@@ -1,0 +1,358 @@
+html {
+	height: 100%;
+	background: linear-gradient(white, lightblue);
+}
+
+#main_head {
+	background: #b9a9a9;
+	text-align: center;
+}
+
+#party_title {
+	color: #000000;
+	width: 50%;
+	font-family: 'Bershire Swash', cursive;
+	border-bottom: 3px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-left: 25%;
+	border-style: solid;
+	border-color: black;
+	text-align: center;
+}
+
+.character {
+	width: 110px;
+	height: 50px;
+	font-family: 'IM Fell Double Pica', serif;
+	border: 3px;
+    border-style: inset;
+    border-color: gold;
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: center;
+	box-shadow: 10px 10px 5px #888888;
+	font-size: 25px;
+}
+
+.character:hover {
+	box-shadow: 5px 5px 2px #888888;
+}
+
+#log_title {
+	position: absolute;
+	top: 350px;
+}
+
+#chp1 {
+	position: absolute;
+	top: 400px;
+}
+.id {
+	font-style: italic;
+}
+
+.statbox {
+	background: white;
+	border-radius: 25px;
+	border: 4px;
+	border-color: #888;
+	border-style: inset;
+	height: 125px;
+	width: 100px;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 5px;
+	float: left;
+}
+
+.ability {
+	text-align: center;
+	padding: auto;
+	margin-top: 20px;
+
+}
+.mod {
+	border-radius: 50px/50px;
+	border: 2px solid #000000;
+	text-align: center;
+	width: 40px;
+	float: left;
+	margin: auto;
+	position: relative;
+	left: 30px;
+}
+.return {
+	width: 100%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    margin-top: 22px;
+}
+
+.return:hover {
+	background: darkgreen;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+}
+
+.fenla_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: linear-gradient(#1a401a, #1c9614, #1a401a);
+	border: 3px;
+    border-style: inset;
+    border-color: gold;
+}
+
+.alea_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #dcc926;
+	border: 3px;
+    border-style: inset;
+    border-color: gold;
+}
+
+.clithsbee_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #d04444;
+	border: 3px;
+    border-style: inset;
+    border-color: black;
+}
+
+.fannar_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #14caac;
+	border: 3px;
+    border-style: inset;
+    border-color: blue;
+}
+
+.regina_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #af4faf;
+	border: 3px;
+    border-style: inset;
+    border-color: #9a0000;
+}
+
+.scepter_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #ff9723;
+	border: 3px;
+    border-style: inset;
+    border-color: gold;
+}
+
+.syndir_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #f50055;
+	border: 3px;
+    border-style: inset;
+    border-color: green;
+}
+
+.spells {
+	clear: both;
+	position: relative;
+	top: 50px;
+	left: 100px;
+}
+
+.main_stats {
+	margin-left: 100px;
+}
+
+.section_titles {
+	font-family: 'Bershire Swash', cursive;
+	font-size: 30px;
+}
+
+ul {
+	font-weight: bold;
+	text-decoration: underline;	
+}
+
+li {
+	padding-bottom: 5px;
+}
+
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #7d7028;
+}
+
+a:active {
+	text-decoration: none;
+	color: #000000;
+}
+
+.spell {
+	display: none;
+}
+
+.input-group {
+	margin: 15px;
+}
+
+.panel-heading {
+	font-size: 24px;
+}
+
+.add {
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.fenla > .panel > .panel-heading {
+	background-image: none;
+	background: linear-gradient(to bottom left, #1a401a, #1c9614);
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	color: white;
+}
+
+.clithsbee > .panel > .panel-heading {
+	background-image: none;
+	background-color: #d04444;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
+.scepter > .panel > .panel-heading {
+	background-image: none;
+	background-color: #ff9723;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
+.syndir > .panel > .panel-heading {
+	background-image: none;
+	background-color: #f50055;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
+.regina > .panel > .panel-heading {
+	background-image: none;
+	background-color: #af4faf;
+	border-color: #9a0000;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
+.fannar > .panel > .panel-heading {
+	background-image: none;
+	background-color: #14caac;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
+.alea > .panel > .panel-heading {
+	background-image: none;
+	background-color: #dcc926;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
+
+.panel > .panel-heading > a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+.fenla {
+	display: none;
+}
+
+.clithsbee {
+	display: none;
+}
+
+.scepter {
+	display: none;
+}
+
+.syndir {
+	display: none;
+}
+
+.alea {
+	display: none;
+}
+
+.fannar {
+	display: none;
+}
+
+.regina {
+	display: none;
+}
+
+footer {
+	background: black;
+	color: white;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.panel-default {
+	border-width: 0px;
+}
+
+.panel-collapse {
+	border-width: 0px;
+}
