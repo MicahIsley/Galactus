@@ -182,6 +182,17 @@ html {
     border-color: green;
 }
 
+.franco_title {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: darkblue;
+	border: 3px;
+    border-style: inset;
+    border-color: grey;
+}
+
 .spells {
 	clear: both;
 	position: relative;
@@ -307,6 +318,15 @@ a:active {
 	color: white;
 }
 
+.franco > .panel > .panel-heading {
+	background-image: none;
+	background-color: darkblue;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	color: white;
+}
+
 
 .panel > .panel-heading > a:hover {
 	text-decoration: none;
@@ -341,6 +361,10 @@ a:active {
 	display: none;
 }
 
+.franco {
+	display: none;
+}
+
 footer {
 	background: black;
 	color: white;
@@ -359,6 +383,6 @@ footer {
 }
 
 .spellName {
-	
+
 	cursor: pointer;
 }
