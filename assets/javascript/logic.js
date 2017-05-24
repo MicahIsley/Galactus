@@ -442,7 +442,7 @@ function startCantrip(){
 
 database.ref().on("value", function(snapshot){
 	spellObject = snapshot.val();
-	fenlaSpells = spellObject.fenla.spells;
+	characterSpells = spellObject.fenla.spells;
 	reginaSpells = spellObject.regina.spells;
 	aleaSpells = spellObject.alea.spells;
 	fannarSpells = spellObject.fannar.spells;
