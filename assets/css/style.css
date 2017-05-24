@@ -22,26 +22,6 @@ html {
 	text-align: center;
 }
 
-.character {
-	width: 110px;
-	height: 50px;
-	font-family: 'IM Fell Double Pica', serif;
-	border: 3px;
-    border-style: inset;
-    border-color: gold;
-	float: left;
-	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: center;
-	box-shadow: 10px 10px 5px #888888;
-	font-size: 25px;
-}
-
-.character:hover {
-	box-shadow: 5px 5px 2px #888888;
-}
-
 #log_title {
 	position: absolute;
 	top: 350px;
@@ -51,8 +31,14 @@ html {
 	position: absolute;
 	top: 400px;
 }
+
 .id {
 	font-style: italic;
+}
+
+.character {
+	text-align: center;
+	font-size: 18px;
 }
 
 .statbox {
@@ -61,18 +47,18 @@ html {
 	border: 4px;
 	border-color: #888;
 	border-style: inset;
-	height: 125px;
-	width: 100px;
+	height: 90px;
+	width: 90px;
 	text-align: center;
-	margin-top: 5px;
 	margin-right: 5px;
+	margin-bottom: 3px;
 	float: left;
 }
 
 .ability {
 	text-align: center;
 	padding: auto;
-	margin-top: 20px;
+	margin-top: 8px;
 
 }
 .mod {
@@ -81,9 +67,9 @@ html {
 	text-align: center;
 	width: 40px;
 	float: left;
-	margin: auto;
 	position: relative;
-	left: 30px;
+	left: 21px;
+	bottom: 5px;
 }
 .return {
 	width: 100%;
@@ -111,9 +97,10 @@ html {
 	text-align: center;
 	color: white;
 	background: linear-gradient(#1a401a, #1c9614, #1a401a);
-	border: 3px;
+	border: 2px;
     border-style: inset;
     border-color: gold;
+
 }
 
 .alea_title {
@@ -201,21 +188,20 @@ html {
 }
 
 .main_stats {
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .section_titles {
-	font-family: 'Bershire Swash', cursive;
 	font-size: 30px;
+	margin-left: 58px;
 }
 
 ul {
 	font-weight: bold;
-	text-decoration: underline;	
 }
 
 li {
-	padding-bottom: 5px;
+	padding-bottom: 0px;
 }
 
 a:link {
@@ -256,7 +242,7 @@ a:active {
 
 .fenla > .panel > .panel-heading {
 	background-image: none;
-	background: linear-gradient(to bottom left, #1a401a, #1c9614);
+	background: linear-gradient(to bottom left, #1a401a, #50d048);
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
@@ -266,64 +252,72 @@ a:active {
 
 .clithsbee > .panel > .panel-heading {
 	background-image: none;
-	background-color: #d04444;
+	background: linear-gradient(to bottom left, #4a1111, #d04444);
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
 .scepter > .panel > .panel-heading {
 	background-image: none;
-	background-color: #ff9723;
+	background: linear-gradient(to bottom left, #c54c04, #ffe04b);
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
 .syndir > .panel > .panel-heading {
 	background-image: none;
-	background-color: #f50055;
+	background: linear-gradient(to bottom left, #ff0000, #ffa6a6);
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
 .regina > .panel > .panel-heading {
 	background-image: none;
-	background-color: #af4faf;
-	border-color: #9a0000;
+	background: linear-gradient(to bottom left, #55047d, #d65ad6);
+	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
 .fannar > .panel > .panel-heading {
 	background-image: none;
-	background-color: #14caac;
+	background: linear-gradient(to bottom left, #006167, #92ffed);
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
 .alea > .panel > .panel-heading {
 	background-image: none;
-	background-color: #dcc926;
+	background: linear-gradient(to bottom left, #c7ca1f, #fffad4);
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
 .franco > .panel > .panel-heading {
 	background-image: none;
-	background-color: darkblue;
+	background: linear-gradient(to bottom left, #0300b1, #c5c5ff);
+	border-color: black;
 	border-color: black;
 	border-width: 2px;
 	border-style: solid;
+	border-radius: 10px;
 	color: white;
 }
 
@@ -405,4 +399,8 @@ footer {
 	border-style: solid;
 	border-width: 2px;
 	border-color: grey;
+}
+
+.btn-group {
+	margin-top: 25px;
 }

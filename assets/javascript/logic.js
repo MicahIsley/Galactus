@@ -293,7 +293,7 @@ $(".character").click(function(){
 	lvl2 = [];
 	character = this.id
 	console.log(character);
-	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir").hide();
+	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir, .franco").hide();
 	$("."+character).show();
 	pushSpells();
 })
@@ -442,7 +442,7 @@ function startCantrip(){
 
 database.ref().on("value", function(snapshot){
 	spellObject = snapshot.val();
-	characterSpells = spellObject.fenla.spells;
+	fenlaSpells = spellObject.fenla.spells;
 	reginaSpells = spellObject.regina.spells;
 	aleaSpells = spellObject.alea.spells;
 	fannarSpells = spellObject.fannar.spells;
