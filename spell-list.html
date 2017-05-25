@@ -8,14 +8,23 @@
 	<body>
 	<div class="container">
 		<div class="row">
-			<a href="features/characters.html"><button>Characters</button></a>
+			<ul class="nav nav-tabs">
+  				<li role="presentation"><a href="index.html">Main Menu</a></li>
+  				<li role="presentation"><a href="features/characters.html">Character Pages</a></li>
+			</ul>
 		</div>	
+		<div class="row">
+			<div class="page-header">
+  				<h1>Spell List</h1>
+  					<p>Contains all spells through Lvl. 2</p>
+			</div>
+		</div>		
 		<div class="row">
   			<div class="col-lg-6">
     			<div class="input-group">
       				<input type="text" class="form-control" id="searchForm" placeholder="Search by class, all lower case">
       				<span class="input-group-btn">
-        			<button class="btn btn-default" id="search" type="button">Go!</button>
+        			<button class="btn btn-default" id="search" type="button">Search!</button>
       				</span>
     			</div><!-- /input-group -->
   			</div><!-- /.col-lg-6 -->
@@ -24,7 +33,7 @@
 			<div class="col-sm-3">
 				<h3>Pick your character</h2>
 			</div>
-			<div class="col-sm-6">	
+			<div class="col-sm-5">	
 				<div class="btn-group" role="group" aria-label="...">
 				  <button type="button" class="btn btn-default choose" id="fenlaA">Fenla</button>
 				  <button type="button" class="btn btn-default choose" id="aleaA">Alea</button>
@@ -34,9 +43,11 @@
 				  <button type="button" class="btn btn-default choose" id="syndirA">Synndur</button>
 				</div>
 			</div>
-			<div class="col-sm-3">
+			<div class="col-sm-2">
 				<button id="deleteSpells">Delete Spells</button>
-			</div>		
+			</div>
+			<div class="col-sm-2">
+				<span id="deleteMessage"></span>	
 		</div>	
 		<div class="panel panel-primary spell sorcerer wizard cantrip" id="acidSplash1">
 			<div class="panel-heading">Acid Splash</div>

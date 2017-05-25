@@ -484,6 +484,8 @@ $("#deleteSpells").click(function(){
 			0: "empty"
 		})
 	}else{}
+
+	$("#deleteMessage").text((character.charAt(0).toUpperCase())+(character.slice(1))+"'s spells deleted").delay(1500).fadeOut(200);
 });
 
 database.ref().on("value", function(snapshot){

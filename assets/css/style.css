@@ -1,7 +1,3 @@
-html {
-	height: 100%;
-	background: linear-gradient(white, lightblue);
-}
 
 #main_head {
 	background: #b9a9a9;
@@ -402,6 +398,46 @@ footer {
 	border-color: grey;
 }
 
-.btn-group {
-	margin-top: 25px;
+.choose {
+	margin-top: 15px;
+}
+
+.choose:focus {
+	outline: none;
+	background: #84dc69;
+}
+
+.choose:active {
+	outline: none;
+}
+
+.btn-default {
+	margin-bottom: 2px;
+	margin-right: 4px;
+}
+
+#deleteSpells {
+	width: 70%;
+	background: #ff6767;
+	border-width: 2px;
+	border-color:  #383030;
+	border-style: solid;
+	margin-top: 10px;
+}
+
+#deleteSpells:hover {
+	background: red;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+}
+
+#deleteSpells:focus {
+	outline: none;
+}
+
+#deleteMessage {
+	position: relative;
+	top: 14px;
+	text-align: center;
 }
