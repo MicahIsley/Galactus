@@ -4,6 +4,21 @@
 	text-align: center;
 }
 
+.mainMenu {
+	height: 50px;
+	width: 30%;
+	background: gold;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	margin: 10px;
+	text-align: center;
+}
+
+#mainMenuButtons {
+	margin-top: 25%;
+}
+
 #party_title {
 	color: #000000;
 	width: 50%;
@@ -472,4 +487,8 @@ footer {
 
 .btn-group {
 	margin-top: 24px;
+}
+
+#italics {
+	font-style: italic;
 }
