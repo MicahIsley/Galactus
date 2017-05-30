@@ -389,6 +389,7 @@ footer {
     font-size: 16px;
     border-radius: 12px;
     margin-top: 22px;
+    margin-bottom: 10px;
 }
 
 #newSpellsButton:hover {
@@ -440,4 +441,35 @@ footer {
 	position: relative;
 	top: 14px;
 	text-align: center;
+}
+
+.chapter {
+	height: 70px;
+	width: 100%;
+	background: linear-gradient(lightgrey, grey);
+	margin: 1px;
+	border-width: 2px 0px 2px 0px;
+	border-color: black;
+	border-style: solid;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+.chapterText {
+	display: none;
+
+}
+
+.chapterContent {
+	height: 600px;
+	padding: 10px;
+	border-radius: 20px;
+	border-width: 0px 0px 0px 2px;
+	border-style: solid;
+	border-color: lightgrey;
+}
+
+.btn-group {
+	margin-top: 24px;
 }

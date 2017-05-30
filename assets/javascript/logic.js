@@ -488,6 +488,13 @@ $("#deleteSpells").click(function(){
 	$("#deleteMessage").text((character.charAt(0).toUpperCase())+(character.slice(1))+"'s spells deleted").delay(1500).fadeOut(200);
 });
 
+$(".chapter").click(function(){
+	$(".chapterText").hide();
+	var chapterId = this.id;
+	var findChapter = (chapterId+"Content");
+	$("#"+findChapter).show();
+})
+
 database.ref().on("value", function(snapshot){
 	spellObject = snapshot.val();
 	fenlaSpells = spellObject.fenla.spells;
