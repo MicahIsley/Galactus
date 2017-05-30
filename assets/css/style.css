@@ -6,7 +6,7 @@
 
 .mainMenu {
 	height: 50px;
-	width: 30%;
+	width: 70%;
 	background: gold;
 	border-width: 3px;
 	border-color: black;
@@ -17,6 +17,7 @@
 
 #mainMenuButtons {
 	margin-top: 25%;
+	margin-left: 15%;
 }
 
 #party_title {
