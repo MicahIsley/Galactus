@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda|Merienda+One" rel="stylesheet">
 		<link rel="stylesheet" href="../assets/css/style.css">
 	</head>
 
@@ -12,32 +13,14 @@
 		
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-2">	
-						<a href='../index.html'><button class='return'>Home</button></a>
-					</div>
-					<div class="col-sm-2">
-						<div class="btn-group">
-  							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Characters <span class="caret"></span>
-  							</button>
-							  <ul class="dropdown-menu">
-							    <li class="character" id="fenla"><a href="#">Fenla</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="clithsbee"><a href="#">Clithsbee</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="scepter"><a href="#">Scepter</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="syndir"><a href="#">Synndur</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="alea"><a href="#">Alea</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="fannar"><a href="#">Fannar</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="regina"><a href="#">Regina</a></li>
-							    <li role="separator" class="divider"></li>
-							    <li class="character" id="franco"><a href="#">Franco</a></li>
-							  </ul>
-						</div>
-						<!--<div class="character" id="fenla">Fenla</div>
+					<ul class="nav nav-tabs">
+	  					<li role="presentation"><a href="../index.html">Main Menu</a></li>
+	  					<li role="presentation"><a href="characters.html">Character Pages</a></li>
+					</ul>
+				</div>
+				<div class="row" id="characterRow">
+					<div class="col-sm-12">
+						<div class="character" id="fenla">Fenla</div>
 						<div class="character" id="clithsbee">Clithsbee</div>	
 						<div class="character" id="scepter">Scepter</div>	
 						<div class="character" id="syndir">Syndir</div>
@@ -45,8 +28,10 @@
 						<div class="character" id="fannar">Fannar</div>
 						<div class="character" id="regina">Regina</div>
 						<div class="character" id="franco">Franco</div>
-						<div class="character" id="minime">Mini-me</div>-->
-					</div>	
+						<!--<div class="character" id="minime">Mini-me</div>-->
+					</div>
+				</div>	
+				<div class="row">		
 					<div class="col-sm-6">
 						<h1 class="fenla_title fenla">Fenla Arila</h1>
 						<h1 class="clithsbee_title clithsbee">Clithsbee</h1>
@@ -2711,7 +2696,7 @@
 					<h3>Micah Isley 2017</h3>
 				</footer>
 			</div>
-					
+
 								
 	</body>
 	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
