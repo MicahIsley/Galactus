@@ -2,13 +2,78 @@ body {
 	background: url("http://www.zastavki.com/pictures/originals/2015/Backgrounds_Masonry_made_of_stone__background_103637_.jpg");
 }
 
-.jumbotron {
+#indexTitle {
 	background-color: transparent;
-	margin-top: 100px;
+	margin-top: 90px;
 	text-align: center;
 	color: black;
+	font-family: 'Cormorant SC', serif;
+}
+
+h1 {
+	font-size: 70px;
+	font-weight: 900;
 }
 
 p {
-	font-size: 100px;
+	font-size: 36px; 
 }
+
+#indexButtons {
+	margin-left: 36%;
+	margin-top: 40px;
+}
+
+.mainTab {
+	margin: 15px;
+	height: 60px;
+	width: 75%;
+	background: transparent;
+	color: black;
+	text-align: center;
+	font-size: 40px;
+}
+
+.mainTab:hover {
+	border-color: darkgrey;
+	border-style: inset;
+	border-width: 3px;
+}
+
+a:hover {
+	text-decoration: none;
+
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+#borderButton {
+	border-width: 2px 0px 2px 0px;
+	border-style: solid;
+	border-color: black;
+	height: 70px;
+}
+
+#borderButton:hover {
+	border-color: darkgrey;
+	border-style: inset;
+	border-width: 3px;
+}
+
+@media only screen and (max-width: 500px) {
+	#indexTitle {
+		margin-top: 50px;
+	}
+
+	#indexButtons {
+		margin-left: 13%;
+	}
+
+	.mainTab {
+		width: 75%;
+		font-size: 35px;
+	}
+}
+
