@@ -1,19 +1,31 @@
-.container {
-	background: #cecece;
+.topRow{
+	background: #2a1965;
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	border-color: black;
 }
-#main_head {
-	background: #b9a9a9;
-	text-align: center;
+
+.nav {
+	margin-left: 50px;
 }
+.mainTab {
+	border-style: solid;
+	border-width: 2px 2px 0px 2px;
+	border-color: black;
+	border-radius: 10px 10px 0px 0px;
+	margin: 2px;
+	background: white;
+}
+
 
 .mainMenu {
 	height: 50px;
-	width: 70%;
+	width: 160px;
 	background: gold;
 	border-width: 3px;
 	border-color: black;
 	border-style: solid;
-	margin: 10px;
+	margin-bottom: 10px;
 	text-align: center;
 	font-size: 30px;
 	box-shadow: 6px 6px 3px #4e4e4e;
@@ -24,8 +36,8 @@
 }
 
 #mainMenuButtons {
-	margin-top: 25%;
-	margin-left: 15%;
+	margin-top: 10%;
+	margin-left: 28%;
 }
 
 #party_title {
@@ -58,13 +70,13 @@
 
 .character {
 	text-align: center;
-	height: 85px;
-	width: 85px;
-	font-size: 17px;
+	height: 75px;
+	width: 75px;
+	font-size: 14px;
 	color: white;
 	border-width: 4px;
 	border-color: #988a8a;
-	border-style: outset;
+	border-style: double;
 	border-radius: 40px;
 	float: left;
 	padding-top: 25px;
@@ -75,7 +87,6 @@
 }
 
 .character:hover {
-	border-style: inset;
 	box-shadow: 0px 0px 5px 3px;
 }
 
@@ -131,96 +142,118 @@
 
 .fenla_title {
 	height: 50px;
-	width: 100%;
-	font-size: 40px;
+	width: 70%;
+	font-size: 44px;
+	font-family: 'Lobster Two', cursive;
 	text-align: center;
 	color: white;
 	background-image: url("http://wallpapercave.com/wp/AmVE9iw.jpg");
-	background-position: 50% 25%;
+	background-position: 0% 15%;
 	background-size: 100% 250px;
 	background-repeat: no-repeat;
 	border: 2px;
     border-style: inset;
     border-color: gold;
-
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .alea_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
 	text-align: center;
+	font-size: 44px;
+	font-family: 'Lobster Two', cursive;
 	color: white;
-	background: #dcc926;
-	border: 3px;
+	background: #c7ca1f;
+	border: 2px;
     border-style: inset;
     border-color: gold;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .clithsbee_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
 	text-align: center;
+	font-size: 44px;
+	background: #4a1111;
+	font-family: 'Lobster Two', cursive;
 	color: white;
-	background: #d04444;
-	border: 3px;
+	border: 2px;
     border-style: inset;
-    border-color: black;
+    border-color: gold;
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .fannar_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
 	text-align: center;
+	background: #006167;
+	font-size: 44px;
+	font-family: 'Lobster Two', cursive;
 	color: white;
-	background: #14caac;
-	border: 3px;
+	border: 2px;
     border-style: inset;
-    border-color: blue;
+    border-color: gold;
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .regina_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
+	font-size: 40px;
+	font-family: 'Lobster Two', cursive;
 	text-align: center;
 	color: white;
-	background: #af4faf;
-	border: 3px;
+	background: #55047d;
+	border: 2px;
     border-style: inset;
-    border-color: #9a0000;
-    font-size: 30px;
+    border-color: gold;
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .scepter_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
+	font-size: 40px;
+	font-family: 'Lobster Two', cursive;
 	text-align: center;
 	color: white;
-	background: #ff9723;
-	border: 3px;
+	background: #c54c04;
+	border: 2px;
     border-style: inset;
     border-color: gold;
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .syndir_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
 	text-align: center;
+	background: #ff0000;
+	font-size: 40px;
+	font-family: 'Lobster Two', cursive;
 	color: white;
-	background: #f50055;
-	border: 3px;
+	border: 2px;
     border-style: inset;
-    border-color: green;
+    border-color: gold;
+    box-shadow: 0px 0px 4px 4px grey;
 }
 
 .franco_title {
 	height: 50px;
-	width: 100%;
+	width: 70%;
+	font-size: 40px;
+	font-family: 'Lobster Two', cursive;
 	text-align: center;
 	color: white;
-	background: darkblue;
-	border: 3px;
+	background: #0300b1;
+	border: 2px;
     border-style: inset;
-    border-color: grey;
+    border-color: gold;
+    box-shadow: 0px 0px 5px 5px grey;
 }
 
 .spells {
@@ -510,7 +543,7 @@ footer {
 .chapterContent {
 	height: 600px;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 20px 0px;
 	border-width: 0px 0px 0px 2px;
 	border-style: solid;
 	border-color: lightgrey;

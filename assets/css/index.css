@@ -1,0 +1,14 @@
+body {
+	background: url("http://www.zastavki.com/pictures/originals/2015/Backgrounds_Masonry_made_of_stone__background_103637_.jpg");
+}
+
+.jumbotron {
+	background-color: transparent;
+	margin-top: 100px;
+	text-align: center;
+	color: black;
+}
+
+p {
+	font-size: 100px;
+}
