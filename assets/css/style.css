@@ -479,7 +479,7 @@ footer {
 }
 
 .choose {
-	margin-top: 15px;
+	margin-bottom:  20px;
 }
 
 .choose:focus {
@@ -489,6 +489,7 @@ footer {
 
 .choose:active {
 	outline: none;
+	background: #84dc69;
 }
 
 .btn-default {
@@ -502,7 +503,8 @@ footer {
 	border-width: 2px;
 	border-color:  #383030;
 	border-style: solid;
-	margin-top: 10px;
+	border-radius: 5px;
+	margin-top: 25px;
 }
 
 #deleteSpells:hover {
@@ -555,4 +557,19 @@ footer {
 
 #italics {
 	font-style: italic;
+}
+
+.learn {
+	float: right;
+	background: green;
+	border-radius: 5px;
+	border-width: 0px;
+}
+
+#spellList {
+	margin-top: 20px;
+}
+
+#pickCharacterTitle {
+	margin-top: 10px;
 }

@@ -44,7 +44,7 @@ $("#search").click(function(){
 	$(".spell").hide();
 	$('.'+search).show();
 	if($(".spell").is(":visible")){
-		$(".spell").append("<button class='learn'>Learn</button>");
+		$(".panel-heading").append("<button class='learn'>Learn</button>");
 	}
 })
 
@@ -52,13 +52,17 @@ $(".choose").click(function(){
 	var userA = this.id;
 	character = userA.replace("A", "");
 	console.log(character);
+	$(".choose").css("background", "white")
+	$(this).css("background", "green");
 })
 
 $(document).on("click", ".learn", function(){
 	pushSpells();
-	var newId = ($(this).parent().attr('id'));
+	$(this).text("Learned!");
+	var newId = ($(this).parent().parent().attr('id'));
 	var newSpell = newId.replace("1", "");
-	if($(this).parent().hasClass("cantrip")){
+	console.log(newSpell);
+	if($(this).parent().parent().hasClass("cantrip")){
 		if(character == "fenla"){
 			var fenlaCantrips = fenlaSpells.cantrips;
 			arrayLength = $(fenlaCantrips).length;
@@ -66,11 +70,11 @@ $(document).on("click", ".learn", function(){
 				database.ref("/fenla/spells/cantrips").set({
 					0: newSpell
 				})		
-			}else{			
+			}else if($.inArray(newSpell, cantrips) == -1){			
 				database.ref("/"+character+"/spells/cantrips").update({
 					[arrayLength]: newSpell
 				})
-			}
+			}else{}
 		}else if(character=="regina"){
 			var reginaCantrips = reginaSpells.cantrips;
 			arrayLength = $(reginaCantrips).length;
@@ -78,7 +82,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/regina/spells/cantrips").set({
 					0: newSpell
 				})		
-			}else{			
+			}else if($.inArray(newSpell, cantrips) == -1){			
 				database.ref("/"+character+"/spells/cantrips").update({
 					[arrayLength]: newSpell
 				})
@@ -90,7 +94,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/alea/spells/cantrips").set({
 					0: newSpell
 				})		
-			}else{			
+			}else if($.inArray(newSpell, cantrips) == -1){			
 				database.ref("/"+character+"/spells/cantrips").update({
 					[arrayLength]: newSpell
 				})
@@ -102,7 +106,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/fannar/spells/cantrips").set({
 					0: newSpell
 				})		
-			}else{			
+			}else if($.inArray(newSpell, cantrips) == -1){			
 				database.ref("/"+character+"/spells/cantrips").update({
 					[arrayLength]: newSpell
 				})
@@ -114,7 +118,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/scepter/spells/cantrips").set({
 					0: newSpell
 				})		
-			}else{			
+			}else if($.inArray(newSpell, cantrips) == -1){			
 				database.ref("/"+character+"/spells/cantrips").update({
 					[arrayLength]: newSpell
 				})
@@ -126,14 +130,14 @@ $(document).on("click", ".learn", function(){
 				database.ref("/syndir/spells/cantrips").set({
 					0: newSpell
 				})		
-			}else{			
+			}else if($.inArray(newSpell, cantrips) == -1){			
 				database.ref("/"+character+"/spells/cantrips").update({
 					[arrayLength]: newSpell
 				})
 			}
 		}else{}
 		
-	} else if($(this).parent().hasClass("one")){
+	} else if($(this).parent().parent().hasClass("one")){
 		if(character == "fenla"){
 			var fenlaOne = fenlaSpells.lvl1;
 			arrayLength = $(fenlaOne).length;
@@ -141,7 +145,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/fenla/spells/lvl1").set({
 					0: newSpell
 				})		
-			}else{
+			}else if($.inArray(newSpell, lvl1) == -1){
 				database.ref("/"+character+"/spells/lvl1").update({
 					[arrayLength]: newSpell
 				})
@@ -153,7 +157,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/regina/spells/lvl1").set({
 					0: newSpell
 				})		
-			}else{
+			}else if($.inArray(newSpell, lvl1) == -1){
 				database.ref("/"+character+"/spells/lvl1").update({
 					[arrayLength]: newSpell
 				})
@@ -165,7 +169,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/alea/spells/lvl1").set({
 					0: newSpell
 				})		
-			}else{
+			}else if($.inArray(newSpell, lvl1) == -1){
 				database.ref("/"+character+"/spells/lvl1").update({
 					[arrayLength]: newSpell
 				})
@@ -177,7 +181,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/fannar/spells/lvl1").set({
 					0: newSpell
 				})		
-			}else{
+			}else if($.inArray(newSpell, lvl1) == -1){
 				database.ref("/"+character+"/spells/lvl1").update({
 					[arrayLength]: newSpell
 				})
@@ -189,7 +193,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/scepter/spells/lvl1").set({
 					0: newSpell
 				})		
-			}else{
+			}else if($.inArray(newSpell, lvl1) == -1){
 				database.ref("/"+character+"/spells/lvl1").update({
 					[arrayLength]: newSpell
 				})
@@ -201,14 +205,14 @@ $(document).on("click", ".learn", function(){
 				database.ref("/syndir/spells/lvl1").set({
 					0: newSpell
 				})		
-			}else{
+			}else if($.inArray(newSpell, lvl1) == -1){
 				database.ref("/"+character+"/spells/lvl1").update({
 					[arrayLength]: newSpell
 				})
 			}
 		}
 
-	} else if($(this).parent().hasClass("two")){
+	} else if($(this).parent().parent().hasClass("two")){
 		if(character == "fenla"){
 			var fenlaTwo = fenlaSpells.lvl2;
 			arrayLength = $(fenlaTwo).length;
@@ -216,7 +220,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/fenla/spells/lvl2").set({
 					0: newSpell
 				})		
-			}else{	
+			}else if($.inArray(newSpell, lvl2) == -1){	
 				database.ref("/"+character+"/spells/lvl2").update({
 					[arrayLength]: newSpell
 				})
@@ -228,7 +232,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/regina/spells/lvl2").set({
 					0: newSpell
 				})		
-			}else{	
+			}else if($.inArray(newSpell, lvl2) == -1){	
 				database.ref("/"+character+"/spells/lvl2").update({
 					[arrayLength]: newSpell
 				})
@@ -240,7 +244,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/alea/spells/lvl2").set({
 					0: newSpell
 				})		
-			}else{	
+			}else if($.inArray(newSpell, lvl2) == -1){	
 				database.ref("/"+character+"/spells/lvl2").update({
 					[arrayLength]: newSpell
 				})
@@ -252,7 +256,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/fannar/spells/lvl2").set({
 					0: newSpell
 				})		
-			}else{	
+			}else if($.inArray(newSpell, lvl2) == -1){	
 				database.ref("/"+character+"/spells/lvl2").update({
 					[arrayLength]: newSpell
 				})
@@ -264,7 +268,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/scepter/spells/lvl2").set({
 					0: newSpell
 				})		
-			}else{	
+			}else if($.inArray(newSpell, lvl2) == -1){	
 				database.ref("/"+character+"/spells/lvl2").update({
 					[arrayLength]: newSpell
 				})
@@ -276,7 +280,7 @@ $(document).on("click", ".learn", function(){
 				database.ref("/syndir/spells/lvl2").set({
 					0: newSpell
 				})		
-			}else{	
+			}else if($.inArray(newSpell, lvl2) == -1){	
 				database.ref("/"+character+"/spells/lvl2").update({
 					[arrayLength]: newSpell
 				})
