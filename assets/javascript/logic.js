@@ -38,7 +38,7 @@ $(document).on("click", ".spellName", function(){
 
 
 $("#search").click(function(){
-	var search = $("#searchForm").val().trim();
+	var search = $("#searchForm").val().trim().toLowerCase();
 	$(".learn").remove();
 	console.log(search);
 	$(".spell").hide();
@@ -48,12 +48,18 @@ $("#search").click(function(){
 	}
 })
 
+$("#searchForm").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#search").click();
+    }
+});
+
 $(".choose").click(function(){
 	var userA = this.id;
 	character = userA.replace("A", "");
 	console.log(character);
 	$(".choose").css("background", "white")
-	$(this).css("background", "green");
+	$(this).css("background", "#46ce46");
 })
 
 $(document).on("click", ".learn", function(){

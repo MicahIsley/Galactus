@@ -1,0 +1,59 @@
+body {
+	background: url(http://www.powerpointhintergrund.com/uploads/2017/05/home-mini-sacrament-kit-aaronic-priesthood-booklet-angels-booklet--1.jpeg);
+}
+
+.chapter {
+	height: 70px;
+	width: 100%;
+	background: linear-gradient(#96683e, #5f3212);
+	margin: 5px;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 15px;
+	box-shadow: 5px 3px 5px black;
+	font-family: 'Courgette', cursive;
+	font-size: 24px;
+	color: #cacaca;
+}
+
+.chapter:hover {
+	border-style: inset;
+	background: linear-gradient(#e0aa61, #9e7f56);
+	box-shadow: 0px 0px 0px;
+}
+
+.chapterText {
+	display: none;
+	font-family: 'Architects Daughter', cursive;
+	color: black;
+}
+
+.chapterContent {
+	height: 600px;
+	padding: 10px;
+	border-radius: 20px 0px;
+	border-width: 0px 0px 0px 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+.page-header {
+	margin-left: 50px;
+	border-color: black;
+	font-family: 'Courgette', cursive;
+}
+
+p {
+	font-family: 'Architects Daughter', cursive;
+	font-size: 17px;
+}
+
+@media only screen and (max-width: 500px) {
+	.chapter {
+		font-size: 30px;
+	}
+}

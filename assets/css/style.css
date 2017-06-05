@@ -8,6 +8,10 @@
 .nav {
 	margin-left: 50px;
 }
+
+.nav-tabs {
+	border-color: #2a1965;
+}
 .mainTab {
 	border-style: solid;
 	border-width: 2px 2px 0px 2px;
@@ -524,32 +528,6 @@ footer {
 	text-align: center;
 }
 
-.chapter {
-	height: 70px;
-	width: 100%;
-	background: linear-gradient(lightgrey, grey);
-	margin: 1px;
-	border-width: 2px 0px 2px 0px;
-	border-color: black;
-	border-style: solid;
-	text-align: center;
-	font-size: 20px;
-	padding-top: 5px;
-}
-
-.chapterText {
-	display: none;
-
-}
-
-.chapterContent {
-	height: 600px;
-	padding: 10px;
-	border-radius: 20px 0px;
-	border-width: 0px 0px 0px 2px;
-	border-style: solid;
-	border-color: lightgrey;
-}
 
 .btn-group {
 	margin-top: 24px;
