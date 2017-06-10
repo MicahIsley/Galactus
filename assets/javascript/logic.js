@@ -449,51 +449,14 @@ function pushSpells(){
 
 $("#deleteSpells").click(function(){
 	console.log(character+"delete");
-	if(character == "fenla"){
-		console.log("hey")
-		database.ref("fenla/spells/lvl1").set({
-			0: "empty"
-		})
-		database.ref("fenla/spells/lvl2").set({
-			0: "empty"
-		})
-		console.log(fenlaSpells.lvl1);
-	}else if(character == "regina"){
-		database.ref("regina/spells/lvl1").set({
-			0: "empty"
-		})
-		database.ref("regina/spells/lvl2").set({
-			0: "empty"
-		})
-	}else if(character == "alea"){
-		database.ref("alea/spells/lvl1").set({
-			0: "empty"
-		})
-		database.ref("alea/spells/lvl2").set({
-			0: "empty"
-		})
-	}else if(character == "fannar"){
-		database.ref("fannar/spells/lvl1").set({
-			0: "empty"
-		})
-		database.ref("fannar/spells/lvl2").set({
-			0: "empty"
-		})
-	}else if(character == "scepter"){
-		database.ref("scepter/spells/lvl1").set({
-			0: "empty"
-		})
-		database.ref("scepter/spells/lvl2").set({
-			0: "empty"
-		})
-	}else if(character == "syndir"){
-		database.ref("syndir/spells/lvl1").set({
-			0: "empty"
-		})
-		database.ref("syndir/spells/lvl2").set({
-			0: "empty"
-		})
-	}else{}
+	console.log("hey")
+	database.ref(character + "/spells/lvl1").set({
+		0: "empty"
+	})
+	database.ref(character + "/spells/lvl2").set({
+		0: "empty"
+	})
+	
 
 	$("#deleteMessage").text((character.charAt(0).toUpperCase())+(character.slice(1))+"'s spells deleted").delay(1500).fadeOut(200);
 });
@@ -514,5 +477,5 @@ database.ref().on("value", function(snapshot){
 	syndirSpells = spellObject.syndir.spells;
 	scepterSpells = spellObject.scepter.spells;
 
-})	
+})
 
