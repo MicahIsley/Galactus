@@ -1,0 +1,120 @@
+body {
+	background: black;
+}
+
+#titleScreen {
+	height: 400px;
+	width: 500px;
+	color: white;
+	margin-left: 30%;
+	margin-top: 200px;
+	background: transparent;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#startButton {
+	margin-top: 50px;
+}
+
+#mainTitle {
+	padding-top: 25px;
+}
+
+#combatScreen {
+	display: none;
+}
+
+#heroSelectScreen {
+	display: none;
+}
+
+.character{
+	color: white;
+	height: auto;
+	width: 100px;
+	background: grey;
+}
+
+#hero {
+	float: left;
+	margin: 20px;
+}
+
+#enemy {
+	float: right;
+	margin: 20px;
+}
+
+#actionMenu {
+	color: white;
+	background: transparent;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.enemyStats {
+	float: left;
+}
+
+#damageTaken {
+	position: relative;
+	color: red;
+}
+
+.damageAnimate {
+	margin-left: 15px;
+	color: red;
+	position: relative;
+}
+
+#statBox {
+	color: white;
+	background: transparent;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 5px;
+}
+
+#adventureScreen {
+	background: transparent;
+	border-color: white;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	height: 600px;
+	width: 90%;
+	margin-top: 30px;
+	display: none;
+	overflow: hidden;
+}
+
+#playerHero {
+	background: green;
+	height: 40px;
+	width: 30px;
+	position: relative;
+}
+
+.generated {
+	background: blue;
+	margin: 5px;
+	height: 150px;
+	width: 160px;
+}
+
+.enemyButtons {
+	background: green;
+	margin: 5px;
+	height: 100px;
+	width: 100px;
+}

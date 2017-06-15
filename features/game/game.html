@@ -1,0 +1,81 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="game.css">
+</head>
+	<body>
+		<div class="container">
+			<div id="titleScreen">
+				<h1 id="mainTitle">The Adventures</h1> <h1 id="titleOf">of</h1> <h1 id="titleNames">Fenla & Moro</h1>
+					<h3 id="startButton">Start</h3>
+					<h3 id="adventureButton">Adventure</h3>
+			</div>
+			<div id="heroSelectScreen">
+				<div class="row">
+					<h1>Your Party</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2" id="statBox">
+						<div class="row">
+							<div class="col-sm-4">
+								<div id="heroPicture"></div>
+								<h3>Fenla Aurila</h3>
+							</div>
+							<div class="col-sm-4">
+								<div>
+									<h4>Strength:14</h4>
+									<h4>Dexterity: 14</h4>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div id="specials">
+									<h3>Wolf Form</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="adventureScreen">
+				<div id="playerHero">
+				</div>
+			</div>											
+			<div id="combatScreen">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="character" id="hero">
+							<h2>Fenla</h2>
+								<div class="displayStats" id="heroHp"></div>
+								<div class="displayStats damageTaken">number</div>
+						</div>
+					</div>	
+					<div class="col-sm-3 col-sm-offset-3">	
+						<div class="character" id="enemy">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">		
+						<div id="actionMenu">
+							<h4 id="attackButton">Attack</h4>
+							<h4 id="specialButton">Special</h4>
+							<h4 id="fleeButton">Flee</h4>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div id="enemyButtonArea">
+						</div>
+					</div>		
+				</div>
+			</div>	
+		</div>				
+					
+
+	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="game.js"></script>				
