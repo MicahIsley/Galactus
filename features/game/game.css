@@ -43,6 +43,8 @@ body {
 #hero {
 	float: left;
 	margin: 20px;
+	position: relative;
+	text-align: center;
 }
 
 #enemy {
@@ -108,8 +110,10 @@ body {
 .generated {
 	background: blue;
 	margin: 5px;
-	height: 150px;
-	width: 160px;
+	height: 70px;
+	width: 90px;
+	text-align: center;
+	padding-top: 15px;
 }
 
 .enemyButtons {
