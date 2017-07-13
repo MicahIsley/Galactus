@@ -11,6 +11,7 @@ var config = {
 var database = firebase.database();
 var person = "";
 var character = "";
+var characterLearn;
 var spellObject;
 var cantrips = [];
 var lvl1 = [];
@@ -24,18 +25,15 @@ var scepterSpells;
 var user;
 var arrayLength;
 
-	
 
 $(document).on("click", ".spellName", function(){
 	$(".spell").hide();
 	var id = this.id;
 	console.log(id);
-	var newId = (id+"1");
+	var newId = ("#" +id + "1");
 	console.log(newId);
-	$("#"+newId).show();
+	$(newId).show();
 })
-
-
 
 $("#search").click(function(){
 	var search = $("#searchForm").val().trim().toLowerCase();
@@ -56,292 +54,94 @@ $("#searchForm").keyup(function(event){
 
 $(".choose").click(function(){
 	var userA = this.id;
-	character = userA.replace("A", "");
+	characterLearn = userA.replace("A", "");
 	console.log(character);
 	$(".choose").css("background", "white")
 	$(this).css("background", "#46ce46");
 })
 
 $(document).on("click", ".learn", function(){
-	pushSpells();
-	$(this).text("Learned!");
-	var newId = ($(this).parent().parent().attr('id'));
-	var newSpell = newId.replace("1", "");
-	console.log(newSpell);
-	if($(this).parent().parent().hasClass("cantrip")){
-		if(character == "fenla"){
-			var fenlaCantrips = fenlaSpells.cantrips;
-			arrayLength = $(fenlaCantrips).length;
-			if(fenlaSpells.cantrips[0] == "empty"){
-				database.ref("/fenla/spells/cantrips").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, cantrips) == -1){			
-				database.ref("/"+character+"/spells/cantrips").update({
-					[arrayLength]: newSpell
-				})
-			}else{}
-		}else if(character=="regina"){
-			var reginaCantrips = reginaSpells.cantrips;
-			arrayLength = $(reginaCantrips).length;
-			if(reginaSpells.cantrips[0] == "empty"){
-				database.ref("/regina/spells/cantrips").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, cantrips) == -1){			
-				database.ref("/"+character+"/spells/cantrips").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="alea"){
-			var aleaCantrips = aleaSpells.cantrips;
-			arrayLength = $(aleaCantrips).length;
-			if(aleaSpells.cantrips[0] == "empty"){
-				database.ref("/alea/spells/cantrips").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, cantrips) == -1){			
-				database.ref("/"+character+"/spells/cantrips").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="fannar"){
-			var fannarCantrips = fannarSpells.cantrips;
-			arrayLength = $(fannarCantrips).length;
-			if(fannarSpells.cantrips[0] == "empty"){
-				database.ref("/fannar/spells/cantrips").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, cantrips) == -1){			
-				database.ref("/"+character+"/spells/cantrips").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="scepter"){
-			var scepterCantrips = scepterSpells.cantrips;
-			arrayLength = $(scepterCantrips).length;
-			if(scepterSpells.cantrips[0] == "empty"){
-				database.ref("/scepter/spells/cantrips").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, cantrips) == -1){			
-				database.ref("/"+character+"/spells/cantrips").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="syndir"){
-			var syndirCantrips = syndirSpells.cantrips;
-			arrayLength = $(syndirCantrips).length;
-			if(syndirSpells.cantrips[0] == "empty"){
-				database.ref("/syndir/spells/cantrips").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, cantrips) == -1){			
-				database.ref("/"+character+"/spells/cantrips").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else{}
-		
-	} else if($(this).parent().parent().hasClass("one")){
-		if(character == "fenla"){
-			var fenlaOne = fenlaSpells.lvl1;
-			arrayLength = $(fenlaOne).length;
-			if(fenlaSpells.lvl1[0] == "empty"){
-				database.ref("/fenla/spells/lvl1").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl1) == -1){
-				database.ref("/"+character+"/spells/lvl1").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="regina"){
-			var reginaOne = reginaSpells.lvl1;
-			arrayLength = $(reginaOne).length;
-			if(reginaSpells.lvl1[0] == "empty"){
-				database.ref("/regina/spells/lvl1").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl1) == -1){
-				database.ref("/"+character+"/spells/lvl1").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="alea"){
-			var aleaOne = aleaSpells.lvl1;
-			arrayLength = $(aleaOne).length;
-			if(aleaSpells.lvl1[0] == "empty"){
-				database.ref("/alea/spells/lvl1").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl1) == -1){
-				database.ref("/"+character+"/spells/lvl1").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="fannar"){
-			var fannarOne = fannarSpells.lvl1;
-			arrayLength = $(fannarOne).length;
-			if(fannarSpells.lvl1[0] == "empty"){
-				database.ref("/fannar/spells/lvl1").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl1) == -1){
-				database.ref("/"+character+"/spells/lvl1").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="scepter"){
-			var scepterOne = scepterSpells.lvl1;
-			arrayLength = $(scepterOne).length;
-			if(scepterSpells.lvl1[0] == "empty"){
-				database.ref("/scepter/spells/lvl1").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl1) == -1){
-				database.ref("/"+character+"/spells/lvl1").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="syndir"){
-			var syndirOne = syndirSpells.lvl1;
-			arrayLength = $(syndirOne).length;
-			if(syndirSpells.lvl1[0] == "empty"){
-				database.ref("/syndir/spells/lvl1").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl1) == -1){
-				database.ref("/"+character+"/spells/lvl1").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}
+	var nameOfSpell = $(this).parent().parent().attr("id");
+	var levelOfSpell = $(this).parent().parent().attr("class").split(" ").pop();
+	var editedName = nameOfSpell.slice(0, -1);
+	console.log(editedName);
+	event.preventDefault();
+	var newSpell = {
+		name: editedName,
+		level: levelOfSpell,
+		character: characterLearn
+	};
 
-	} else if($(this).parent().parent().hasClass("two")){
-		if(character == "fenla"){
-			var fenlaTwo = fenlaSpells.lvl2;
-			arrayLength = $(fenlaTwo).length;
-			if(fenlaSpells.lvl2[0] == "empty"){
-				database.ref("/fenla/spells/lvl2").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl2) == -1){	
-				database.ref("/"+character+"/spells/lvl2").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="regina"){
-			var reginaTwo = reginaSpells.lvl2;
-			arrayLength = $(reginaTwo).length;
-			if(reginaSpells.lvl2[0] == "empty"){
-				database.ref("/regina/spells/lvl2").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl2) == -1){	
-				database.ref("/"+character+"/spells/lvl2").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="alea"){
-			var aleaTwo = aleaSpells.lvl2;
-			arrayLength = $(aleaTwo).length;
-			if(aleaSpells.lvl2[0] == "empty"){
-				database.ref("/alea/spells/lvl2").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl2) == -1){	
-				database.ref("/"+character+"/spells/lvl2").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="fannar"){
-			var fannarTwo = fannarSpells.lvl2;
-			arrayLength = $(fannarTwo).length;
-			if(fannarSpells.lvl2[0] == "empty"){
-				database.ref("/fannar/spells/lvl2").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl2) == -1){	
-				database.ref("/"+character+"/spells/lvl2").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="scepter"){
-			var scepterTwo = scepterSpells.lvl2;
-			arrayLength = $(scepterTwo).length;
-			if(scepterSpells.lvl2[0] == "empty"){
-				database.ref("/scepter/spells/lvl2").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl2) == -1){	
-				database.ref("/"+character+"/spells/lvl2").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}else if(character=="syndir"){
-			var syndirTwo = syndirSpells.lvl2;
-			arrayLength = $(syndirTwo).length;
-			if(syndirSpells.lvl2[0] == "empty"){
-				database.ref("/syndir/spells/lvl2").set({
-					0: newSpell
-				})		
-			}else if($.inArray(newSpell, lvl2) == -1){	
-				database.ref("/"+character+"/spells/lvl2").update({
-					[arrayLength]: newSpell
-				})
-			}
-		}
-	}				
-})	
+	$.post("/api/new", newSpell)
+		.done(function(data) {
+			console.log(data);
+		});
+});
 
 
 $(".character").click(function(){
 	$(".spell").hide();
-	cantrips = [];
-	lvl1 = [];
-	lvl2 = [];
 	character = this.id
 	console.log(character);
 	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir, .franco").hide();
 	$("."+character).show();
-	pushSpells();
+	$.get("/api/character_stats/" + character, function(data) {
+		renderStats(data);
+	})
 })
 
 $(".cantripPanel").click(function(){
 	console.log(cantrips);
-	if( !$.trim( $("#"+character+"CantripBody").html() ).length ){
-		for(i=0; i<cantrips.length; i++){
-			var readableName = cantrips[i].replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); })
-			var firstCan = ("<h2 class='spellName' id='"+cantrips[i]+"'>"+readableName+"</h2>");
-			console.log(firstCan);
-			$("#"+character+"CantripBody").append(firstCan);
+	$("#cantripBody").empty();
+	$.get("api/spells/" + character, function(data) {
+		for(var i =0; i <data.length; i++) {
+			if(data[i].level == "cantrip"){
+				var readableName = data[i].name.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
+				var spellName = $("<div>");
+				spellName.addClass("spellName");
+				spellName.attr("id", data[i].name);
+				spellName.append("<h2>"+readableName+"</h2>");
+				$("#cantripBody").append(spellName);
+				$("#cantripBody").append("<button class='delete' id='" + data[i].id + "'>Delete Spell</button>");
+			}else{}
 		}
-	} else{}
-})
+	});
+});
 
 $(".onePanel").click(function(){
-	if( !$.trim( $("#"+character+"OneBody").html() ).length ){
-		for(i=0; i<lvl1.length; i++){
-			var readableName = lvl1[i].replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); })
-			var firstSpell = ("<h2 class='spellName' id='"+lvl1[i]+"'>"+readableName+"</h2>");
-			console.log(firstSpell);
-			$("#"+character+"OneBody").append(firstSpell);
+	$("#oneBody").empty();
+	$.get("api/spells/" + character, function(data) {
+		for(var i =0; i <data.length; i++) {
+			if(data[i].level == "one"){
+				var readableName = data[i].name.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
+				var spellName = $("<div>");
+				spellName.addClass("spellName");
+				spellName.attr("id", data[i].name);
+				spellName.append("<h2>"+readableName+"</h2>");
+				$("#oneBody").append(spellName);
+				$("#oneBody").append("<button class='delete' id='" + data[i].id + "'>Delete Spell</button>");
+			}else{}
 		}
-	} else{}
+	});
 })
 
 $(".twoPanel").click(function(){
-	if( !$.trim( $("#"+character+"TwoBody").html() ).length ){
-		for(i=0; i<lvl2.length; i++){
-			var readableName = lvl2[i].replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); })
-			var firstSpell = ("<h2 class='spellName' id='"+lvl2[i]+"'>"+readableName+"</h2>");
-			console.log(firstSpell);
-			$("#"+character+"TwoBody").append(firstSpell);
+	$("#twoBody").empty();
+	$.get("api/spells/" + character, function(data) {
+		for(var i =0; i <data.length; i++) {
+			if(data[i].level == "two"){
+				var readableName = data[i].name.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
+				var spellName = $("<div>");
+				spellName.addClass("spellName");
+				spellName.attr("id", data[i].name);
+				spellName.append("<h2>"+readableName+"</h2>");
+				$("#twoBody").append(spellName);
+				$("#twoBody").append("<button class='delete' id='" + data[i].id + "'>Delete Spell</button>");
+			}else{}
 		}
-	} else{}
+	});
 })
-function pushSpells(){
+/*function pushSpells(){
 	if(character=="fenla"){
 		console.log(fenlaSpells.cantrips);
 		var fenlaCantrips = fenlaSpells.cantrips;
@@ -445,29 +245,26 @@ function pushSpells(){
 			lvl2.push(scepterSpells.lvl2[i]);
 		}
 	}else{}
-}
-
-$("#deleteSpells").click(function(){
-	console.log(character+"delete");
-	console.log("hey")
-	database.ref(character + "/spells/lvl1").set({
-		0: "empty"
-	})
-	database.ref(character + "/spells/lvl2").set({
-		0: "empty"
-	})
-	
-
-	$("#deleteMessage").text((character.charAt(0).toUpperCase())+(character.slice(1))+"'s spells deleted").delay(1500).fadeOut(200);
-});
+}*/
 
 $(".chapter").click(function(){
 	$(".chapterText").hide();
 	var chapterId = this.id;
 	var findChapter = (chapterId+"Content");
 	$("#"+findChapter).show();
-})
+});
 
+$(document).on("click", ".delete", function(){
+	var spellId = parseInt(this.id);
+	$.ajax({
+		method: "DELETE",
+		url: "api/delete/" + spellId
+	})
+	.done(function(deldata) {
+		console.log(deldata);
+		console.log("Deleted Successfully!");
+	});
+});
 database.ref().on("value", function(snapshot){
 	spellObject = snapshot.val();
 	fenlaSpells = spellObject.fenla.spells;
@@ -477,5 +274,22 @@ database.ref().on("value", function(snapshot){
 	syndirSpells = spellObject.syndir.spells;
 	scepterSpells = spellObject.scepter.spells;
 
-})
+});
+
+function renderStats(data) {
+	$("#abilityScores").empty();
+	$("#abilityScores").show();
+
+	var div = $("<div>");
+
+	div.append("<tr><th>Strength " + data.str + "</th></tr>");
+	div.append("<tr><th>Dexterity " + data.dex + "</th></tr>");
+	div.append("<tr><th>Constitution " + data.con + "</th></tr>");
+	div.append("<tr><th>Wisdom " + data.wis + "</th></tr>");
+	div.append("<tr><th>Intelligence " + data.inte + "</th></tr>");
+	div.append("<tr><th>Charisma " + data.cha + "</th></tr>");
+
+	$("#abilityScores").append(div);
+}
+
 

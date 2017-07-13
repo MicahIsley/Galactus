@@ -5,7 +5,6 @@ var currentEnemy;
 var number;
 var typeOfEnemy;
 var currentHero = fenla;
-var wolfForm = false;
 
 function Hero(race, role, hp, strength, constitution, dexterity, intelligence, wisdom, charisma){
 	this.race = race;
@@ -127,6 +126,11 @@ $("#attackButton").click(function(){
 
 })
 
+$("#socialTesting").click(function(){
+	$("#titleScreen").hide();
+	$("#socialScreen").show();
+})
+
 $(document).on("click", ".generated", function(){
 	number = parseInt(this.id);
 	combat(fenla, typeOfEnemy[number]);
@@ -212,4 +216,5 @@ $("#specialButton").click(function(){
 })
 
 summonEnemies(goblin, 3);
+
 

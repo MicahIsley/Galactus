@@ -3,14 +3,14 @@
 	<head>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 			<div class="row topRow">
 			<ul class="nav nav-tabs">
-  				<li class="mainTab" role="presentation"><a href="index.html">Main Menu</a></li>
-  				<li class="mainTab" role="presentation"><a href="features/characters.html">Character Pages</a></li>
-  				<li class="mainTab" role="presentation"><a href="features/adventure-log.html">Story</a></li>
+  				<li class="mainTab" role="presentation"><a href="./">Main Menu</a></li>
+  				<li class="mainTab" role="presentation"><a href="./characters">Character Pages</a></li>
+  				<li class="mainTab" role="presentation"><a href="./adventure-log">Story</a></li>
 			</ul>
 		</div>	
 	<div class="container">
@@ -1452,11 +1452,81 @@
 					<h4>Duration: 10 minutes</h4>
 						<p>You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.</p>
 						<p>An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.</p>
-		</div>																				
+		</div>																			
+		<div>
+			<div>Animate Dead</div>
+				<p>3rd-level necromancy</p>
+					<h4>Casting Time: 1 minute</h4>
+					<h4>Range: 10 feet</h4>
+					<h4>Duration: Instantaneous</h4>
+						<p>This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse.</p>
+						<p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p>
+						<p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.</p>
+						<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.</p>
+		</div>
+		<div>
+			<div>Aura of Vitality</div>
+				<p>3rd-level evocation</p>
+					<h4>Casting Time: 1 action</h4>
+					<h4>Range: Self (30-foot radius)</h4>
+					<h4>Duration: Concentration, up to 1 minute</h4>
+						<p>Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.</p>
+		</div>
+		<div>
+			<div>Beacon of Hope</div>
+				<p>3rd-level abjuration</p>
+					<h4>Casting Time: 1 action</h4>
+					<h4>Range: 30 feet</h4>
+					<h4>Duration: Concentration, up to 1 minute</h4>
+						<p>This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.</p>
+		</div>
+		<div>
+			<div>Bestow Curse</div>
+				<p>3rd-level necromancy</p>
+					<h4>Casting Time: 1 action</h4>
+					<h4>Range: Touch</h4>
+					<h4>Duration: Concentration, up to 1 minute</h4>
+						<p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:</p>
+						<ul>Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.</ul>
+						<ul>While cursed, the target has disadvantage on attack rolls against you.</ul>
+						<ul>While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.</ul>
+						<ul>While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.</ul>
+						<p>A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful that those described above. The DM has final say on such a curse's effect.</p>
+						<p>At Higher Levels. If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level of higher grants a duration that doesn't require concentration.</p>
+		</div>
+		<div>
+			<div>Blinding Smite</div>
+				<p>3rd-level evocation</p>
+					<h4>Casting Time: 1 bonus action</h4>
+					<h4>Range: Self</h4>
+					<h4>Duration: Concentration, up to 1 minute</h4>
+						<p>The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.</p>
+						<p>A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.</p>
+		</div>
+		<div>
+			<div>Blink</div>
+				<p>3rd-level transmutation</p>
+					<h4>Casting Time: 1 action</h4>
+					<h4>Range: Self</h4>
+					<h4>Duration: 1 minute</h4>
+						<p>Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already of the plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismess this spell as an action.</p>
+						<p>While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.</p>
+		</div>
+		<div>
+			<div>Call Lightning</div>
+				<p>3rd-level conjuration</p>
+					<h4>Casting Time: 1 action</h4>
+					<h4>Range: 120 feet</h4>
+					<h4>Duration: Concentration, up to 10 minutes</h4>
+						<p>A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).</p>
+						<p>When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.</p>
+						<p>If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing sotrm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.</p>
+						<p>At Higher Levels. When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.</p>
+		</div>			
 		</div>
 	</div>	
 	</body>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
-	<script type="text/javascript" src="assets/javascript/logic.js"></script>
+	<script type="text/javascript" src="javascript/logic.js"></script>
 </html>																	

@@ -114,6 +114,33 @@
 	margin-top: 8px;
 
 }
+
+#abilityTitle {
+	background: linear-gradient(to bottom left, grey, black);
+	color: white;
+	margin: 0px;
+	padding-left: 10px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.sectionTitles {
+	background: linear-gradient(to bottom left, grey, black);
+	color: white;
+	margin: 0px;
+	padding-left: 10px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+th {
+	width: 25px;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.tableWords {
+	font-size: 12px;
+}
+
 .mod {
 	border-radius: 50px/50px;
 	border: 2px solid #000000;
