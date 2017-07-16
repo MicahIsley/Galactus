@@ -115,26 +115,21 @@
 
 }
 
-#abilityTitle {
-	background: linear-gradient(to bottom left, grey, black);
-	color: white;
-	margin: 0px;
-	padding-left: 10px;
-	border-radius: 5px 5px 0px 0px;
-}
-
 .sectionTitles {
 	background: linear-gradient(to bottom left, grey, black);
 	color: white;
 	margin: 0px;
-	padding-left: 10px;
-	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 5px;
+	text-align: center;
+	border-radius: 5px;
 }
 
 th {
-	width: 25px;
+	width: 40px;
 	font-size: 20px;
 	padding-top: 10px;
+	padding-left: 5px;
+	text-align: center;
 }
 
 .tableWords {
@@ -274,6 +269,20 @@ th {
 }
 
 .franco_title {
+	height: 50px;
+	width: 70%;
+	font-size: 40px;
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+	color: white;
+	background: #0300b1;
+	border: 2px;
+    border-style: inset;
+    border-color: gold;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+.minime_title {
 	height: 50px;
 	width: 70%;
 	font-size: 40px;
@@ -428,6 +437,17 @@ a:active {
 	color: white;
 }
 
+.minime > .panel > .panel-heading {
+	background-image: none;
+	background: linear-gradient(to bottom left, #0300b1, #c5c5ff);
+	border-color: black;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	color: white;
+}
+
 
 .panel > .panel-heading > a:hover {
 	text-decoration: none;
@@ -466,6 +486,10 @@ a:active {
 	display: none;
 }
 
+.minime {
+	display: none;
+}
+
 footer {
 	background: black;
 	color: white;
@@ -484,8 +508,10 @@ footer {
 }
 
 .spellName {
-
 	cursor: pointer;
+	width: 200px;
+	margin-right: 0px;
+	float: left;
 }
 
 #newSpellsButton {
@@ -538,24 +564,6 @@ footer {
 	margin-top: 25px;
 }
 
-#deleteSpells:hover {
-	background: red;
-	border-width: 3px;
-	border-color: black;
-	border-style: solid;
-}
-
-#deleteSpells:focus {
-	outline: none;
-}
-
-#deleteMessage {
-	position: relative;
-	top: 14px;
-	text-align: center;
-}
-
-
 .btn-group {
 	margin-top: 24px;
 }
@@ -578,4 +586,30 @@ footer {
 
 #pickCharacterTitle {
 	margin-top: 10px;
+}
+
+.delete {
+	background: #a70202;
+	font-size: 11px;
+	font-weight: bold;
+	color: black;
+	height: 20px;
+	padding: 0px 3px 1px 4px;
+	margin-top: 27px;
+	margin-left: 5px;
+	float: left;
+	border-color: black;
+	border-radius: 3px;
+}
+
+.delete:hover {
+	background: pink;
+}
+
+.delete:focus {
+	outline: none;
+}
+
+.delete:active {
+	outline: none;
 }

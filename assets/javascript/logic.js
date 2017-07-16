@@ -9,22 +9,8 @@ var config = {
   firebase.initializeApp(config);
 
 var database = firebase.database();
-var person = "";
 var character = "";
 var characterLearn;
-var spellObject;
-var cantrips = [];
-var lvl1 = [];
-var lvl2 = [];
-var fenlaSpells;
-var reginaSpells;
-var aleaSpells;
-var fannarSpells;
-var syndirSpells;
-var scepterSpells;
-var user;
-var arrayLength;
-
 
 $(document).on("click", ".spellName", function(){
 	$(".spell").hide();
@@ -76,14 +62,15 @@ $(document).on("click", ".learn", function(){
 		.done(function(data) {
 			console.log(data);
 		});
+	console.log(this);
+	$(this).text("Learned");
 });
-
 
 $(".character").click(function(){
 	$(".spell").hide();
 	character = this.id
 	console.log(character);
-	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir, .franco").hide();
+	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir, .franco, .minime").hide();
 	$("."+character).show();
 	$.get("/api/character_stats/" + character, function(data) {
 		renderStats(data);
@@ -91,7 +78,6 @@ $(".character").click(function(){
 })
 
 $(".cantripPanel").click(function(){
-	console.log(cantrips);
 	$("#cantripBody").empty();
 	$.get("api/spells/" + character, function(data) {
 		for(var i =0; i <data.length; i++) {
@@ -102,7 +88,7 @@ $(".cantripPanel").click(function(){
 				spellName.attr("id", data[i].name);
 				spellName.append("<h2>"+readableName+"</h2>");
 				$("#cantripBody").append(spellName);
-				$("#cantripBody").append("<button class='delete' id='" + data[i].id + "'>Delete Spell</button>");
+				$("#cantripBody").append("<button class='delete' id='" + data[i].id + "'>X</button>");
 			}else{}
 		}
 	});
@@ -119,7 +105,7 @@ $(".onePanel").click(function(){
 				spellName.attr("id", data[i].name);
 				spellName.append("<h2>"+readableName+"</h2>");
 				$("#oneBody").append(spellName);
-				$("#oneBody").append("<button class='delete' id='" + data[i].id + "'>Delete Spell</button>");
+				$("#oneBody").append("<button class='delete' id='" + data[i].id + "'>X</button>");
 			}else{}
 		}
 	});
@@ -136,116 +122,11 @@ $(".twoPanel").click(function(){
 				spellName.attr("id", data[i].name);
 				spellName.append("<h2>"+readableName+"</h2>");
 				$("#twoBody").append(spellName);
-				$("#twoBody").append("<button class='delete' id='" + data[i].id + "'>Delete Spell</button>");
+				$("#twoBody").append("<button class='delete' id='" + data[i].id + "'>X</span></button>");
 			}else{}
 		}
 	});
 })
-/*function pushSpells(){
-	if(character=="fenla"){
-		console.log(fenlaSpells.cantrips);
-		var fenlaCantrips = fenlaSpells.cantrips;
-		for(i=0; i<fenlaCantrips.length; i++){
-			console.log(fenlaCantrips[i]);
-			cantrips.push(fenlaSpells.cantrips[i]);
-		}
-		var fenlaLvl1 = fenlaSpells.lvl1;
-		for(i=0; i<fenlaLvl1.length; i++){
-			console.log(fenlaLvl1[i]);
-			lvl1.push(fenlaSpells.lvl1[i]);
-		}
-		var fenlaLvl2 = fenlaSpells.lvl2;
-		for(i=0; i<fenlaLvl2.length; i++){
-			console.log(fenlaLvl2[i]);
-			lvl2.push(fenlaSpells.lvl2[i]);
-		}	
-	}else if(character=="regina"){
-		console.log(reginaSpells);
-		var reginaCantrips = reginaSpells.cantrips;
-		for(i=0; i<reginaCantrips.length; i++){
-			console.log(reginaCantrips[i]);
-			cantrips.push(reginaSpells.cantrips[i]);
-		}
-		var reginaLvl1 = reginaSpells.lvl1;
-		for(i=0; i<reginaLvl1.length; i++){
-			console.log(reginaLvl1[i]);
-			lvl1.push(reginaSpells.lvl1[i]);
-		}
-		var reginaLvl2 = reginaSpells.lvl2;
-		for(i=0; i<reginaLvl2.length; i++){
-			console.log(reginaLvl2[i]);
-			lvl2.push(reginaSpells.lvl2[i]);
-		}
-	}else if(character=="alea"){
-		console.log(aleaSpells);
-		var aleaCantrips = aleaSpells.cantrips;
-		for(i=0; i<aleaCantrips.length; i++){
-			console.log(aleaCantrips[i]);
-			cantrips.push(aleaSpells.cantrips[i]);
-		}
-		var aleaLvl1 = aleaSpells.lvl1;
-		for(i=0; i<aleaLvl1.length; i++){
-			console.log(aleaLvl1[i]);
-			lvl1.push(aleaSpells.lvl1[i]);
-		}
-		var aleaLvl2 = aleaSpells.lvl2;
-		for(i=0; i<aleaLvl2.length; i++){
-			console.log(aleaLvl2[i]);
-			lvl2.push(aleaSpells.lvl2[i]);
-		}
-	}else if(character=="fannar"){
-		console.log(fannarSpells);
-		var fannarCantrips = fannarSpells.cantrips;
-		for(i=0; i<fannarCantrips.length; i++){
-			console.log(fannarCantrips[i]);
-			cantrips.push(fannarSpells.cantrips[i]);
-		}
-		var fannarLvl1 = fannarSpells.lvl1;
-		for(i=0; i<fannarLvl1.length; i++){
-			console.log(fannarLvl1[i]);
-			lvl1.push(fannarSpells.lvl1[i]);
-		}
-		var fannarLvl2 = fannarSpells.lvl2;
-		for(i=0; i<fannarLvl2.length; i++){
-			console.log(fannarLvl2[i]);
-			lvl2.push(fannarSpells.lvl2[i]);
-		}
-	}else if(character=="syndir"){
-		console.log(syndirSpells);
-		var syndirCantrips = syndirSpells.cantrips;
-		for(i=0; i<syndirCantrips.length; i++){
-			console.log(syndirCantrips[i]);
-			cantrips.push(syndirSpells.cantrips[i]);
-		}
-		var syndirLvl1 = syndirSpells.lvl1;
-		for(i=0; i<syndirLvl1.length; i++){
-			console.log(syndirLvl1[i]);
-			lvl1.push(syndirSpells.lvl1[i]);
-		}
-		var syndirLvl2 = syndirSpells.lvl2;
-		for(i=0; i<syndirLvl2.length; i++){
-			console.log(syndirLvl2[i]);
-			lvl2.push(syndirSpells.lvl2[i]);
-		}
-	}else if(character=="scepter"){
-		console.log(scepterSpells);
-		var scepterCantrips = scepterSpells.cantrips;
-		for(i=0; i<scepterCantrips.length; i++){
-			console.log(scepterCantrips[i]);
-			cantrips.push(scepterSpells.cantrips[i]);
-		}
-		var scepterLvl1 = scepterSpells.lvl1;
-		for(i=0; i<scepterLvl1.length; i++){
-			console.log(scepterLvl1[i]);
-			lvl1.push(scepterSpells.lvl1[i]);
-		}
-		var scepterLvl2 = scepterSpells.lvl2;
-		for(i=0; i<scepterLvl2.length; i++){
-			console.log(scepterLvl2[i]);
-			lvl2.push(scepterSpells.lvl2[i]);
-		}
-	}else{}
-}*/
 
 $(".chapter").click(function(){
 	$(".chapterText").hide();
@@ -265,31 +146,23 @@ $(document).on("click", ".delete", function(){
 		console.log("Deleted Successfully!");
 	});
 });
-database.ref().on("value", function(snapshot){
-	spellObject = snapshot.val();
-	fenlaSpells = spellObject.fenla.spells;
-	reginaSpells = spellObject.regina.spells;
-	aleaSpells = spellObject.alea.spells;
-	fannarSpells = spellObject.fannar.spells;
-	syndirSpells = spellObject.syndir.spells;
-	scepterSpells = spellObject.scepter.spells;
-
-});
 
 function renderStats(data) {
 	$("#abilityScores").empty();
 	$("#abilityScores").show();
-
+	var strMod = Math.floor((data.str-=10)/2);
+	var dexMod = Math.floor((data.dex-=10)/2);
+	var conMod = Math.floor((data.con-=10)/2);
+	var wisMod = Math.floor((data.wis-=10)/2);
+	var inteMod = Math.floor((data.inte-=10)/2);
+	var chaMod = Math.floor((data.cha-=10)/2);
 	var div = $("<div>");
-
-	div.append("<tr><th>Strength " + data.str + "</th></tr>");
-	div.append("<tr><th>Dexterity " + data.dex + "</th></tr>");
-	div.append("<tr><th>Constitution " + data.con + "</th></tr>");
-	div.append("<tr><th>Wisdom " + data.wis + "</th></tr>");
-	div.append("<tr><th>Intelligence " + data.inte + "</th></tr>");
-	div.append("<tr><th>Charisma " + data.cha + "</th></tr>");
-
+	div.append("<tr><th></th><th></th><th>Mod</th></tr>");
+	div.append("<tr><th>Strength</th><th>" + data.str + "</th><th> " + Math.floor((data.str-=10)/2) + "</th></tr>");
+	div.append("<tr><th>Dexterity</th><th>" + data.dex + "</th><th> " + Math.floor((data.dex-=10)/2) + "</th></tr>");
+	div.append("<tr><th>Constitution</th><th>" + data.con + "</th><th> " + Math.floor((data.con-=10)/2) + "</th></tr>");
+	div.append("<tr><th>Wisdom</th><th>" + data.wis + "</th><th> " + Math.floor((data.wis-=10)/2) + "</th></tr>");
+	div.append("<tr><th>Intelligence</th><th>" + data.inte + "</th><th> " + Math.floor((data.inte-=10)/2) + "</th></tr>");
+	div.append("<tr><th>Charisma</th><th>" + data.cha + "</th><th> " + Math.floor((data.cha-=10)/2) + "</th></tr>");
 	$("#abilityScores").append(div);
 }
-
-
