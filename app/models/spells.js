@@ -12,8 +12,6 @@ var Spells = sequelize.define("spells", {
 	character: {
 		type: Sequelize.INTEGER
 	},
-}, {
-		timestamps: false
 });
 
 Spells.sync();

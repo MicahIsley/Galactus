@@ -150,12 +150,6 @@ $(document).on("click", ".delete", function(){
 function renderStats(data) {
 	$("#abilityScores").empty();
 	$("#abilityScores").show();
-	var strMod = Math.floor((data.str-=10)/2);
-	var dexMod = Math.floor((data.dex-=10)/2);
-	var conMod = Math.floor((data.con-=10)/2);
-	var wisMod = Math.floor((data.wis-=10)/2);
-	var inteMod = Math.floor((data.inte-=10)/2);
-	var chaMod = Math.floor((data.cha-=10)/2);
 	var div = $("<div>");
 	div.append("<tr><th></th><th></th><th>Mod</th></tr>");
 	div.append("<tr><th>Strength</th><th>" + data.str + "</th><th> " + Math.floor((data.str-=10)/2) + "</th></tr>");

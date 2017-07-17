@@ -24,8 +24,6 @@ var Character_stats = sequelize.define("character_stats", {
 	cha: {
 		type: Sequelize.INTEGER
 	}
-}, {
-		timestamps: false
 });
 
 Character_stats.sync();
