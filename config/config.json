@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Password123",
+    "database": "galactus_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "a9p23a5uh2ngm65x",
+    "password": "b1n28j05mbj3opwp",
+    "database": "llr085ntje6he6ye",
+    "host": "hngomrlb3vfq3jcr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
