@@ -1,5 +1,5 @@
-var Character_stats = require("./models/")["Character_stats"];
-var Spells = require("./models/")["Spells"];
+var Character_stats = require("../../../models/")["Character_stats"];
+var Spells = require("../../../models/")["Spells"];
 
 module.exports = function(app) {
 
