@@ -630,4 +630,13 @@ footer {
 	#hpSection {
 		margin-left: 35%;
 	}
+
+	.learn {
+		width: 50px;
+		font-size: 14px;
+	}
+
+	.panel > .panel-heading {
+	font-size: 15px;
+}
 }
