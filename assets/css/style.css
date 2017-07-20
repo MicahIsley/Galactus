@@ -590,6 +590,24 @@ footer {
 	height: 200px;
 }
 
+.spellObject {
+	height: 65px;
+}
+
+.spellName > h2 {
+	font-size: 30px;
+}
+
+.delete {
+	margin-left: 40px;
+	margin-top: 20px;
+	background: red;
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	border-radius: 5px;
+	font-weight: 600;
+}
 .fenla {
 	display: none;
 }
@@ -626,6 +644,25 @@ footer {
 	display: none;
 }
 
+@media only screen and (max-width: 980px) {
+	.panel > .panel-heading {
+	font-size: 15px;
+	}
+
+	.spellName {
+		width: 150px;
+		height: 70px;
+	}
+
+	.spellName > h2 {
+		font-size: 20px;
+	}
+
+	.spellObject {
+		height: 80px;
+	}
+}
+
 @media only screen and (max-width: 500px) {
 	#hpSection {
 		margin-left: 35%;
@@ -638,5 +675,18 @@ footer {
 
 	.panel > .panel-heading {
 	font-size: 15px;
-}
+	}
+
+	.spellName {
+		width: 150px;
+		height: 70px;
+	}
+
+	.spellName > h2 {
+		font-size: 24px;
+	}
+
+	.spellObject {
+		height: 80px;
+	}
 }

@@ -88,12 +88,14 @@ $(".cantripPanel").click(function(){
 		for(var i =0; i <data.length; i++) {
 			if(data[i].level == "cantrip"){
 				var readableName = data[i].name.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
+				var spellObject = $("<div class='spellObject'>");
 				var spellName = $("<div>");
 				spellName.addClass("spellName");
 				spellName.attr("id", data[i].name);
 				spellName.append("<h2>"+readableName+"</h2>");
-				$("#cantripBody").append(spellName);
-				$("#cantripBody").append("<button class='delete' id='" + data[i].id + "'>X</button>");
+				$(spellObject).append(spellName);
+				$(spellObject).append("<button class='delete' id='" + data[i].id + "'>X</button>");
+				$("#cantripBody").append(spellObject);
 			}else{}
 		}
 	});
@@ -105,12 +107,14 @@ $(".onePanel").click(function(){
 		for(var i =0; i <data.length; i++) {
 			if(data[i].level == "one"){
 				var readableName = data[i].name.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
+				var spellObject = $("<div class='spellObject'>");
 				var spellName = $("<div>");
 				spellName.addClass("spellName");
 				spellName.attr("id", data[i].name);
 				spellName.append("<h2>"+readableName+"</h2>");
-				$("#oneBody").append(spellName);
-				$("#oneBody").append("<button class='delete' id='" + data[i].id + "'>X</button>");
+				$(spellObject).append(spellName);
+				$(spellObject).append("<button class='delete' id='" + data[i].id + "'>X</button>");
+				$("#oneBody").append(spellObject);
 			}else{}
 		}
 	});
@@ -122,12 +126,14 @@ $(".twoPanel").click(function(){
 		for(var i =0; i <data.length; i++) {
 			if(data[i].level == "two"){
 				var readableName = data[i].name.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); });
+				var spellObject = $("<div class='spellObject'>");
 				var spellName = $("<div>");
 				spellName.addClass("spellName");
 				spellName.attr("id", data[i].name);
 				spellName.append("<h2>"+readableName+"</h2>");
-				$("#twoBody").append(spellName);
-				$("#twoBody").append("<button class='delete' id='" + data[i].id + "'>X</span></button>");
+				$(spellObject).append(spellName);
+				$(spellObject).append("<button class='delete' id='" + data[i].id + "'>X</span></button>");
+				$("#twoBody").append(spellObject);
 			}else{}
 		}
 	});
