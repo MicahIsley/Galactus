@@ -23,6 +23,7 @@ html {
 	margin-left: 35px;
 	margin-right: 5px;
 	margin-bottom: 10px;
+	border-radius: 15px;
 }
 
 .nav {
@@ -172,41 +173,33 @@ th {
 }
 
 .fenla_title {
-	height: 50px;
+	height: 60px;
 	width: 70%;
-	font-size: 44px;
-	font-family: 'Lobster Two', cursive;
-	text-align: center;
+	font-size: 40px;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	background-image: url("http://wallpapercave.com/wp/AmVE9iw.jpg");
-	background-position: 0% 15%;
-	background-size: 100% 250px;
-	background-repeat: no-repeat;
-	margin-left: 35px;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
+    margin-left: 35px;
 }
 
 .alea_title {
-	height: 50px;
+	height: 60px;
 	width: 70%;
-	text-align: center;
-	font-size: 44px;
-	font-family: 'Skranji', cursive;
+	font-size: 40px;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	background: #c7ca1f;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
-    padding-bottom: 2px;
     margin-left: 35px;
 }
 
 .clithsbee_title {
-	height: 70px;
+	height: 60px;
 	width: 70%;
-	font-size: 64px;
+	font-size: 40px;
 	font-family: 'Chonburi', cursive;
 	color: white;
 	border-width: 0px 0px 2px 0px;
@@ -216,85 +209,73 @@ th {
 }
 
 .fannar_title {
-	height: 50px;
+	height: 60px;
 	width: 70%;
-	text-align: center;
-	background: #006167;
-	font-size: 44px;
-	font-family: 'Skranji', cursive;
+	font-size: 40px;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
     margin-left: 35px;
 }
 
 .regina_title {
-	height: 50px;
+	height: 95px;
 	width: 70%;
 	font-size: 40px;
-	font-family: 'Lobster Two', cursive;
-	text-align: center;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	background: #55047d;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
     margin-left: 35px;
 }
 
 .scepter_title {
-	height: 50px;
+	height: 95px;
 	width: 70%;
 	font-size: 40px;
-	font-family: 'Lobster Two', cursive;
-	text-align: center;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	background: #c54c04;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
     margin-left: 35px;
 }
 
 .syndir_title {
-	height: 50px;
+	height: 95px;
 	width: 70%;
-	text-align: center;
-	background: #ff0000;
 	font-size: 40px;
-	font-family: 'Lobster Two', cursive;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
     margin-left: 35px;
 }
 
 .franco_title {
-	height: 50px;
+	height: 95px;
 	width: 70%;
 	font-size: 40px;
-	font-family: 'Lobster Two', cursive;
-	text-align: center;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	background: #0300b1;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
     margin-left: 35px;
 }
 
 .minime_title {
-	height: 50px;
+	height: 60px;
 	width: 70%;
 	font-size: 40px;
-	font-family: 'Lobster Two', cursive;
-	text-align: center;
+	font-family: 'Chonburi', cursive;
 	color: white;
-	background: #0300b1;
-	border: 2px;
-    border-style: inset;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
     border-color: gold;
     margin-left: 35px;
 }
@@ -368,6 +349,10 @@ a:active {
 	margin-bottom: 5px;
 }
 
+.panel {
+	background-color: transparent;
+}
+
 .fenla > .panel > .panel-heading {
 	background-image: none;
 	background: linear-gradient(to bottom left, #1a401a, #50d048);
@@ -376,6 +361,7 @@ a:active {
 	border-style: solid;
 	border-radius: 10px;
 	color: white;
+	overflow: hidden;
 }
 
 .clithsbee > .panel > .panel-heading {
@@ -451,7 +437,7 @@ a:active {
 
 .minime > .panel > .panel-heading {
 	background-image: none;
-	background: linear-gradient(to bottom left, #0300b1, #c5c5ff);
+	background: linear-gradient(to bottom left, #21140f, #f8ffa3);
 	border-color: black;
 	border-color: black;
 	border-width: 2px;
@@ -509,6 +495,7 @@ footer {
     font-size: 16px;
     border-radius: 12px;
     margin-top: 22px;
+    margin-left: 35px;
     margin-bottom: 10px;
 }
 
@@ -562,13 +549,45 @@ footer {
 	margin-top: 10px;
 }
 
+#hpSection {
+	height: 190px;
+	width: 150px;
+	margin-top: 20px;
+	margin-left: 15%;
+}
+
+#maxHp {
+	font-size: 14px;
+}
+
+#maxHpLabel {
+	font-size: 14px;
+	margin-left: 25%;
+}
+
 .hpButton {
+	width: 60px;
 	background: yellow;
-	width: 40px;
 	text-align: center;
+	font-size: 20px;
 	border-color: black;
 	border-width: 3px;
 	border-style: solid;
+	border-radius: 5px;
+}
+
+#currentHp{
+	padding-left: 10px;
+	font-size: 36px;
+
+}
+
+#hpArea {
+	margin-left: 30%;
+}
+
+#nameSection {
+	height: 200px;
 }
 
 .fenla {
@@ -605,4 +624,10 @@ footer {
 
 .minime {
 	display: none;
+}
+
+@media only screen and (max-width: 500px) {
+	#hpSection {
+		margin-left: 35%;
+	}
 }

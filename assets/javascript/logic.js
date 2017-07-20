@@ -24,10 +24,12 @@ $(document).on("click", ".spellName", function(){
 
 $("#search").click(function(){
 	var search = $("#searchForm").val().trim().toLowerCase();
+	var level = $("#q1").val().trim();
+	console.log(level);
 	$(".learn").remove();
 	console.log(search);
 	$(".spell").hide();
-	$('.'+search).show();
+	$("." + search + "." + level).show();
 	if($(".spell").is(":visible")){
 		$(".panel-heading").append("<button class='learn'>Learn</button>");
 	}
@@ -161,7 +163,7 @@ $("#subHp").click(function(){
 function renderStats(data) {
 	$("#abilityScores").empty();
 	$("#abilityScores").show();
-	$("#maxHp").append(data.hp);
+	$("#maxHp").text(data.hp);
 	currentHp = data.hp;
 	console.log(currentHp);
 	var div = $("<div>");
