@@ -24,7 +24,7 @@ $(document).on("click", ".spellName", function(){
 
 $("#search").click(function(){
 	var search = $("#searchForm").val().trim().toLowerCase();
-	var level = $("#q1").val().trim();
+	var level = $("#levelSearch").val().trim();
 	console.log(level);
 	$(".learn").remove();
 	console.log(search);
