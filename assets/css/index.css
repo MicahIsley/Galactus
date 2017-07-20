@@ -28,10 +28,15 @@ p {
 	margin: 15px;
 	height: 60px;
 	width: 75%;
-	background: transparent;
-	color: black;
+	background: grey;
+	color: white;
 	text-align: center;
+	border-color: black;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 4px;
 	font-size: 40px;
+	font-family: 'Cormorant SC', serif;
 }
 
 .mainTab:hover {
@@ -49,18 +54,6 @@ a:focus {
 	text-decoration: none;
 }
 
-#borderButton {
-	border-width: 2px 0px 2px 0px;
-	border-style: solid;
-	border-color: black;
-	height: 70px;
-}
-
-#borderButton:hover {
-	border-color: darkgrey;
-	border-style: inset;
-	border-width: 3px;
-}
 
 @media only screen and (max-width: 500px) {
 	#indexTitle {

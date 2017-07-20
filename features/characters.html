@@ -7,6 +7,7 @@
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Merienda|Merienda+One" rel="stylesheet">
   		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  		<link href="https://fonts.googleapis.com/css?family=Chonburi|Skranji" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 
@@ -18,7 +19,7 @@
   					<li class="mainTab" role="presentation"><a href="./spell-list">Spell List</a></li>
 				</ul>
 			</div>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row" id="characterRow">
 					<div class="col-sm-12">
 						<div class="character" id="fenla">Fenla</div>
@@ -43,46 +44,54 @@
 						<h1 class="regina_title regina">Regina the Wretched</h1>
 						<h1 class="franco_title franco">Franco Buffandi</h1>
 						<h1 class="minime_title minime">Mini-Me</h1>
-					</div>	
+					</div>
+					<div class="col-sm-4 col-sm-offset-1 contentSection">
+						<h3>Max HP:<span id="maxHp"></span></h3>
+						<div id="hpArea">
+							<div class="hpButton" id="addHp">+</div>
+							<span id="currentHp"></span>
+							<div class="hpButton" id="subHp">-</div>
+						</div>	
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-6">
-						<div class="fenla">
+						<div class="fenla levelClass">
 							<h3>Lvl.3 Gnome Druid</h3>
 						</div>
-						<div class="clithsbee">
+						<div class="clithsbee levelClass">
 							<h3>Lvl.3 Dwarf Barbarian</h3>
 						</div>
-						<div class="scepter">
+						<div class="scepter levelClass">
 							<h3>Lvl.3 Human Bard</h3>
 						</div>
-						<div class="syndir">
+						<div class="syndir levelClass">
 							<h3>Lvl.3 Dragonborn Sorcerer</h3>
 						</div>
-						<div class="alea">
+						<div class="alea levelClass">
 							<h3>Lvl.3 Dark Elf Ranger</h3>
 						</div>
-						<div class="fannar">
+						<div class="fannar levelClass">
 							<h3>Lvl.3 Elf Cleric</h3>
 						</div>
-						<div class="regina">
+						<div class="regina levelClass">
 							<h3>Lvl.3 Teifling Warlock</h3>
 						</div>
-						<div class="franco">
+						<div class="franco levelClass">
 							<h3>Lvl.2 Half-Elf Monk</h3>
 						</div>
-						<div class="minime">
+						<div class="minime levelClass">
 							<h3>Lvl.2 Halfling Rogue</h3>
 						</div>
 					</div>
 				</div>				
 				<div class="row">
-					<div class="col-sm-5">
+					<div class="col-sm-5 contentSection">
 						<h2 class="sectionTitles">Ability Scores</h2>
 							<table class="table table-striped" id="abilityScores">
 							</table>
 					</div>
-					<div class="col-sm-offset-1 col-sm-5">
+					<div class="col-sm-offset-1 col-sm-5 contentSection">
 						<div class="panel-group clithsbee" id="accordionClithsbeeSkills">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
@@ -1013,7 +1022,7 @@
 					</div>	
 				</div>
 				<div class="row">
-					<div class="col-sm-5">
+					<div class="col-sm-5 contentSection">
 						<div class="row">
 							<h2 class="sectionTitles">Racial Abilities</h2>
 						</div>
@@ -1272,7 +1281,7 @@
 							</div>			
 						</div>
 					</div>	
-					<div class="col-sm-offset-1 col-sm-5">
+					<div class="col-sm-offset-1 col-sm-5 contentSection">
 						<div class="row">
 							<h2 class="sectionTitles">Class Abilities</h2>
 						</div>
@@ -1673,7 +1682,7 @@
 					</div>			
 				</div>
 				<div class="row">
-					<div class="col-sm-5">
+					<div class="col-sm-5 contentSection">
 						<h2 class="sectionTitles">Spells</h2>
 							<div id="currentSpells">
 								<div class="panel-group" id="accordionFenlaS">

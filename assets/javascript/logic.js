@@ -11,6 +11,7 @@ var config = {
 var database = firebase.database();
 var character = "";
 var characterLearn;
+var currentHp;
 
 $(document).on("click", ".spellName", function(){
 	$(".spell").hide();
@@ -74,8 +75,10 @@ $(".character").click(function(){
 	$("."+character).show();
 	$.get("/api/character_stats/" + character, function(data) {
 		renderStats(data);
-	})
-})
+	}).then(function() {
+		displayHp();
+	});
+});
 
 $(".cantripPanel").click(function(){
 	$("#cantripBody").empty();
@@ -147,9 +150,20 @@ $(document).on("click", ".delete", function(){
 	});
 });
 
+$("#addHp").click(function(){
+	addHp();
+});
+
+$("#subHp").click(function(){
+	subHp();
+});
+
 function renderStats(data) {
 	$("#abilityScores").empty();
 	$("#abilityScores").show();
+	$("#maxHp").append(data.hp);
+	currentHp = data.hp;
+	console.log(currentHp);
 	var div = $("<div>");
 	div.append("<tr><th></th><th></th><th>Mod</th></tr>");
 	div.append("<tr><th>Strength</th><th>" + data.str + "</th><th> " + Math.floor((data.str-=10)/2) + "</th></tr>");
@@ -159,4 +173,18 @@ function renderStats(data) {
 	div.append("<tr><th>Intelligence</th><th>" + data.inte + "</th><th> " + Math.floor((data.inte-=10)/2) + "</th></tr>");
 	div.append("<tr><th>Charisma</th><th>" + data.cha + "</th><th> " + Math.floor((data.cha-=10)/2) + "</th></tr>");
 	$("#abilityScores").append(div);
+}
+
+function displayHp() {
+	$("#currentHp").text(currentHp);
+}
+
+function addHp() {
+	currentHp ++;
+	$("#currentHp").text(currentHp);
+}
+
+function subHp() {
+	currentHp --;
+	$("#currentHp").text(currentHp);
 }
