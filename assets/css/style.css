@@ -608,6 +608,11 @@ footer {
 	border-radius: 5px;
 	font-weight: 600;
 }
+
+.classSymbol {
+	width: 50px;
+	background: transparent;
+}
 .fenla {
 	display: none;
 }
