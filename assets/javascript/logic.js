@@ -148,6 +148,7 @@ $(".chapter").click(function(){
 
 $(document).on("click", ".delete", function(){
 	var spellId = parseInt(this.id);
+	$(this).text("Deleted!");
 	$.ajax({
 		method: "DELETE",
 		url: "api/delete/" + spellId

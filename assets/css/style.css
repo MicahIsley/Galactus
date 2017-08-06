@@ -696,6 +696,11 @@ footer {
 	}
 
 	.delete {
-		margin-left: 10px;
+		margin-left: 0px;
+		font-size: 10px;
+	}
+
+	.learn {
+		font-size: 10px;
 	}
 }
