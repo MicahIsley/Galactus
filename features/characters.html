@@ -31,7 +31,7 @@
 						<div class="character" id="regina">Regina</div>
 						<div class="character" id="franco">Franco</div>
 						<div class="character" id="minime">Mini-me</div>
-						<div class="character" id="autumn">Autumn Leaves on the Wind</div>
+						<div class="character" id="autumn">Autumn</div>
 					</div>
 				</div>	
 				<div class="row">		
@@ -46,7 +46,7 @@
 							<h1 class="regina_title regina">Regina the Wretched</h1>
 							<h1 class="franco_title franco">Franco Buffandi</h1>
 							<h1 class="minime_title minime">Mini-Me</h1>
-							<h1 class="autumn_title autumn"></h1>
+							<h1 class="autumn_title autumn">Autumn</h1>
 						</div>
 						<div class="row">
 							<div class="fenla levelClass">
@@ -76,7 +76,7 @@
 							<div class="minime levelClass">
 								<h3>Lvl.2 Halfling Rogue</h3>
 							</div>
-							<div class="levelClass">
+							<div class="autumn levelClass">
 								<h3>Lvl.2 Tabaxi Bard</h3>
 							</div>
 						</div>	
@@ -1025,12 +1025,12 @@
 	    						</div>
 	  						</div>
 						</div>
-						<!--<div class="panel-group minime" id="accordionMinimeSkills">
+						<div class="panel-group autumn" id="accordionAutumnSkills">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeSkills" href="#collapseMmSkills"><h4 class="panel-title">Skills</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionAutumnSkills" href="#collapseAuSkills"><h4 class="panel-title">Skills</h4></a>
 	   							</div>
-	    						<div id="collapseMmSkills" class="panel-collapse collapse">
+	    						<div id="collapseAuSkills" class="panel-collapse collapse">
 	      							<div class="panel-body">
 	      								<table class="table table-striped">
 											<tr>
@@ -1416,6 +1416,36 @@
 		      							<a data-toggle="collapse" data-parent="#accordionFrancoR" href="#collapseMmR2"><h4 class="panel-title">Fey Ancestry</h4></a>
 		    						</div>
 		    						<div id="collapseMmR2" class="panel-collapse collapse">
+		      							<div class="panel-body">
+		      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
+		      							</div>
+		   							</div>
+		  						</div>
+							</div>
+							<div class="panel-group autumn" id="accordionAutumnR">
+		  						<div class="panel panel-default">
+		    						<div class="panel-heading">
+		      							<a data-toggle="collapse" data-parent="#accordionAutumnR" href="#collapseAuR1"><h4 class="panel-title">Darkvision</h4></a>
+		   							</div>
+		    						<div id="collapseAuR1" class="panel-collapse collapse">
+		      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
+		    						</div>
+		  						</div>
+		  						<div class="panel panel-default">
+		    						<div class="panel-heading">
+		      							<a data-toggle="collapse" data-parent="#accordionAutumnR" href="#collapseAuR2"><h4 class="panel-title">Fey Ancestry</h4></a>
+		    						</div>
+		    						<div id="collapseAuR2" class="panel-collapse collapse">
+		      							<div class="panel-body">
+		      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
+		      							</div>
+		   							</div>
+		  						</div>
+		  						<div class="panel panel-default">
+		    						<div class="panel-heading">
+		      							<a data-toggle="collapse" data-parent="#accordionAutumnR" href="#collapseAuR3"><h4 class="panel-title">Fey Ancestry</h4></a>
+		    						</div>
+		    						<div id="collapseAuR3" class="panel-collapse collapse">
 		      							<div class="panel-body">
 		      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
 		      							</div>
@@ -1822,6 +1852,46 @@
 					     				<div class="panel-body">Your quick thinking and agility allow you to make and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
 					     				</div>
 					     			</div>	
+								</div>
+							</div>
+							<div class="panel-group autumn" id="accordionAutumnC">
+		  						<div class="panel panel-default">
+		    						<div class="panel-heading">
+		      							<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC1"><h4 class="panel-title">Ritual Casting</h4></a>
+		   							</div>
+		    						<div id="collapseAuC1" class="panel-collapse collapse">
+		      							<div class="panel-body">
+		      							You can cast any bard spell you know as a ritual if that spell has the ritual tag. A ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn't expend a spell slot, which means the ritual version of a spell can't be cast at a higher level.
+		      							</div>
+		    						</div>
+		  						</div>
+		  						<div class="panel panel-default">
+		    						<div class="panel-heading">
+		      							<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC2"><h4 class="panel-title">Bardic Inspiration</h4></a>
+		    						</div>
+		    						<div id="collapseAuC2" class="panel-collapse collapse">
+		      							<div class="panel-body">
+		      							<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choosse one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
+		      							<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
+		      							<p>You can use this feature a number of times equal to your Charisma modifier(a minimum of ocnce). You regain any expended uses when you finish a long rest.</p>
+		      							</div>
+		   							</div>
+		  						</div>
+					  			<div class="panel panel-default">
+					    			<div class="panel-heading">
+					     				<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC3"><h4 class="panel-title">Jack of All Trades</h4></a>
+					    			</div>
+					    			<div id="collapseAuC3" class="panel-collapse collapse">
+					     				<div class="panel-body">You can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</div>
+					    			</div>
+								</div>
+								<div class="panel panel-default">
+					    			<div class="panel-heading">
+					     				<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC4"><h4 class="panel-title">Song of Rest</h4></a>
+					    			</div>
+					    			<div id="collapseAuC4" class="panel-collapse collapse">
+					     				<div class="panel-body">You can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performace regain hit points at the end of the short rest, each of those creatures regains an extra 1d6 hit points.</div>
+					    			</div>
 								</div>
 							</div>							
 						</div>	
