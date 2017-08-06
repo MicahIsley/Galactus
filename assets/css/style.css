@@ -688,10 +688,14 @@ footer {
 	}
 
 	.spellName > h2 {
-		font-size: 20px;
+		font-size: 16px;
 	}
 
 	.spellObject {
 		height: 80px;
+	}
+
+	.delete {
+		margin-left: 10px;
 	}
 }
