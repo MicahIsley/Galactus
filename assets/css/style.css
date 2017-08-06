@@ -280,6 +280,18 @@ th {
     margin-left: 35px;
 }
 
+.autumn_title {
+	height: 95px;
+	width: 70%;
+	font-size: 40px;
+	font-family: 'Chonburi', cursive;
+	color: white;
+	border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: gold;
+    margin-left: 35px;
+}
+
 .levelClass {
 	margin-left: 35px;
 	color: white;
@@ -646,6 +658,10 @@ footer {
 }
 
 .minime {
+	display: none;
+}
+
+.autumn {
 	display: none;
 }
 

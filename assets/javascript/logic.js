@@ -73,7 +73,7 @@ $(".character").click(function(){
 	$(".spell").hide();
 	character = this.id
 	console.log(character);
-	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir, .franco, .minime").hide();
+	$(".fenla, .clithsbee, .scepter, .alea, .fannar, .regina, .syndir, .franco, .minime, .autumn").hide();
 	$("."+character).show();
 	$.get("/api/character_stats/" + character, function(data) {
 		renderStats(data);
@@ -148,7 +148,7 @@ $(".chapter").click(function(){
 
 $(document).on("click", ".delete", function(){
 	var spellId = parseInt(this.id);
-	$(this).text("Deleted!");
+	$(this).text("Deleted");
 	$.ajax({
 		method: "DELETE",
 		url: "api/delete/" + spellId
