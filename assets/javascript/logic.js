@@ -173,6 +173,7 @@ $("#addNoteButton").click(function() {
 	$.post("api/new_note", newNote)
 		.done(function(data) {
 			console.log(data);
+			displayNotes();
 		});
 });
 
