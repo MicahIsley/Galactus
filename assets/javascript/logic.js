@@ -164,6 +164,7 @@ $(".chapter").click(function(){
 });
 
 $("#addNoteButton").click(function() {
+	console.log("am I clicking?");
 	var noteText = $("#noteTextArea").val();
 	var newNote = {
 		note: noteText,
@@ -172,9 +173,9 @@ $("#addNoteButton").click(function() {
 	}
 	$.post("api/new_note", newNote)
 		.done(function(data) {
-			console.log(data);
-			displayNotes();
+			console.log("data");
 		});
+	displayNotes();
 });
 
 $("#allyNoteButton").click(function() {
@@ -219,7 +220,6 @@ $("#otherNoteButton").click(function() {
 
 $(document).on("click", ".deleteNote", function(){
 	var noteId = $(this).parent().attr("id");
-	console.log(noteId);
 	$.ajax({
 		method: "DELETE",
 		url: "/api/deleteNote/" + noteId
