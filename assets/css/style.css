@@ -20,8 +20,8 @@ html {
 	border-width: 5px;
 	border-style: solid;
 	padding: 5px;
-	margin-left: 35px;
-	margin-right: 5px;
+	margin-left: 25px;
+	margin-right: 35px;
 	margin-bottom: 10px;
 	border-radius: 15px;
 }
@@ -131,8 +131,8 @@ html {
 }
 
 th {
-	width: 40px;
-	font-size: 20px;
+	width: 25%;
+	font-size: 12px;
 	padding-top: 10px;
 	padding-left: 5px;
 	text-align: center;
@@ -458,6 +458,17 @@ a:active {
 	color: white;
 }
 
+.autumn > .panel > .panel-heading {
+	background-image: none;
+	background: linear-gradient(to bottom left, #6b6563, #9fff4c);
+	border-color: black;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	color: white;
+}
+
 .panel-title {
 	font-size: 24px;
 }
@@ -497,7 +508,7 @@ footer {
 }
 
 #newSpellsButton {
-	width: 100%;
+	width: 75%;
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -507,7 +518,7 @@ footer {
     font-size: 16px;
     border-radius: 12px;
     margin-top: 22px;
-    margin-left: 35px;
+    margin-left: 12%;
     margin-bottom: 10px;
 }
 
@@ -625,6 +636,113 @@ footer {
 	width: 50px;
 	background: transparent;
 }
+
+#tabRow {
+	height: 75px;
+	padding-left: 150px;
+}
+.tabRowButton {
+	background-color: white;
+	float: left;
+	margin: 10px;
+	font-size: 30px;
+}
+
+.skillTable {
+	width: auto;
+}
+
+.inventoryTab {
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background: white;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+	float: left;
+}
+
+#inventoryTabRow {
+	margin-left: 20px;
+}
+
+.noteCategoryButton {
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	margin: 2px;
+	margin-left: 20px;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 5px;
+}
+
+#noteDisplayArea {
+	margin-left: 30px;
+}
+
+textarea {
+	height: 100%;
+	width: 90%;
+	margin-left: 20px;
+}
+
+#allyNoteDisplay {
+	display: none;
+}
+
+#enemyNoteDisplay {
+	display: none;
+}
+
+#orgNoteDisplay {
+	display: none;
+}
+
+#backstoryNoteDisplay {
+	display: none;
+}
+
+#otherNoteDisplay {
+	display: none;
+}
+
+#addNoteButton {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	background: green;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	margin-right: 0px;
+}
+
+#updateNoteButton {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	background: orange;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	display: none;
+}
+
+.editNote {
+	float: right;
+	margin-left: 5px;
+}
+
+.deleteNote {
+	float: right;
+	margin-left: 5px;
+}
+
+
 .fenla {
 	display: none;
 }

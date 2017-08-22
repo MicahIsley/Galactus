@@ -3,7 +3,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
-
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -17,7 +16,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Static directory
 app.use(express.static("assets"));
-
 
 // Routes
 // =============================================================

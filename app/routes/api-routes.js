@@ -1,5 +1,7 @@
 var Character_stats = require("../../models/")["Character_stats"];
 var Spells = require("../../models/")["Spells"];
+var Skills = require("../../models/")["Skills"];
+var Notes = require("../../models/")["Notes"];
 
 module.exports = function(app) {
 
@@ -31,7 +33,17 @@ module.exports = function(app) {
 		});
 	});
 
-	app.delete("/api/delete/:id", function(req, res) {
+	app.get("/api/skills/:character", function(req, res) {
+		Skills.findOne({
+			where: {
+				name: req.params.character
+			}
+		}).then(function(results) {
+			res.json(results);
+		});
+	});
+
+	app.delete("/api/deleteSpell/:id", function(req, res) {
 		Spells.destroy({
 			where: {
 				id: req.params.id
@@ -46,6 +58,45 @@ module.exports = function(app) {
 			name: req.body.name,
 			level: req.body.level,
 			character: req.body.character
+		});
+	});
+
+	app.get("/api/notes/:character", function(req, res) {
+		Notes.findAll({
+			where: {
+				character: req.params.character
+			}
+		}).then(function(results) {
+			res.json(results);
+		});
+	});
+
+	app.post("/api/new_note", function(req, res) {
+		Notes.create({
+			note: req.body.note,
+			category: req.body.category,
+			character: req.body.character
+		});
+	});
+
+	app.delete("/api/deleteNote/:id", function(req, res) {
+		Notes.destroy({
+			where: {
+				id: req.params.id
+			}
+		}).then(function(result) {
+			res.json(result);
+		});
+	});
+
+	app.put("/api/updateNote/:id", function(req, res) {
+		Notes.update(req.body,
+		{
+			where: {
+				id: req.params.id
+			}
+		}).then(function(result) {
+			res.json(result);
 		});
 	});
 };
