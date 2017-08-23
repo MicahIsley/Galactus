@@ -19,9 +19,9 @@ html {
 	border-color: black;
 	border-width: 5px;
 	border-style: solid;
-	padding: 5px;
+	padding: 15px;
 	margin-left: 25px;
-	margin-right: 35px;
+	margin-right: 25px;
 	margin-bottom: 10px;
 	border-radius: 15px;
 }
@@ -111,11 +111,11 @@ html {
 }
 
 .character:hover {
-	border-color: green;
+	border-color: #1d2546;
 }
 
 #characterRow {
-	background: #e63838;
+	background: #606ea2;
 	border-style: solid;
 	border-color: black;
 	border-width: 0px 0px 3px 0px;
@@ -180,7 +180,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -192,7 +192,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -204,7 +204,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -216,7 +216,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -228,7 +228,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -240,7 +240,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -252,7 +252,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -264,7 +264,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -276,7 +276,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -288,7 +288,7 @@ th {
 	color: white;
 	border-width: 0px 0px 2px 0px;
     border-style: solid;
-    border-color: gold;
+    border-color: black;
     margin-left: 35px;
 }
 
@@ -349,8 +349,8 @@ a:active {
 }
 
 .panel > .panel-heading {
-	background: #f51616;
-	border-color: gold;
+	background: #e62a2a;
+	border-color: #606ea2;
 	border-width: 4px;
 	border-style: solid;
 	border-radius: 10px;
@@ -365,7 +365,7 @@ a:active {
 	background-color: transparent;
 }
 
-.fenla > .panel > .panel-heading {
+/*.fenla > .panel > .panel-heading {
 	background-image: none;
 	background: linear-gradient(to bottom left, #1a401a, #50d048);
 	border-color: black;
@@ -468,6 +468,7 @@ a:active {
 	border-radius: 10px;
 	color: white;
 }
+*/
 
 .panel-title {
 	font-size: 24px;
@@ -509,7 +510,7 @@ footer {
 
 #newSpellsButton {
 	width: 75%;
-    background-color: #4CAF50;
+    background-color: #606ea2;
     border: none;
     color: white;
     padding: 10px;
@@ -523,10 +524,7 @@ footer {
 }
 
 #newSpellsButton:hover {
-	background: darkgreen;
-	border-style: solid;
-	border-width: 2px;
-	border-color: grey;
+	background: #1d2546;
 }
 
 .choose {
@@ -575,25 +573,26 @@ footer {
 #hpSection {
 	height: 190px;
 	width: 150px;
-	margin-top: 20px;
+	margin-top: 5px;
 	margin-left: 15%;
 }
 
 #maxHp {
-	font-size: 14px;
+	font-size: 18px;
 }
 
 #maxHpLabel {
-	font-size: 14px;
-	margin-left: 25%;
+	font-size: 18px;
+	margin-top: 0px;
+	text-align: center;
 }
 
 .hpButton {
 	width: 60px;
-	background: yellow;
+	background: #e62a2a;
 	text-align: center;
 	font-size: 20px;
-	border-color: black;
+	border-color: #606ea2;
 	border-width: 3px;
 	border-style: solid;
 	border-radius: 5px;
@@ -606,7 +605,7 @@ footer {
 }
 
 #hpArea {
-	margin-left: 30%;
+	margin-left: 25%;
 }
 
 #nameSection {
@@ -653,30 +652,34 @@ footer {
 }
 
 .inventoryTab {
+	color: black;
+	background: #e62a2a;
 	border-width: 2px;
-	border-color: black;
+	border-color: #606ea2;
+	border-radius: 15px;
 	border-style: solid;
-	background: white;
 	padding: 10px;
-	margin-right: 10px;
-	font-size: 18px;
+	margin-right: 5px;
+	font-size: 16px;
 	float: left;
 }
 
 #inventoryTabRow {
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 .noteCategoryButton {
-	border-width: 2px;
-	border-color: black;
+	color: black;
+	background: #e62a2a;
+	border-width: 3px;
+	border-radius: 15px;
+	border-color: #606ea2;
 	border-style: solid;
 	margin: 2px;
-	margin-left: 20px;
 	height: 50px;
 	width: 100%;
 	text-align: center;
-	font-size: 24px;
+	font-size: 22px;
 	padding-top: 5px;
 }
 
@@ -714,11 +717,15 @@ textarea {
 	color: white;
 	font-size: 16px;
 	text-align: center;
-	background: green;
+	background: #606ea2;
 	border-width: 3px;
 	border-style: solid;
 	border-color: black;
 	margin-right: 0px;
+}
+
+#addNoteButton:hover {
+	background: #1d2546;
 }
 
 #updateNoteButton {
@@ -742,6 +749,21 @@ textarea {
 	margin-left: 5px;
 }
 
+.inventoryDisplay {
+	margin-left: 10px;
+}
+
+#weapons {
+	display: none;
+}
+
+#items {
+	display: none;
+}
+
+#gold {
+	display: none;
+}
 
 .fenla {
 	display: none;

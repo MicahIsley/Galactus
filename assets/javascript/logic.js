@@ -179,40 +179,40 @@ $("#addNoteButton").click(function() {
 });
 
 $("#allyNoteButton").click(function() {
-	$(".noteCategoryButton").css("background", "white");
-	$("#allyNoteButton").css("background", "green");
+	$(".noteCategoryButton").css("background", "#e62a2a");
+	$("#allyNoteButton").css("background", "#ff6161");
 	$(".noteCategoryDisplay").hide();
 	$("#allyNoteDisplay").show();
 	noteCategory = "ally";
 });
 
 $("#enemyNoteButton").click(function() {
-	$(".noteCategoryButton").css("background", "white");
-	$("#enemyNoteButton").css("background", "green");
+	$(".noteCategoryButton").css("background", "#e62a2a");
+	$("#enemyNoteButton").css("background", "#ff6161");
 	$(".noteCategoryDisplay").hide();
 	$("#enemyNoteDisplay").show();
 	noteCategory = "enemy";
 });
 
 $("#orgNoteButton").click(function() {
-	$(".noteCategoryButton").css("background", "white");
-	$("#orgNoteButton").css("background", "green");
+	$(".noteCategoryButton").css("background", "#e62a2a");
+	$("#orgNoteButton").css("background", "#ff6161");
 	$(".noteCategoryDisplay").hide();
 	$("#orgNoteDisplay").show();
 	noteCategory = "org";
 });
 
 $("#backstoryNoteButton").click(function() {
-	$(".noteCategoryButton").css("background", "white");
-	$("#backstoryNoteButton").css("background", "green");
+	$(".noteCategoryButton").css("background", "#e62a2a");
+	$("#backstoryNoteButton").css("background", "#ff6161");
 	$(".noteCategoryDisplay").hide();
 	$("#backstoryNoteDisplay").show();
 	noteCategory = "backstory";
 });
 
 $("#otherNoteButton").click(function() {
-	$(".noteCategoryButton").css("background", "white");
-	$("#otherNoteButton").css("background", "green");
+	$(".noteCategoryButton").css("background", "#e62a2a");
+	$("#otherNoteButton").css("background", "#ff6161");
 	$(".noteCategoryDisplay").hide();
 	$("#otherNoteDisplay").show();
 	noteCategory = "other";
@@ -269,6 +269,22 @@ $("#addHp").click(function(){
 
 $("#subHp").click(function(){
 	subHp();
+});
+
+$("#weaponsButton").click(function(){
+	$(".inventoryDisplay").hide();
+	$("#weapons").show();
+});
+
+$("#itemsButton").click(function(){
+	$(".inventoryDisplay").hide();
+	$("#items").show();
+});
+
+$("#goldButton").click(function(){
+	console.log("gold!");
+	$(".inventoryDisplay").hide();
+	$("#gold").show();
 });
 
 function renderStats(data) {

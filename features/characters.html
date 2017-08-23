@@ -173,16 +173,17 @@
 					</div>	
 					<div class="col-sm-3 contentSection">
 						<div class="row" id="inventoryTabRow">
-							<div class="inventoryTab">Weapons</div>
-							<div class="inventoryTab">Items</div>
-							<div class="inventoryTab">Gold</div>
+							<div class="inventoryTab" id="weaponsButton">Weapons</div>
+							<div class="inventoryTab" id="itemsButton">Items</div>
+							<div class="inventoryTab" id="goldButton">Gold</div>
 						</div>
 						<div class="row">
-							<div id="weapons">
+							<div class="inventoryDisplay" id="weapons">
 							</div>
-							<div id="items">
+							<div class="inventoryDisplay" id="items">
 							</div>
-							<div id="gold">
+							<div class="inventoryDisplay" id="gold">
+								<div>Gold: </div>
 							</div>
 						</div>
 					</div>
@@ -2391,7 +2392,7 @@
 							<div class="col-sm-2">
 								<div class="noteCategoryButton" id="allyNoteButton">Allies</div>
 								<div class="noteCategoryButton" id="enemyNoteButton">Enemies</div>
-								<div class="noteCategoryButton" id="orgNoteButton">Organizations</div>
+								<div class="noteCategoryButton" id="orgNoteButton">Orgs</div>
 								<div class="noteCategoryButton" id="backstoryNoteButton">Backstory</div>
 								<div class="noteCategoryButton" id="otherNoteButton">Other</div>
 							</div>
