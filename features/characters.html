@@ -179,8 +179,45 @@
 						</div>
 						<div class="row">
 							<div class="inventoryDisplay" id="weapons">
+								<
 							</div>
 							<div class="inventoryDisplay" id="items">
+								<div id="itemsDisplayArea">
+								</div>
+								<div id="itemTransferMenu">
+									<select data-placeholder="" class="chosen-select" id="itemTransfer">
+							            <option value="Alea">Alea</option>
+							            <option value="Autumn">Autumn</option>
+							            <option value="Clithsbee">Clithsbee</option>
+							            <option value="Fannar">Fannar</option>
+							            <option value="Fenla">Fenla</option>
+							            <option value="Franco">Franco</option>
+							            <option value="Mini-me">Mini-me</option>
+							            <option value="Regina">Regina</option>
+							            <option value="Scepter">Scepter</option>
+							            <option value="Syndir">Syndir</option>
+						      		</select>
+						      		<div id="transferButton">Go</div>
+						      	</div>
+								<div id="newItemButton">Add Item</div>
+
+								<div id="itemForm">
+									<form>
+						                <div class="form-group">
+						                    <label for="itemName">Item</label>
+						                    <input type="text" class="form-control" id="nameField" placeholder="item">
+						                </div>
+						                 <div class="form-group">
+										    <label for="textarea">Item Description</label>
+										    <textarea class="form-control" id="descriptionField" rows="3"></textarea>
+										</div>
+						                <div class="form-group">
+						                    <label for="owner">Owner</label>
+						                    <input type="text" class="form-control" id="ownerField" placeholder="owner">
+						                </div>
+						                <button class="btn btn-default" id="addItem" type="button">Add Item</button>
+						            </form>
+						        </div>
 							</div>
 							<div class="inventoryDisplay" id="gold">
 								<div>Gold: </div>

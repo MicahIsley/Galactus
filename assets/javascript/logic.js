@@ -1,14 +1,3 @@
-var config = {
-    apiKey: "AIzaSyD3VjM28WcPH62zDqDl_Ftmk9trgbqviQU",
-    authDomain: "grimore-c74c2.firebaseapp.com",
-    databaseURL: "https://grimore-c74c2.firebaseio.com",
-    projectId: "grimore-c74c2",
-    storageBucket: "grimore-c74c2.appspot.com",
-    messagingSenderId: "814042999572"
-  };
-  firebase.initializeApp(config);
-
-var database = firebase.database();
 var character = "";
 var noteCategory = "other";
 var characterLearn;
@@ -20,6 +9,8 @@ var inteStat;
 var wisStat;
 var chaStat;
 var updateNoteId;
+var itemDescriptionToggle = true;
+var transferItemId;
 
 $(document).on("click", ".spellName", function(){
 	$(".spell").hide();
@@ -77,6 +68,9 @@ $(document).on("click", ".learn", function(){
 });
 
 $(".character").click(function(){
+	$("#weapons").hide();
+	$("#items").hide();
+	$("#gold").hide();
 	$(".spell").hide();
 	character = this.id
 	console.log(character);
@@ -262,6 +256,53 @@ $(document).on("click", ".delete", function(){
 	});
 });
 
+$(document).on("click", ".deleteItemButton", function(){
+	var itemId = $(this).parent().attr("id");
+	console.log(itemId);
+	$.ajax({
+		method: "DELETE",
+		url: "api/deleteItem/" + itemId
+	})
+	.done(function(deldata) {
+		console.log(deldata);
+		renderItems();
+	});
+});
+
+$(document).on("click", ".updateOwnerButton", function() {
+	$("#itemTransferMenu").show();
+	transferItemId = $(this).parent().attr("id");
+});
+
+$("#transferButton").click(function() {
+	var recipient = $("#itemTransfer").val().trim();
+	console.log(transferItemId);
+	var newOwner = {
+		id: transferItemId,
+		owner: recipient};
+	$.ajax({
+      method: "PUT",
+      url: "/api/updateItem/" + transferItemId,
+      data: newOwner
+    })
+    .done(function() {
+    	$("#itemTransferMenu").hide();
+    	renderItems();
+    });
+});
+
+$(document).on("click", ".itemName", function(){
+	var description = $(this).children().attr("id");
+	console.log(itemDescriptionToggle);
+	if(itemDescriptionToggle === true){
+		$("#" + description).show();
+		itemDescriptionToggle = false;
+		console.log(itemDescriptionToggle);
+	}else if(itemDescriptionToggle === false){
+		$("#" + description).hide();
+		itemDescriptionToggle = true;
+	}else{}
+});
 
 $("#addHp").click(function(){
 	addHp();
@@ -279,12 +320,38 @@ $("#weaponsButton").click(function(){
 $("#itemsButton").click(function(){
 	$(".inventoryDisplay").hide();
 	$("#items").show();
+	renderItems()
 });
 
 $("#goldButton").click(function(){
 	console.log("gold!");
 	$(".inventoryDisplay").hide();
 	$("#gold").show();
+});
+
+$("#addItem").click(function(){
+	console.log("clicked");
+	var item = $("#nameField").val().trim();
+	var description = $("#descriptionField").val().trim();
+	var owner = $("#ownerField").val().trim();
+	var newItem = {
+		item: item,
+		description: description,
+		owner: owner
+	};
+	$.post("/api/new/item", newItem)
+		.done(function(data) {
+			console.log(data);
+		});
+	$("#itemForm").hide();
+	$("#itemsDisplayArea").show();
+	renderItems();
+});
+
+$("#newItemButton").click(function(){
+	$("#itemsDisplayArea").hide();
+	$("#itemForm").show();
+	$("#newItemButton").hide();
 });
 
 function renderStats(data) {
@@ -377,6 +444,21 @@ function displayNotes() {
 	});
 }
 
+function renderItems() {
+	$("#itemsDisplayArea").empty();
+	$.get("api/items/" + character, function(data) {
+		console.log(data);
+		for(i=0; i < data.length; i++) {
+			var itemDiv = $("<div>");
+			itemDiv.attr("id", data[i].id);
+			itemDiv.append("<div class='itemName'>" + data[i].item + "<p class='itemHidden' id='itemDescription" + [i] + "'>" + data[i].description + "</p></div>");
+			itemDiv.append("<div class='deleteItemButton'><span class='glyphicon glyphicon-remove'></span></div>");
+			itemDiv.append("<div class='updateOwnerButton'><span class='glyphicon glyphicon-transfer'></span></div>");
+			$("#itemsDisplayArea").prepend(itemDiv);
+		}
+	});
+	$("#newItemButton").show();
+}
 
 function displayHp() {
 	$("#currentHp").text(currentHp);

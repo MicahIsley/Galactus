@@ -687,7 +687,7 @@ footer {
 	margin-left: 30px;
 }
 
-textarea {
+#noteTextArea {
 	height: 100%;
 	width: 90%;
 	margin-left: 20px;
@@ -753,6 +753,7 @@ textarea {
 
 .inventoryDisplay {
 	margin-left: 10px;
+	margin-top: 10px;
 }
 
 #weapons {
@@ -760,6 +761,41 @@ textarea {
 }
 
 #items {
+	display: none;
+}
+
+#itemForm {
+	padding-right: 10px;
+	display: none;
+}
+
+#newItemButton {
+	background: #606ea2;
+	color: white;
+	width: 60px;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 14px;
+	padding: 2px;
+	margin-top: 5px;
+}
+
+#newItemButton:hover {
+	background: #2a1965;
+}
+
+.itemName {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.itemHidden {
+	display: none;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+#itemTransferMenu {
 	display: none;
 }
 
