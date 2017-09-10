@@ -2,6 +2,11 @@ html {
 	background: grey;
 }
 
+img {
+	height: 173px;
+	width: 120px;
+}
+
 .topRow{
 	background: #2a1965;
 	border-style: solid;
@@ -574,7 +579,7 @@ footer {
 	height: 190px;
 	width: 150px;
 	margin-top: 5px;
-	margin-left: 15%;
+	margin-left: 5%;
 }
 
 #maxHp {
