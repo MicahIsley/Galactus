@@ -35,56 +35,62 @@
 					</div>
 				</div>	
 				<div class="row">		
-					<div class="col-sm-6" id="nameSection">
+					<div class="col-sm-4" id="nameSection">
 						<div class="row">
-							<h1 class="fenla_title fenla">Fenla Arila</h1>
-							<h1 class="clithsbee_title clithsbee">Clithsbee</h1>
-							<h1 class="scepter_title scepter">Scepter de Scepter</h1>
-							<h1 class="syndir_title syndir">Synndur the Sober</h1>
-							<h1 class="alea_title alea">Alea Vonbella</h1>
-							<h1 class="fannar_title fannar">Fannar Imada</h1>
-							<h1 class="regina_title regina">Regina the Wretched</h1>
-							<h1 class="franco_title franco">Franco Buffandi</h1>
-							<h1 class="minime_title minime">Mini-Me</h1>
-							<h1 class="autumn_title autumn">Autumn</h1>
+							<h1 class="character_title fenla">Fenla Arila</h1>
+							<h1 class="character_title clithsbee">Clithsbee</h1>
+							<h1 class="character_title scepter">Scepter de Scepter</h1>
+							<h1 class="character_title syndir">Synndur the Sober</h1>
+							<h1 class="character_title alea">Alea Vonbella</h1>
+							<h1 class="character_title fannar">Fannar Imada</h1>
+							<h1 class="character_title regina">Regina the Wretched</h1>
+							<h1 class="character_title franco">Franco Buffandi</h1>
+							<h1 class="character_title minime">Mini-Me</h1>
+							<h1 class="character_title autumn">Autumn</h1>
 						</div>
 						<div class="row">
-							<div class="col-sm-5">
-								<div class="fenla levelClass">
-									<h3>Lvl.3 Gnome Druid</h3>
-								</div>
-								<div class="clithsbee levelClass">
-									<h3>Lvl.3 Dwarf Barbarian</h3>
-								</div>
-								<div class="scepter levelClass">
-									<h3>Lvl.3 Human Bard</h3>
-								</div>
-								<div class="syndir levelClass">
-									<h3>Lvl.3 Dragonborn Sorcerer</h3>
-								</div>
-								<div class="alea levelClass">
-									<h3>Lvl.3 Dark Elf Ranger</h3>
-								</div>
-								<div class="fannar levelClass">
-									<h3>Lvl.3 Elf Cleric</h3>
-								</div>
-								<div class="regina levelClass">
-									<h3>Lvl.3 Teifling Warlock</h3>
-								</div>
-								<div class="franco levelClass">
-									<h3>Lvl.2 Half-Elf Monk</h3>
-								</div>
-								<div class="minime levelClass">
-									<h3>Lvl.2 Halfling Rogue</h3>
-								</div>
-								<div class="autumn levelClass">
-									<h3>Lvl.2 Tabaxi Bard</h3>
-								</div>
+							<div class="fenla levelClass">
+								<div>Lvl.3 Gnome Druid</div>
+							</div>
+							<div class="clithsbee levelClass">
+								<div>Lvl.3 Dwarf Barbarian</div>
+							</div>
+							<div class="scepter levelClass">
+								<div>Lvl.3 Human Bard</div>
+							</div>
+							<div class="syndir levelClass">
+								<div>Lvl.3 Dragonborn Sorcerer</div>
+							</div>
+							<div class="alea levelClass">
+								<div>Lvl.3 Dark Elf Ranger</div>
+							</div>
+							<div class="fannar levelClass">
+								<div>Lvl.3 Elf Cleric</div>
+							</div>
+							<div class="regina levelClass">
+								<div>Lvl.3 Teifling Warlock</div>
+							</div>
+							<div class="franco levelClass">
+								<div>Lvl.2 Half-Elf Monk</div>
+							</div>
+							<div class="minime levelClass">
+								<div>Lvl.2 Halfling Rogue</div>
+							</div>
+							<div class="autumn levelClass">
+								<div>Lvl.2 Tabaxi Bard</div>
 							</div>
 						</div>	
 					</div>
-					<div class="col-sm-2">
-						<img src="/images/fighter-symbol.png" alt="Responsive image">
+					<div class="col-sm-2" id="classIcon">
+						<img src="/images/druid-symbol.png" alt="Responsive image" class="fenla">
+						<img src="/images/cleric-symbol.png" alt="Responsive image" class="fannar">
+						<img src="/images/bard-symbol.png" alt="Responsive image" class="autumn scepter">
+						<img src="/images/ranger-symbol.png" alt="Responsive image" class="alea">
+						<img src="/images/warlock-symbol.png" alt="Responsive image" class="regina">
+						<img src="/images/monk-symbol.png" alt="Responsive image" class="franco">
+						<img src="/images/sorcerer-symbol.png" alt="Responsive image" class="syndir">
+						<img src="/images/barbarian-symbol.png" alt="Responsive image" class="clithsbee">
+						<img src="/images/rogue-symbol.png" alt="Responsive image" class="minime">
 					</div>
 					<div class="col-sm-3 contentSection" id="hpSection">
 						<h3 id="maxHpLabel">Max HP: <span id="maxHp"></span></h3>
@@ -428,26 +434,6 @@
 					     				<div class="panel-body">Whenever you make an Intelligence(History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.</div>
 					    			</div>
 								</div>
-							</div>
-							<div class="panel-group franco" id="accordionFrancoR">
-		  						<div class="panel panel-default">
-		    						<div class="panel-heading">
-		      							<a data-toggle="collapse" data-parent="#accordionFrancoR" href="#collapseFrR1"><h4 class="panel-title">Darkvision</h4></a>
-		   							</div>
-		    						<div id="collapseFrR1" class="panel-collapse collapse">
-		      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
-		    						</div>
-		  						</div>
-		  						<div class="panel panel-default">
-		    						<div class="panel-heading">
-		      							<a data-toggle="collapse" data-parent="#accordionFrancoR" href="#collapseMmR2"><h4 class="panel-title">Fey Ancestry</h4></a>
-		    						</div>
-		    						<div id="collapseMmR2" class="panel-collapse collapse">
-		      							<div class="panel-body">
-		      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
-		      							</div>
-		   							</div>
-		  						</div>
 							</div>
 							<div class="panel-group minime" id="accordionMinimeR">
 		  						<div class="panel panel-default">

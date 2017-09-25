@@ -3,8 +3,6 @@ html {
 }
 
 img {
-	height: 173px;
-	width: 120px;
 }
 
 .topRow{
@@ -177,130 +175,22 @@ th {
 	border-color: grey;
 }
 
-.fenla_title {
+.character_title {
 	height: 60px;
-	width: 70%;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: 'Chonburi', cursive;
 	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.alea_title {
-	height: 60px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.clithsbee_title {
-	height: 60px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.fannar_title {
-	height: 60px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.regina_title {
-	height: 95px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.scepter_title {
-	height: 95px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.syndir_title {
-	height: 95px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.franco_title {
-	height: 95px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.minime_title {
-	height: 60px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
-}
-
-.autumn_title {
-	height: 95px;
-	width: 70%;
-	font-size: 40px;
-	font-family: 'Chonburi', cursive;
-	color: white;
-	border-width: 0px 0px 2px 0px;
-    border-style: solid;
-    border-color: black;
-    margin-left: 35px;
 }
 
 .levelClass {
-	margin-left: 35px;
+	font-size: 15px;
 	color: white;
 	font-family: 'Merienda One', cursive;
+}
+
+#classIcon {
+	padding: 3px;
+	text-align: center;
 }
 
 .spells {
@@ -369,111 +259,6 @@ a:active {
 .panel {
 	background-color: transparent;
 }
-
-/*.fenla > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #1a401a, #50d048);
-	border-color: black;
-	border-width: 4px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-	overflow: hidden;
-}
-
-.clithsbee > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #4a1111, #d04444);
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.scepter > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #c54c04, #ffe04b);
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.syndir > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #ff0000, #ffa6a6);
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.regina > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #55047d, #d65ad6);
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.fannar > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #006167, #92ffed);
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.alea > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #c7ca1f, #fffad4);
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.franco > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #0300b1, #c5c5ff);
-	border-color: black;
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.minime > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #21140f, #f8ffa3);
-	border-color: black;
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-
-.autumn > .panel > .panel-heading {
-	background-image: none;
-	background: linear-gradient(to bottom left, #6b6563, #9fff4c);
-	border-color: black;
-	border-color: black;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 10px;
-	color: white;
-}
-*/
 
 .panel-title {
 	font-size: 24px;
@@ -614,7 +399,7 @@ footer {
 }
 
 #nameSection {
-	height: 200px;
+	text-align: center;
 }
 
 .spellObject {
@@ -854,7 +639,7 @@ footer {
 	}
 
 	.spellName {
-		width: 150px;
+		width: 130px;
 		height: 70px;
 	}
 
@@ -869,7 +654,7 @@ footer {
 
 @media only screen and (max-width: 500px) {
 	#hpSection {
-		margin-left: 35%;
+		margin-left: 28%;
 	}
 
 	.learn {
@@ -882,7 +667,7 @@ footer {
 	}
 
 	.spellName {
-		width: 150px;
+		width: 130px;
 		height: 70px;
 	}
 

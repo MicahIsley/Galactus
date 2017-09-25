@@ -20,12 +20,12 @@ p {
 }
 
 #indexButtons {
-	margin-left: 36%;
 	margin-top: 40px;
 }
 
 .mainTab {
 	margin: 15px;
+	margin-left: 50px;
 	height: 60px;
 	width: 75%;
 	background: grey;
@@ -67,6 +67,7 @@ a:focus {
 	.mainTab {
 		width: 75%;
 		font-size: 35px;
+		margin-left: 0px;
 	}
 }
 
