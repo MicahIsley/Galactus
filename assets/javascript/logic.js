@@ -449,11 +449,11 @@ function renderItems() {
 	$.get("api/items/" + character, function(data) {
 		console.log(data);
 		for(i=0; i < data.length; i++) {
-			var itemDiv = $("<div>");
+			var itemDiv = $("<div class='row itemRow'>");
 			itemDiv.attr("id", data[i].id);
-			itemDiv.append("<div class='itemName'>" + data[i].item + "<p class='itemHidden' id='itemDescription" + [i] + "'>" + data[i].description + "</p></div>");
-			itemDiv.append("<div class='deleteItemButton'><span class='glyphicon glyphicon-remove'></span></div>");
-			itemDiv.append("<div class='updateOwnerButton'><span class='glyphicon glyphicon-transfer'></span></div>");
+			itemDiv.append("<div class='col-sm-8 itemName'>" + data[i].item + "<p class='itemHidden' id='itemDescription" + [i] + "'>" + data[i].description + "</p></div>");
+			itemDiv.append("<div class='col-sm-1 deleteItemButton'><span class='glyphicon glyphicon-remove'></span></div>");
+			itemDiv.append("<div class='col-sm-1 updateOwnerButton'><span class='glyphicon glyphicon-transfer'></span></div>");
 			$("#itemsDisplayArea").prepend(itemDiv);
 		}
 	});

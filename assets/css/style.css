@@ -1,8 +1,9 @@
 html {
-	background: grey;
+	background: #010c30;
 }
 
-img {
+body {
+	background: #010c30;
 }
 
 .topRow{
@@ -13,20 +14,22 @@ img {
 }
 
 .container-fluid {
-	background: #3a2c86;
+	background-image: url("../images/mountains.jpg");
+	background-repeat: no-repeat;
 	margin-right: -20px;
 }
 
 .contentSection {
 	background: white;
 	border-color: black;
-	border-width: 5px;
+	border-width: 2px;
 	border-style: solid;
-	padding: 15px;
+	padding: 10px 0px 0px 0px;
 	margin-left: 25px;
 	margin-right: 25px;
 	margin-bottom: 10px;
-	border-radius: 15px;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 0px 3px 2px #232323;
 }
 
 .nav {
@@ -68,28 +71,9 @@ img {
 	margin-left: 28%;
 }
 
-#party_title {
-	color: #000000;
-	width: 50%;
-	font-family: 'Bershire Swash', cursive;
-	border-bottom: 3px;
-	border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
-	margin-left: 25%;
-	border-style: solid;
-	border-color: black;
-	text-align: center;
-}
-
 #log_title {
 	position: absolute;
 	top: 350px;
-}
-
-#chp1 {
-	position: absolute;
-	top: 400px;
 }
 
 .id {
@@ -179,12 +163,12 @@ th {
 	height: 60px;
 	font-size: 30px;
 	font-family: 'Chonburi', cursive;
-	color: white;
+	color: black;
 }
 
 .levelClass {
 	font-size: 15px;
-	color: white;
+	color: black;
 	font-family: 'Merienda One', cursive;
 }
 
@@ -243,12 +227,27 @@ a:active {
 	font-size: 24px;
 }
 
+.panel-group > .panel {
+	margin-bottom: 8px;
+}
+
 .panel > .panel-heading {
 	background: #e62a2a;
 	border-color: #606ea2;
 	border-width: 4px;
 	border-style: solid;
-	border-radius: 10px;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 0px 4px 3px black;
+}
+
+.panel > .panel-heading:hover {
+	background: #de5a5a;
+	border-color: #192175;
+	box-shadow: 0px 1px 3px black;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border: 0px;
 }
 
 .add {
@@ -444,14 +443,24 @@ footer {
 .inventoryTab {
 	color: black;
 	background: #e62a2a;
-	border-width: 2px;
-	border-color: #606ea2;
-	border-radius: 15px;
+	border-width: 4px;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 0px 4px 3px black;
 	border-style: solid;
+	border-color: #606ea2;
 	padding: 10px;
 	margin-right: 5px;
-	font-size: 16px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
 	float: left;
+}
+
+.inventoryTab:hover {
+	background: #de5a5a;
+	border-color: #192175;
+	box-shadow: 0px 1px 3px black;
 }
 
 #inventoryTabRow {
@@ -462,15 +471,21 @@ footer {
 	color: black;
 	background: #e62a2a;
 	border-width: 3px;
-	border-radius: 15px;
 	border-color: #606ea2;
 	border-style: solid;
-	margin: 2px;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 0px 3px 2px #232323;
+	margin: 5px;
 	height: 50px;
-	width: 100%;
 	text-align: center;
 	font-size: 22px;
 	padding-top: 5px;
+}
+
+.noteCategoryButton:hover {
+	background: #de5a5a;
+	border-color: #192175;
+	box-shadow: 0px 1px 3px black;
 }
 
 #noteDisplayArea {
@@ -556,18 +571,24 @@ footer {
 
 #itemForm {
 	padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 	display: none;
 }
 
 #newItemButton {
 	background: #606ea2;
-	color: white;
-	width: 60px;
-	border-radius: 10px;
-	text-align: center;
-	font-size: 14px;
-	padding: 2px;
-	margin-top: 5px;
+    color: white;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px;
+    padding-top: 7px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
 }
 
 #newItemButton:hover {
@@ -576,7 +597,13 @@ footer {
 
 .itemName {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 14px;
+	padding: 0px;
+}
+
+.itemRow {
+	margin-left: 15px;
+	margin-right: -5px;
 }
 
 .itemHidden {
