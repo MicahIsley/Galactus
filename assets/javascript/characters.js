@@ -1,3 +1,5 @@
+//Global variables
+
 var character = "";
 var noteCategory = "other";
 var characterLearn;
@@ -12,14 +14,7 @@ var updateNoteId;
 var itemDescriptionToggle = true;
 var transferItemId;
 
-$(document).on("click", ".spellName", function(){
-	$(".spell").hide();
-	var id = this.id;
-	console.log(id);
-	var newId = ("#" +id + "1");
-	console.log(newId);
-	$(newId).show();
-});
+//Character selection
 
 $(".character").click(function(){
 	$("#weapons").hide();
@@ -39,12 +34,89 @@ $(".character").click(function(){
 
 });
 
+function renderStats(data) {
+	strStat = data.str;
+	dexStat = data.dex;
+	conStat = data.con;
+	inteStat = data.inte;
+	wisStat = data.wis;
+	chaStat = data.cha;
+	$("#abilityScores").empty();
+	$("#abilityScores").show();
+	$("#maxHp").text(data.hp);
+	currentHp = data.hp;
+	var div = $("<div>");
+	div.append("<tr><th></th><th></th><th>Mod</th></tr>");
+	div.append("<tr><th>Strength</th><th>" + strStat + "</th><th> " + Math.floor((data.str-10)/2) + "</th></tr>");
+	div.append("<tr><th>Dexterity</th><th>" + dexStat + "</th><th> " + Math.floor((data.dex-10)/2) + "</th></tr>");
+	div.append("<tr><th>Constitution</th><th>" + conStat + "</th><th> " + Math.floor((data.con-10)/2) + "</th></tr>");
+	div.append("<tr><th>Wisdom</th><th>" + wisStat + "</th><th> " + Math.floor((data.wis-10)/2) + "</th></tr>");
+	div.append("<tr><th>Intelligence</th><th>" + inteStat + "</th><th> " + Math.floor((data.inte-10)/2) + "</th></tr>");
+	div.append("<tr><th>Charisma</th><th>" + chaStat + "</th><th> " + Math.floor((data.cha-10)/2) + "</th></tr>");
+	$("#abilityScores").append(div);
+}
+
+//Skills Section
+
 $("#skillsPanel").click(function(){
 	$.get("/api/skills/" + character, function(data) {
 		renderSkills(data);
 	}).then(function() {
 
 	});
+});
+
+function renderSkills(data) {
+	var strMod = Math.floor((strStat-10)/2);
+	var dexMod = Math.floor((dexStat-10)/2);
+	var conMod = Math.floor((conStat-10)/2);
+	var inteMod = Math.floor((inteStat-10)/2);
+	var wisMod = Math.floor((wisStat-10)/2);
+	var chaMod = Math.floor((chaStat-10)/2);
+	var skillsArray = [data.acro, data.anim, data.arca, data.athl, data.dece, data.hist, data.insi, data.inti, data.inve, data.medi, data.natu, data.perc, data.perf, data.pers, data.reli, data.slei, data.stea, data.surv];
+	for(var i=0; i < skillsArray.length; i++) {
+		var idString = "#skill_" + [i];
+		if(skillsArray[i] === true) {
+			if($(idString).hasClass("str") === true){
+				$(idString).text(strMod + 2);
+			} else if($(idString).hasClass("dex") === true){
+				$(idString).text(dexMod + 2);
+			} else if($(idString).hasClass("con") === true){
+				$(idString).text(conMod + 2);
+			} else if($(idString).hasClass("inte") === true){
+				$(idString).text(inteMod + 2);
+			} else if($(idString).hasClass("wis") === true){
+				$(idString).text(wisMod + 2);	
+			} else if($(idString).hasClass("cha") === true){
+				$(idString).text(chaMod + 2);
+			}
+		} else{
+			if($(idString).hasClass("str") === true){
+				$(idString).text(strMod);
+			} else if($(idString).hasClass("dex") === true){
+				$(idString).text(dexMod);
+			} else if($(idString).hasClass("con") === true){
+				$(idString).text(conMod);
+			} else if($(idString).hasClass("inte") === true){
+				$(idString).text(inteMod);
+			} else if($(idString).hasClass("wis") === true){
+				$(idString).text(wisMod);
+			} else if($(idString).hasClass("cha") === true){
+				$(idString).text(chaMod);
+			} else{}
+		}
+	}	
+}
+
+//Spells Section
+
+$(document).on("click", ".spellName", function(){
+	$(".spell").hide();
+	var id = this.id;
+	console.log(id);
+	var newId = ("#" +id + "1");
+	console.log(newId);
+	$(newId).show();
 });
 
 $(".cantripPanel").click(function(){
@@ -102,14 +174,9 @@ $(".twoPanel").click(function(){
 			}else{}
 		}
 	});
-})
-
-$(".chapter").click(function(){
-	$(".chapterText").hide();
-	var chapterId = this.id;
-	var findChapter = (chapterId+"Content");
-	$("#"+findChapter).show();
 });
+
+//Notes Section
 
 $("#addNoteButton").click(function() {
 	console.log("am I clicking?");
@@ -210,6 +277,41 @@ $(document).on("click", ".delete", function(){
 	});
 });
 
+function displayNotes() {
+	$(".noteCategoryDisplay").empty();
+	$.get("api/notes/" + character, function(data) {
+		for(i=0; i < data.length; i++) {
+			var noteDiv = $("<div class='row'>");
+			noteDiv.attr("id", data[i].id);
+			noteDiv.attr("class", "appendedNote");
+			noteDiv.append("<div class='col-sm-10'>- " + data[i].note + "</div>");
+			//noteDiv.append("<div class='editNote'><span class='glyphicon glyphicon-pencil'></span></div>");
+			noteDiv.append("<div class='col-sm-1 deleteNote'><span class='glyphicon glyphicon-remove'></span></div>");
+			if(data[i].category === "ally") {
+				console.log(data[i].note);
+				$("#allyNoteDisplay").append(noteDiv);
+				console.log("appended");
+			} else if(data[i].category === "enemy") {
+				$("#enemyNoteDisplay").append(noteDiv);
+			} else if(data[i].category === "org") {
+				$("#orgNoteDisplay").append(noteDiv);
+			} else if(data[i].category === "backstory") {
+				$("#backstoryNoteDisplay").append(noteDiv);
+			} else if(data[i].category === "other") {
+				$("#otherNoteDisplay").append(noteDiv);
+			}
+		}
+	});
+}
+
+//Items Section
+
+$("#itemsButton").click(function(){
+	$(".inventoryDisplay").hide();
+	$("#items").show();
+	renderItems()
+});
+
 $(document).on("click", ".deleteItemButton", function(){
 	var itemId = $(this).parent().attr("id");
 	console.log(itemId);
@@ -258,31 +360,6 @@ $(document).on("click", ".itemName", function(){
 	}else{}
 });
 
-$("#addHp").click(function(){
-	addHp();
-});
-
-$("#subHp").click(function(){
-	subHp();
-});
-
-$("#weaponsButton").click(function(){
-	$(".inventoryDisplay").hide();
-	$("#weapons").show();
-});
-
-$("#itemsButton").click(function(){
-	$(".inventoryDisplay").hide();
-	$("#items").show();
-	renderItems()
-});
-
-$("#goldButton").click(function(){
-	console.log("gold!");
-	$(".inventoryDisplay").hide();
-	$("#gold").show();
-});
-
 $("#addItem").click(function(){
 	console.log("clicked");
 	var item = $("#nameField").val().trim();
@@ -308,97 +385,6 @@ $("#newItemButton").click(function(){
 	$("#newItemButton").hide();
 });
 
-function renderStats(data) {
-	strStat = data.str;
-	dexStat = data.dex;
-	conStat = data.con;
-	inteStat = data.inte;
-	wisStat = data.wis;
-	chaStat = data.cha;
-	$("#abilityScores").empty();
-	$("#abilityScores").show();
-	$("#maxHp").text(data.hp);
-	currentHp = data.hp;
-	var div = $("<div>");
-	div.append("<tr><th></th><th></th><th>Mod</th></tr>");
-	div.append("<tr><th>Strength</th><th>" + strStat + "</th><th> " + Math.floor((data.str-10)/2) + "</th></tr>");
-	div.append("<tr><th>Dexterity</th><th>" + dexStat + "</th><th> " + Math.floor((data.dex-10)/2) + "</th></tr>");
-	div.append("<tr><th>Constitution</th><th>" + conStat + "</th><th> " + Math.floor((data.con-10)/2) + "</th></tr>");
-	div.append("<tr><th>Wisdom</th><th>" + wisStat + "</th><th> " + Math.floor((data.wis-10)/2) + "</th></tr>");
-	div.append("<tr><th>Intelligence</th><th>" + inteStat + "</th><th> " + Math.floor((data.inte-10)/2) + "</th></tr>");
-	div.append("<tr><th>Charisma</th><th>" + chaStat + "</th><th> " + Math.floor((data.cha-10)/2) + "</th></tr>");
-	$("#abilityScores").append(div);
-}
-
-function renderSkills(data) {
-	var strMod = Math.floor((strStat-10)/2);
-	var dexMod = Math.floor((dexStat-10)/2);
-	var conMod = Math.floor((conStat-10)/2);
-	var inteMod = Math.floor((inteStat-10)/2);
-	var wisMod = Math.floor((wisStat-10)/2);
-	var chaMod = Math.floor((chaStat-10)/2);
-	var skillsArray = [data.acro, data.anim, data.arca, data.athl, data.dece, data.hist, data.insi, data.inti, data.inve, data.medi, data.natu, data.perc, data.perf, data.pers, data.reli, data.slei, data.stea, data.surv];
-	for(var i=0; i < skillsArray.length; i++) {
-		var idString = "#skill_" + [i];
-		if(skillsArray[i] === true) {
-			if($(idString).hasClass("str") === true){
-				$(idString).text(strMod + 2);
-			} else if($(idString).hasClass("dex") === true){
-				$(idString).text(dexMod + 2);
-			} else if($(idString).hasClass("con") === true){
-				$(idString).text(conMod + 2);
-			} else if($(idString).hasClass("inte") === true){
-				$(idString).text(inteMod + 2);
-			} else if($(idString).hasClass("wis") === true){
-				$(idString).text(wisMod + 2);	
-			} else if($(idString).hasClass("cha") === true){
-				$(idString).text(chaMod + 2);
-			}
-		} else{
-			if($(idString).hasClass("str") === true){
-				$(idString).text(strMod);
-			} else if($(idString).hasClass("dex") === true){
-				$(idString).text(dexMod);
-			} else if($(idString).hasClass("con") === true){
-				$(idString).text(conMod);
-			} else if($(idString).hasClass("inte") === true){
-				$(idString).text(inteMod);
-			} else if($(idString).hasClass("wis") === true){
-				$(idString).text(wisMod);
-			} else if($(idString).hasClass("cha") === true){
-				$(idString).text(chaMod);
-			} else{}
-		}
-	}	
-}
-
-function displayNotes() {
-	$(".noteCategoryDisplay").empty();
-	$.get("api/notes/" + character, function(data) {
-		for(i=0; i < data.length; i++) {
-			var noteDiv = $("<div class='row'>");
-			noteDiv.attr("id", data[i].id);
-			noteDiv.attr("class", "appendedNote");
-			noteDiv.append("<div class='col-sm-10'>- " + data[i].note + "</div>");
-			//noteDiv.append("<div class='editNote'><span class='glyphicon glyphicon-pencil'></span></div>");
-			noteDiv.append("<div class='col-sm-1 deleteNote'><span class='glyphicon glyphicon-remove'></span></div>");
-			if(data[i].category === "ally") {
-				console.log(data[i].note);
-				$("#allyNoteDisplay").append(noteDiv);
-				console.log("appended");
-			} else if(data[i].category === "enemy") {
-				$("#enemyNoteDisplay").append(noteDiv);
-			} else if(data[i].category === "org") {
-				$("#orgNoteDisplay").append(noteDiv);
-			} else if(data[i].category === "backstory") {
-				$("#backstoryNoteDisplay").append(noteDiv);
-			} else if(data[i].category === "other") {
-				$("#otherNoteDisplay").append(noteDiv);
-			}
-		}
-	});
-}
-
 function renderItems() {
 	$("#itemsDisplayArea").empty();
 	$.get("api/items/" + character, function(data) {
@@ -415,6 +401,16 @@ function renderItems() {
 	$("#newItemButton").show();
 }
 
+// Hp Section
+
+$("#addHp").click(function(){
+	addHp();
+});
+
+$("#subHp").click(function(){
+	subHp();
+});
+
 function displayHp() {
 	$("#currentHp").text(currentHp);
 }
@@ -428,3 +424,18 @@ function subHp() {
 	currentHp --;
 	$("#currentHp").text(currentHp);
 }
+
+//Weapons Section
+
+$("#weaponsButton").click(function(){
+	$(".inventoryDisplay").hide();
+	$("#weapons").show();
+});
+
+//Gold Section
+
+$("#goldButton").click(function(){
+	console.log("gold!");
+	$(".inventoryDisplay").hide();
+	$("#gold").show();
+});
