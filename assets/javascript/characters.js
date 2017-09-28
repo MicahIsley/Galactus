@@ -21,52 +21,6 @@ $(document).on("click", ".spellName", function(){
 	$(newId).show();
 });
 
-$("#search").click(function(){
-	var search = $("#searchForm").val().trim().toLowerCase();
-	var level = $("#levelSearch").val().trim();
-	console.log(level);
-	$(".learn").remove();
-	console.log(search);
-	$(".spell").hide();
-	$("." + search + "." + level).show();
-	if($(".spell").is(":visible")){
-		$(".panel-heading").append("<button class='learn'>Learn</button>");
-	}
-});
-
-$("#searchForm").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#search").click();
-    }
-});
-
-$(".choose").click(function(){
-	var userA = this.id;
-	characterLearn = userA.replace("A", "");
-	console.log(character);
-	$(".choose").css("background", "white")
-	$(this).css("background", "#46ce46");
-})
-
-$(document).on("click", ".learn", function(){
-	var nameOfSpell = $(this).parent().parent().attr("id");
-	var levelOfSpell = $(this).parent().parent().attr("class").split(" ").pop();
-	var editedName = nameOfSpell.slice(0, -1);
-	console.log(editedName);
-	event.preventDefault();
-	var newSpell = {
-		name: editedName,
-		level: levelOfSpell,
-		character: characterLearn
-	};
-
-	$.post("/api/new", newSpell)
-		.done(function(data) {
-			console.log(data);
-		});
-	$(this).text("Learned");
-});
-
 $(".character").click(function(){
 	$("#weapons").hide();
 	$("#items").hide();
@@ -422,15 +376,16 @@ function displayNotes() {
 	$(".noteCategoryDisplay").empty();
 	$.get("api/notes/" + character, function(data) {
 		for(i=0; i < data.length; i++) {
-			var noteDiv = $("<div>");
+			var noteDiv = $("<div class='row'>");
 			noteDiv.attr("id", data[i].id);
 			noteDiv.attr("class", "appendedNote");
-			noteDiv.append(data[i].note);
+			noteDiv.append("<div class='col-sm-10'>- " + data[i].note + "</div>");
 			//noteDiv.append("<div class='editNote'><span class='glyphicon glyphicon-pencil'></span></div>");
-			noteDiv.append("<div class='deleteNote'><span class='glyphicon glyphicon-remove'></span></div>");
+			noteDiv.append("<div class='col-sm-1 deleteNote'><span class='glyphicon glyphicon-remove'></span></div>");
 			if(data[i].category === "ally") {
 				console.log(data[i].note);
 				$("#allyNoteDisplay").append(noteDiv);
+				console.log("appended");
 			} else if(data[i].category === "enemy") {
 				$("#enemyNoteDisplay").append(noteDiv);
 			} else if(data[i].category === "org") {

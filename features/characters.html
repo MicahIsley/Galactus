@@ -13,11 +13,11 @@
 
 	<body>
 		<div class="row topRow">
-			<ul class="nav nav-tabs">
-					<li class="mainTab" role="presentation"><a href="./">Main Menu</a></li>
-					<li class="mainTab" role="presentation"><a href="./adventure-log">Story</a></li>
-					<li class="mainTab" role="presentation"><a href="./spell-list">Spell List</a></li>
-			</ul>
+			<div class="col-sm-4" id="leftMenuOptions">
+				<div class="mainTab"><a href="./adventure-log">Story</a></div>
+				<div class="mainTab"><a href="./spell-list">Spell List</a></div>
+			</div>
+			<a href="./"><div class="col-sm-4 col-sm-offset-1" id="mLogo">M</div></a>
 		</div>
 		<div class="container-fluid">
 			<div class="row" id="characterRow">
@@ -2433,7 +2433,7 @@
 									<!--<div id="updateNoteButton">Update</div>-->
 								</div>	
 							</div>
-							<div class="row">
+							<div class="row" id="noteSecondRow">
 								<div class="noteCategoryDisplay" id="allyNoteDisplay">
 								</div>
 								<div class="noteCategoryDisplay" id="enemyNoteDisplay">
@@ -2457,7 +2457,6 @@
 
 								
 	</body>
-	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="javascript/logic.js"></script>
+	<script type="text/javascript" src="javascript/characters.js"></script>
 </html>			

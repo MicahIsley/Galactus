@@ -1,0 +1,10 @@
+.spell {
+	display: none;
+}
+
+.learn {
+	float: right;
+	background: green;
+	border-radius: 5px;
+	border-width: 0px;
+}

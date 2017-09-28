@@ -14,6 +14,6 @@ module.exports = function(app) {
 	});
 
 	app.get("/spell-list", function(req, res) {
-		res.sendFile(path.join(__dirname + "/../../spell-list.html"));
+		res.sendFile(path.join(__dirname + "/../../features/spell-search.html"));
 	});
 };
