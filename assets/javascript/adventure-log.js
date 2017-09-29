@@ -1,3 +1,5 @@
+//Chapter function
+
 $(".chapter").click(function(){
 	$(".chapterText").hide();
 	var chapterId = this.id;

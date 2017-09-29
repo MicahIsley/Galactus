@@ -72,37 +72,6 @@ body {
 	margin-left: 50px;
 }
 
-.mainMenu {
-	height: 50px;
-	width: 160px;
-	background: gold;
-	border-width: 3px;
-	border-color: black;
-	border-style: solid;
-	margin-bottom: 10px;
-	text-align: center;
-	font-size: 30px;
-	box-shadow: 6px 6px 3px #4e4e4e;
-}
-
-.mainMenu:hover {
-	box-shadow: 0px 0px 0px;
-}
-
-#mainMenuButtons {
-	margin-top: 10%;
-	margin-left: 28%;
-}
-
-#log_title {
-	position: absolute;
-	top: 350px;
-}
-
-.id {
-	font-style: italic;
-}
-
 .character {
 	text-align: center;
 	height: 55px;
@@ -132,6 +101,7 @@ body {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 }
+
 .sectionTitles {
 	color: black;
 	margin: 0px;
@@ -162,25 +132,6 @@ th {
 	left: 21px;
 	bottom: 5px;
 }
-.return {
-	width: 100%;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 12px;
-    margin-top: 22px;
-}
-
-.return:hover {
-	background: darkgreen;
-	border-style: solid;
-	border-width: 2px;
-	border-color: grey;
-}
 
 .character_title {
 	height: 60px;
@@ -198,17 +149,6 @@ th {
 #classIcon {
 	padding: 3px;
 	text-align: center;
-}
-
-.spells {
-	clear: both;
-	position: relative;
-	top: 50px;
-	left: 100px;
-}
-
-.main_stats {
-	margin-left: 50px;
 }
 
 ul {
@@ -240,10 +180,6 @@ a:active {
 
 .spell {
 	display: none;
-}
-
-.input-group {
-	margin: 15px;
 }
 
 .panel-heading {

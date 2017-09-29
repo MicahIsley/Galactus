@@ -423,7 +423,7 @@ function addHp() {
 function subHp() {
 	currentHp --;
 	$("#currentHp").text(currentHp);
-}
+}  
 
 //Weapons Section
 

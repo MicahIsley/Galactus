@@ -1,4 +1,8 @@
+//Global Variables
+
 var characterLearn;
+
+//Search Function 
 
 $("#search").click(function(){
 	var search = $("#searchForm").val().trim().toLowerCase();
@@ -19,6 +23,8 @@ $("#searchForm").keyup(function(event){
     }
 });
 
+// Pick who is learning spell
+
 $(".choose").click(function(){
 	var userA = this.id;
 	characterLearn = userA.replace("A", "");
@@ -26,6 +32,8 @@ $(".choose").click(function(){
 	$(".choose").css("background", "white")
 	$(this).css("background", "#46ce46");
 })
+
+//Post new spell to database
 
 $(document).on("click", ".learn", function(){
 	var nameOfSpell = $(this).parent().parent().attr("id");
