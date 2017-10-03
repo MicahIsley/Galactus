@@ -8,7 +8,8 @@ module.exports = function(sequelize, DataTypes) {
     wis: DataTypes.INTEGER,
     inte: DataTypes.INTEGER,
     cha: DataTypes.INTEGER,
-    hp: DataTypes.INTEGER
+    hp: DataTypes.INTEGER,
+    gold: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {

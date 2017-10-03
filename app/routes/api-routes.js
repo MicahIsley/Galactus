@@ -140,4 +140,17 @@ module.exports = function(app) {
 			res.json(result);
 		});
 	});
+
+	app.put("/api/updateGold/:character", function(req, res) {
+		Character_stats.update({
+			gold: req.body.gold
+		}, {
+			where: {
+				name: req.body.name
+			}
+		}).then(function(result) {
+			console.log("WHat is this" + result);
+			res.json(result);
+		});
+	});
 };

@@ -35,6 +35,7 @@ $(".character").click(function(){
 });
 
 function renderStats(data) {
+	console.log(data);
 	strStat = data.str;
 	dexStat = data.dex;
 	conStat = data.con;
@@ -54,7 +55,8 @@ function renderStats(data) {
 	div.append("<tr><th>Intelligence</th><th>" + inteStat + "</th><th> " + Math.floor((data.inte-10)/2) + "</th></tr>");
 	div.append("<tr><th>Charisma</th><th>" + chaStat + "</th><th> " + Math.floor((data.cha-10)/2) + "</th></tr>");
 	$("#abilityScores").append(div);
-}
+	$("#goldDisplay").text("Gold: " + data.gold);
+};
 
 //Skills Section
 
@@ -106,7 +108,7 @@ function renderSkills(data) {
 			} else{}
 		}
 	}	
-}
+};
 
 //Spells Section
 
@@ -426,3 +428,25 @@ $("#goldButton").click(function(){
 	$(".inventoryDisplay").hide();
 	$("#gold").show();
 });
+
+$("#goldSubmit").click(function(){
+	var updatedGold = $("#goldField").val().trim();
+	var newAmount = {
+		name: character,
+		gold: updatedGold};
+	$.ajax({
+      method: "PUT",
+      url: "/api/updateGold/" + character,
+      data: newAmount
+    })
+    .done(function() {
+    	renderGold();
+    	$("#goldField").val(" ");
+    })
+});
+
+function renderGold() {
+	$.get("/api/character_stats/" + character, function(data) {
+		$("#goldDisplay").text("Gold: " + data.gold);
+	});
+};

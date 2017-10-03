@@ -39,6 +39,9 @@ module.exports = {
       },
       hp: {
         type: Sequelize.INTEGER
+      },
+      gold: {
+        type: Sequelize.INTEGER
       }
     });
   },
