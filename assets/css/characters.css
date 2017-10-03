@@ -7,7 +7,7 @@ body {
 }
 
 .topRow{
-	background: #2a1965;
+	background: url("http://www.zastavki.com/pictures/originals/2015/Backgrounds_Masonry_made_of_stone__background_103637_.jpg");
 	border-style: solid;
 	border-width: 0px 0px 2px 0px;
 	border-color: black;
@@ -44,28 +44,23 @@ body {
 	box-shadow: 0px 3px 2px #232323;
 }
 
-.nav {
-	margin-left: 50px;
-}
-
-.nav-tabs {
-	border-color: #2a1965;
-}
-
 .mainTab {
-	width: 100px;
+	background: rgba(214, 214, 214, .5);
+	width: 150px;
 	height: 50px;
-	border-style: solid;
-	border-width: 2px 2px 0px 2px;
-	border-color: black;
-	border-radius: 10px 10px 0px 0px;
-	margin: 2px;
-	background: white;
+	box-shadow: 0px 3px 15px black;
+	border-radius: 15px;
+	margin: 10px;
 	float: left;
 	text-align: center;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
 	padding-top: 10px;
+}
+
+.mainTab:hover {
+	color: black;
+	box-shadow: 0px 0px 0px black;
 }
 
 #leftMenuOptions {
@@ -80,9 +75,10 @@ body {
 	color: black;
 	background: white;
 	border-width: 4px;
-	border-color: black;
+	border-color: #606ea2;
 	border-style: solid;
-	border-radius: 25px;
+	border-radius: 10px 0px 10px 0px;
+	box-shadow: 0px 3px 2px #232323;
 	float: left;
 	padding-top: 15px;
 	margin: 5px;
@@ -90,11 +86,12 @@ body {
 }
 
 .character:hover {
-	border-color: #1d2546;
+	box-shadow: 0px 0px 0px black;
+	border-color: #e62a2a;
 }
 
 #characterRow {
-	background: #606ea2;
+	background: #800000;
 	border-style: solid;
 	border-color: black;
 	border-width: 0px 0px 3px 0px;
@@ -170,7 +167,6 @@ a:visited {
 
 a:hover {
 	text-decoration: none;
-	color: #7d7028;
 }
 
 a:active {
@@ -520,8 +516,7 @@ footer {
 }
 
 .inventoryDisplay {
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-left: 25px;
 }
 
 #weapons {
@@ -575,12 +570,45 @@ footer {
 	font-size: 14px;
 }
 
+#xpProgressBar {
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	height: 40px;
+	width: 200px;
+}
+
+#xpProgressFill {
+	background: green;
+	width: 55%;
+	height: 34px;
+}
+
 #itemTransferMenu {
 	display: none;
 }
 
 #gold {
+	padding-left: 10px;
 	display: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#goldField {
+	margin: 7px 0px 7px 0px;
+}
+
+#goldSubmit {
+	background: #606ea2;
+	border-radius: 12px;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#goldSubmit:hover {
+	background: #1d2546;
 }
 
 .fenla {

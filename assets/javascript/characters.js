@@ -272,8 +272,6 @@ $(document).on("click", ".delete", function(){
 		url: "api/deleteSpell/" + spellId
 	})
 	.done(function(deldata) {
-		console.log(deldata);
-		console.log("Deleted Successfully!");
 	});
 });
 
@@ -288,9 +286,7 @@ function displayNotes() {
 			//noteDiv.append("<div class='editNote'><span class='glyphicon glyphicon-pencil'></span></div>");
 			noteDiv.append("<div class='col-sm-1 deleteNote'><span class='glyphicon glyphicon-remove'></span></div>");
 			if(data[i].category === "ally") {
-				console.log(data[i].note);
 				$("#allyNoteDisplay").append(noteDiv);
-				console.log("appended");
 			} else if(data[i].category === "enemy") {
 				$("#enemyNoteDisplay").append(noteDiv);
 			} else if(data[i].category === "org") {
@@ -314,13 +310,11 @@ $("#itemsButton").click(function(){
 
 $(document).on("click", ".deleteItemButton", function(){
 	var itemId = $(this).parent().attr("id");
-	console.log(itemId);
 	$.ajax({
 		method: "DELETE",
 		url: "api/deleteItem/" + itemId
 	})
 	.done(function(deldata) {
-		console.log(deldata);
 		renderItems();
 	});
 });
@@ -332,7 +326,6 @@ $(document).on("click", ".updateOwnerButton", function() {
 
 $("#transferButton").click(function() {
 	var recipient = $("#itemTransfer").val().trim();
-	console.log(transferItemId);
 	var newOwner = {
 		id: transferItemId,
 		owner: recipient};
@@ -349,11 +342,9 @@ $("#transferButton").click(function() {
 
 $(document).on("click", ".itemName", function(){
 	var description = $(this).children().attr("id");
-	console.log(itemDescriptionToggle);
 	if(itemDescriptionToggle === true){
 		$("#" + description).show();
 		itemDescriptionToggle = false;
-		console.log(itemDescriptionToggle);
 	}else if(itemDescriptionToggle === false){
 		$("#" + description).hide();
 		itemDescriptionToggle = true;
@@ -361,7 +352,6 @@ $(document).on("click", ".itemName", function(){
 });
 
 $("#addItem").click(function(){
-	console.log("clicked");
 	var item = $("#nameField").val().trim();
 	var description = $("#descriptionField").val().trim();
 	var owner = $("#ownerField").val().trim();
@@ -372,7 +362,6 @@ $("#addItem").click(function(){
 	};
 	$.post("/api/new/item", newItem)
 		.done(function(data) {
-			console.log(data);
 		});
 	$("#itemForm").hide();
 	$("#itemsDisplayArea").show();
@@ -388,7 +377,6 @@ $("#newItemButton").click(function(){
 function renderItems() {
 	$("#itemsDisplayArea").empty();
 	$.get("api/items/" + character, function(data) {
-		console.log(data);
 		for(i=0; i < data.length; i++) {
 			var itemDiv = $("<div class='row itemRow'>");
 			itemDiv.attr("id", data[i].id);
@@ -435,7 +423,6 @@ $("#weaponsButton").click(function(){
 //Gold Section
 
 $("#goldButton").click(function(){
-	console.log("gold!");
 	$(".inventoryDisplay").hide();
 	$("#gold").show();
 });

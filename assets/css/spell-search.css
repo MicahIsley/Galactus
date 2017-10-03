@@ -1,32 +1,48 @@
+.container-fluid {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
 .topRow{
-	background: #2a1965;
+	background: url("http://www.zastavki.com/pictures/originals/2015/Backgrounds_Masonry_made_of_stone__background_103637_.jpg");
 	border-style: solid;
 	border-width: 0px 0px 2px 0px;
 	border-color: black;
 }
 
-.nav {
+#leftMenuOptions {
 	margin-left: 50px;
 }
 
-.nav-tabs {
-	border-color: #2a1965;
+#mLogo {
+	width: 70px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+	font-size: 46px;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 50px;
 }
 
 .mainTab {
-	width: 100px;
+	background: rgba(214, 214, 214, .5);
+	width: 150px;
 	height: 50px;
-	border-style: solid;
-	border-width: 2px 2px 0px 2px;
-	border-color: black;
-	border-radius: 10px 10px 0px 0px;
-	margin: 2px;
-	background: white;
+	box-shadow: 0px 3px 15px black;
+	border-radius: 15px;
+	margin: 10px;
 	float: left;
 	text-align: center;
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: bold;
 	padding-top: 10px;
+}
+
+.mainTab:hover {
+	color: black;
+	box-shadow: 0px 0px 0px black;
 }
 
 .spell {
@@ -38,4 +54,17 @@
 	background: green;
 	border-radius: 5px;
 	border-width: 0px;
+}
+
+.learn:hover {
+	background: #013a01;
+}
+
+.panel > .panel-heading {
+	font-size: 24px;
+	background: #e62a2a;
+	border-color: #606ea2;
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 10px 0px 10px 0px;
 }

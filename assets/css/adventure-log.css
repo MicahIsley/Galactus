@@ -2,6 +2,48 @@ body {
 	background: url(http://www.powerpointhintergrund.com/uploads/2017/05/home-mini-sacrament-kit-aaronic-priesthood-booklet-angels-booklet--1.jpeg);
 }
 
+.topRow{
+	background: url("http://www.zastavki.com/pictures/originals/2015/Backgrounds_Masonry_made_of_stone__background_103637_.jpg");
+	border-style: solid;
+	border-width: 0px 0px 2px 0px;
+	border-color: black;
+}
+
+#leftMenuOptions {
+	margin-left: 50px;
+}
+
+#mLogo {
+	width: 70px;
+	padding: 0px;
+	color: white;
+	text-align: center;
+	font-size: 46px;
+	border-width: 3px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 50px;
+}
+
+.mainTab {
+	background: rgba(214, 214, 214, .5);
+	width: 150px;
+	height: 50px;
+	box-shadow: 0px 3px 15px black;
+	border-radius: 15px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.mainTab:hover {
+	color: black;
+	box-shadow: 0px 0px 0px black;
+}
+
 .chapter {
 	height: 70px;
 	width: 100%;

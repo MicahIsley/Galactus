@@ -14,8 +14,8 @@
 	<body>
 		<div class="row topRow">
 			<div class="col-sm-4" id="leftMenuOptions">
-				<div class="mainTab"><a href="./adventure-log">Story</a></div>
-				<div class="mainTab"><a href="./spell-list">Spell List</a></div>
+				<a href="./adventure-log"><div class="mainTab">Story</div></a>
+				<a href="./spell-list"><div class="mainTab">Spell List</div></a>
 			</div>
 			<a href="./"><div class="col-sm-4 col-sm-offset-1" id="mLogo">M</div></a>
 		</div>
@@ -35,7 +35,7 @@
 				</div>
 			</div>	
 			<div class="row contentSection">		
-				<div class="col-sm-4" id="nameSection">
+				<div class="col-sm-3" id="nameSection">
 					<div class="row">
 						<h1 class="character_title fenla">Fenla Arila</h1>
 						<h1 class="character_title clithsbee">Clithsbee</h1>
@@ -92,13 +92,18 @@
 					<img src="/images/barbarian-symbol.png" alt="Responsive image" class="clithsbee">
 					<img src="/images/rogue-symbol.png" alt="Responsive image" class="minime">
 				</div>
-				<div class="col-sm-3 col-sm-offset-1 contentSection" id="hpSection">
+				<div class="col-sm-3 contentSection" id="hpSection">
 					<h3 id="maxHpLabel">Max HP: <span id="maxHp"></span></h3>
 					<div id="hpArea">
 						<div class="hpButton" id="addHp">+</div>
 						<span id="currentHp"></span>
 						<div class="hpButton" id="subHp">-</div>
 					</div>	
+				</div>
+				<div class="col-sm-3" id="experienceSection">
+					<div id="xpProgressBar">
+						<div id="xpProgressFill">1000/1800</div>
+					</div>
 				</div>
 			</div>		
 			<div class="row">
@@ -230,7 +235,17 @@
 					        </div>
 						</div>
 						<div class="inventoryDisplay" id="gold">
-							<div>Gold: </div>
+							<div class="row">
+								<div id="goldDisplay">Gold: </div>
+							</div>
+							<div class="row">
+								<div class="col-xs-8">
+									<input type="text" class="form-control" id="goldField" placeholder="Gold">
+								</div>
+								<div class="col-xs-3">
+									<div id="goldSubmit">Go</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
