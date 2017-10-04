@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/MicahIsley/Galactus.git"
   },
+  "engine": {
+    "npm": "5.4.2"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
