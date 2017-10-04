@@ -12,7 +12,7 @@
     "url": "git+https://github.com/MicahIsley/Galactus.git"
   },
   "engine": {
-    "npm": "5.3.0"
+    "node": "8.3.0"
   },
   "author": "",
   "license": "ISC",
