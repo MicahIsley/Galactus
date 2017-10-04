@@ -3,6 +3,8 @@ var Spells = require("../../models/")["Spells"];
 var Skills = require("../../models/")["Skills"];
 var Notes = require("../../models/")["Notes"];
 var Items = require("../../models/")["Items"];
+var Equipment = require("../../models/")["Equipment"];
+var Character_weapons = require("../../models")["Character_weapons"];
 
 module.exports = function(app) {
 
@@ -22,6 +24,26 @@ module.exports = function(app) {
 				res.json(results);
 			});
 		}	
+	});
+
+	app.get("/api/weapons/:character", function(req, res) {
+		Character_weapons.findAll({
+			where: {
+				name: req.params.character
+			}
+		}).then(function(results) {
+			res.json(results);
+		});
+	});
+
+	app.get("/api/weaponStats/:weapon", function(req, res) {
+		Equipment.findOne({
+			where: {
+				name: req.params.weapon
+			}
+		}).then(function(results) {
+			res.json(results);
+		});
 	});
 
 	app.get("/api/spells/:character", function(req, res) {

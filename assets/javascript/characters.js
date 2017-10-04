@@ -12,6 +12,7 @@ var wisStat;
 var chaStat;
 var updateNoteId;
 var itemDescriptionToggle = true;
+var weaponPropertiesToggle = true;
 var transferItemId;
 
 //Character selection
@@ -408,19 +409,55 @@ function displayHp() {
 function addHp() {
 	currentHp ++;
 	$("#currentHp").text(currentHp);
-}
+};
 
 function subHp() {
 	currentHp --;
 	$("#currentHp").text(currentHp);
-}  
+};  
 
 //Weapons Section
 
 $("#weaponsButton").click(function(){
 	$(".inventoryDisplay").hide();
 	$("#weapons").show();
+	$("#weapons").empty();
+	renderWeapons();
 });
+
+$(document).on("click", ".weaponObject", function(){
+	var properties = $(this).parent().attr("id");
+	if(weaponPropertiesToggle === true){
+		$("#weapon" + properties).show();
+		weaponPropertiesToggle = false;
+	}else if(weaponPropertiesToggle === false){
+		$("#weapon" + properties).hide();
+		weaponPropertiesToggle = true;
+	}else{}
+});
+
+function renderWeapons() {
+	$.get("/api/weapons/" + character, function(data) {
+		getWeaponStats(data)
+	});
+};
+
+function getWeaponStats(data) {
+	for(i=0; i<data.length; i++){
+		console.log(data[i].weapon);
+		$.get("/api/weaponStats/" + data[i].weapon, function(data) {
+			displayWeaponStats(data);
+		});
+	}
+};
+
+function displayWeaponStats(data){
+	var weaponDiv = $("<div class='row weaponRow'>");
+	weaponDiv.attr("id", data.id);
+	weaponDiv.append("<div class='row weaponObject'><div class='weaponName'>" + data.name + ":</div><div class='weaponDamage'>" + data.damage + " damage</div></div>");
+	weaponDiv.append("<div class='row weaponProperties' id='weapon" + data.id + "'>" + data.properties + "</div>");
+	$("#weapons").append(weaponDiv);
+}
 
 //Gold Section
 

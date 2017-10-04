@@ -611,6 +611,25 @@ footer {
 	background: #1d2546;
 }
 
+.weaponName {
+	font-weight: bold;
+	float: left;
+}
+
+.weaponDamage {
+	margin-left: 15px;
+	float: left;
+}
+
+.weaponProperties {
+	display: none;
+	margin-left: 5px;
+}
+
+.weaponRow {
+	margin-left: 10px;
+}
+
 .fenla {
 	display: none;
 }
