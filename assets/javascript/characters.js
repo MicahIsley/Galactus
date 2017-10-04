@@ -452,6 +452,7 @@ function getWeaponStats(data) {
 };
 
 function displayWeaponStats(data){
+	console.log(data);
 	var weaponDiv = $("<div class='row weaponRow'>");
 	weaponDiv.attr("id", data.id);
 	weaponDiv.append("<div class='row weaponObject'><div class='weaponName'>" + data.name + ":</div><div class='weaponDamage'>" + data.damage + " damage</div></div>");
