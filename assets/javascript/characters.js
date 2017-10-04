@@ -448,6 +448,7 @@ function getWeaponStats(data) {
 	for(i=0; i<data.length; i++){
 		$.get("/api/weaponStats/" + data[i].weapon, function(data) {
 		}).done(function(data){
+			console.log(data);
 			displayWeaponStats(data);
 		});
 	}
