@@ -439,6 +439,8 @@ $(document).on("click", ".weaponObject", function(){
 function renderWeapons() {
 	$.get("/api/weapons/" + character, function(data) {
 		getWeaponStats(data)
+	}).done(function(){
+		console.log("get weapons finshed");
 	});
 };
 
@@ -447,6 +449,9 @@ function getWeaponStats(data) {
 		console.log(data[i].weapon);
 		$.get("/api/weaponStats/" + data[i].weapon, function(data) {
 			displayWeaponStats(data);
+		}).done(function(){
+			console.log(data);
+			console.log("get stats finshed");
 		});
 	}
 };
