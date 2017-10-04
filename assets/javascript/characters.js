@@ -440,25 +440,19 @@ function renderWeapons() {
 	$.get("/api/weapons/" + character, function(data) {
 		getWeaponStats(data)
 	}).done(function(){
-		console.log("get weapons finshed");
 	});
 };
 
 function getWeaponStats(data) {
 	for(i=0; i<data.length; i++){
-		console.log(data[i].weapon);
 		$.get("/api/weaponStats/" + data[i].weapon, function(data) {
-			console.log(data);
-			displayWeaponStats(data);
 		}).done(function(data){
-			console.log(data);
-			console.log("get stats finshed");
+			displayWeaponStats(data);
 		});
 	}
 };
 
 function displayWeaponStats(data){
-	console.log(data);
 	var weaponDiv = $("<div class='row weaponRow'>");
 	weaponDiv.attr("id", data.id);
 	weaponDiv.append("<div class='row weaponObject'><div class='weaponName'>" + data.name + ":</div><div class='weaponDamage'>" + data.damage + " damage</div></div>");
