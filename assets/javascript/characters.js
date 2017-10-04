@@ -438,8 +438,8 @@ $(document).on("click", ".weaponObject", function(){
 
 function renderWeapons() {
 	$.get("/api/weapons/" + character, function(data) {
-		getWeaponStats(data)
-	}).done(function(){
+	}).done(function(data){
+		getWeaponStats(data);
 	});
 };
 
