@@ -42,6 +42,9 @@ module.exports = {
       },
       gold: {
         type: Sequelize.INTEGER
+      },
+      xp: {
+        type: Sequelize.INTEGER
       }
     });
   },

@@ -57,6 +57,10 @@ function renderStats(data) {
 	div.append("<tr><th>Charisma</th><th>" + chaStat + "</th><th> " + Math.floor((data.cha-10)/2) + "</th></tr>");
 	$("#abilityScores").append(div);
 	$("#goldDisplay").text("Gold: " + data.gold);
+	console.log(data.xp);
+	$("#xpProgressFill").text(data.xp + "/2700");
+	var xpPercentage = (data.xp/2700) * 100;
+	$("#xpProgressFill").css("width", xpPercentage + "%");
 };
 
 //Skills Section

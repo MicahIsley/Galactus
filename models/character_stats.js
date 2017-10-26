@@ -9,7 +9,8 @@ module.exports = function(sequelize, DataTypes) {
     inte: DataTypes.INTEGER,
     cha: DataTypes.INTEGER,
     hp: DataTypes.INTEGER,
-    gold: DataTypes.INTEGER
+    gold: DataTypes.INTEGER,
+    xp: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {
