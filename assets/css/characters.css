@@ -581,6 +581,7 @@ footer {
 
 #xpProgressFill {
 	background: green;
+	width: 0%;
 	height: 34px;
 }
 
@@ -690,6 +691,9 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+	#mLogo {
+		margin-left: 80px;
+	}
 	#hpSection {
 		margin-left: 28%;
 	}
