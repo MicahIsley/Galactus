@@ -17,7 +17,7 @@
 		<div class="row">
 			<div class="page-header">
   				<h1>Spell List</h1>
-  					<p>Contains all spells through Lvl. 2</p>
+  					<p>Contains all spells through Lvl. 4</p>
 			</div>
 		</div>		
 		<div class="row">
@@ -38,11 +38,12 @@
 			            <option value="three">3</option>
 			            <option value="four">4</option>
 		      		</select>
+		      	</div>
   			</div><!-- /.col-lg-6 -->
 		</div><!-- /.row -->
 		<div class="row">
 			<div class="col-sm-3" id="pickCharacterTitle">
-				<h3>Pick your character</h2>
+				<h3>Pick your character</h3>
 			</div>
 			<div class="col-sm-5">	
 				<div class="btn-group" role="group" aria-label="...">
@@ -83,6 +84,28 @@
 							<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.</p>
 							<p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p>
 							<p>This spell's damage increases by 1d8 when you reach 5th level(2d8), 11th level(3d8), and 17th level(4d8).</p>
+			</div>
+			<div class="panel panel-primary spell" id="createBonfire1">
+				<div class="panel-heading">Create Bonfire</div>
+					<p>Conjuration Cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentraion, up to 1 minute</h4>
+							<p>You create a bonfire on the ground that you can see within range. Until the spell ends, the bonfire fills a 5-foot cube. Any creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 fire damage. A creature must also make the saving throw when it enters the bonfire's space for the first time on a turn or ends its turn there.</p>
+							<p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+			</div>
+			<div class="panel panel-primary spell" id="controlFlames1">
+				<div class="panel-heading">Control Flames</div>
+					<p>Transmutation cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Instantaneous or 1 hour</h4>
+							<p>You choose a nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:</p>
+							<li>You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.</li>
+							<li>You instantaneously extinguish the flames within the cube.</li>
+							<li>You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.</li>
+							<li>You cause simple shapes-such as the vague form of a crature, an inanimate object, or a location-to appear within the flames and animate as you like. The shapes last for 1 hour</li>
+							<p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
 			</div>
 			<div class="panel panel-primary spell bard sorcerer wizard cantrip" id="dancingLights1">
 				<div class="panel-heading">Dancing Lights</div>
@@ -131,6 +154,15 @@
 					<h4>Duration: Concentration, up to 1 minute</h4>
 						<p>For the duration, you have advantage on all Charisma checks direced at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways(at the DM's discretion), depending on the nature of your interaction with it.</p>
 			</div>
+			<div class="panel panel-primary spell" id="frostbite1">
+				<div class="panel-heading">Frostbite</div>
+					<p>Evocation cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You cause numbing frost to form on one creature that you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes 1d6 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.</p>
+							<p>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</div>
 			<div class="panel panel-primary spell cleric druid cantrip" id="guidance1">
 				<div class="panel-heading">Guidance</div>
 					<p>Divination cantrip</p>
@@ -138,6 +170,17 @@
 						<h4>Range: Touch</h4>
 						<h4>Duration: Concentration, up to 1 minute</h4>
 							<p>You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of it choice. It can roll the die before or after making the ability check. The spell then ends.</p>
+			</div>
+			<div class="panel panel-primary spell" id="gust1">
+				<div class="panel-heading">Gust</div>
+					<p>Transmutation cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You seize the air and compel it to create one of the following effects at a point you can see within range:</p>
+								<li>One Medium or smaller creature that you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.</li>
+								<li>You create a small blast of air capable of moving one object that is neither held nor carried and that weighs no more than 5 pounds. The object is pushed up to 10 feet away from you. It isn't pushed with enough force to cause damage.</li>
+								<li>You create a harmless sensory affect using air, such as causing leaves to rustle, wind to slam shutters shut, or your clothing to rippli in a breeze.</li>
 			</div>
 			<div class="panel panel-primary spell bard cleric sorcerer wizard cantrip" id="light1">
 				<div class="panel-heading">Light</div>
@@ -157,6 +200,15 @@
 							<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or it you cast this spell again.</p>
 							<p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p>
 							<p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p>
+			</div>
+			<div class="panel panel-primary spell" id="magicStone1">
+				<div class="panel-heading">Magic Stone</div>
+					<p>Transmutation cantrip</p>
+						<h4>Casting Time: 1 bonus action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: 1 minute</h4>
+							<p>You touch one to three pebbles and imbue them with magic. You are someone else can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. If thrown, it has a range of 60 feet. If someone else attacks with the pebble, that attacker adds your spellcasting ability modifier, not the attacker's, to the attack roll. On a hit the target takes bludgeoning damage equal to 1d6 + your spellcasting ability modifier. Hit or miss, the spell then ends on the stone.</p>
+							<p>If you cast this spell again, the spell ends early on any pebbles still affected by it.</p>
 			</div>
 			<div class="panel panel-primary spell bard cleric druid sorcerer wizard cantrip" id="mending1">
 				<div class="panel-heading">Mending</div>
@@ -186,6 +238,18 @@
 							<p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p>
 							<p>If you create an image of an object-such as a char, muddy footprints, or a small chest-it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p>
 							<p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence(Investigation)check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>
+			</div>
+			<div class="panel panel-primary spell" id="moldEarth1">
+				<div class="panel-heading">Mold Earth</div>
+					<p>Transmutation cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Instantaneous or 1 hour</h4>
+							<p>You choose a portion of dirt or stone that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways.</p>
+								<li>If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. This movement doesn't have enough force to cause damage.</li>
+								<li>You cause shapes, colors, or both to appear on the dirt or stone, spelling out words, creating images, or shaping patterns. The changes last for 1 hour.</li>
+								<li>If the dirt or stone you target is on the ground, you cause it to become difficult terrain. Alternatively, you can cause the ground to become normal terrain if it is already difficult terrain. This change lasts for 1 hour.</li>
+							<p>If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
 			</div>
 			<div class="panel panel-primary spell druid sorcerer warlock wizard cantrip" id="poisonSpray1">
 				<div class="panel-heading">Poison Spray</div>
@@ -247,6 +311,19 @@
 							<p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.</p>
 							<p>The spell's damage increases by 1d8 when you reach 5th level(2d8), 11th level(3d8), and 17th level(4d8).</p>
 			</div>
+			<div class="panel panel-primary spell" id="shapeWater1">
+				<div class="panel-heading">Shape Water</div>
+					<p>Transmutation cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Instantaneous or 1 hour</h4>
+							<p>You choose an area of water that you can see within range and that fits within a 5-foot cube. You manipulate it in one of the following ways:</p>
+								<li>You instantaneously move or otherwise change the flow of the water as you direct, up to 5 feet in any direction. This movement doesn't have enough force to cause damage.</li>
+								<li>You cause the water to form into simple shapes and animate at your direction. This change lasts for 1 hour</li>
+								<li>You change the water's color or opacity. The water must be changed in the same way throughout. This change lasts for 1 hour.</li>
+								<li>You freeze the water, provided that there are no creatures in it. The water unfreezes in 1 hour.</li>
+							<p>If you cast this spell multiple times, you can have no more than two of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+			</div>
 			<div class="panel panel-primary spell druid cantrip" id="shillelagh1">
 				<div class="panel-heading">Shillelagh</div>
 					<p>Transmutation cantrip</p>
@@ -296,6 +373,15 @@
 							<p>You create a long, vine-like whip covered in thorns that lashes out at your command toward a creature in range. Make a melee spell attack against the target. If the attack hits, the creature takes 1d6 piercing damage, and if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.</p>
 							<p>The spell's damage increases by 1d6 when you reach 5th level(2d6), 11th level(3d6), and 17th level(4d6).</p>
 			</div>
+			<div class="panel panel-primary spell" id="thunderclap1">
+				<div class="panel-heading">Thunderclap</div>
+					<p>Evocation cantrip</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self (5-foot radius)</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You create a burst of thunderous sound, which can be heard 100 feet away. Each creature other than you within 5 feet of you must make a Constitution saving throw. On a failed save, the creature takes 1d6 thunder damage.</p>
+							<p>The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
+			</div>
 			<div class="panel panel-primary spell bard sorcerer warlock wizard cantrip" id="trueStrike1">
 				<div class="panel-heading">True Strike</div>
 					<p>Divination cantrip</p>
@@ -312,6 +398,15 @@
 						<h4>Duration: Instantaneous</h4>
 							<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you, it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p>
 							<p>This spell's damage increases by 1d4 when you reach 5th level(2d4), 11th level(3d4), and 17th level(4d4).</p>
+			</div>
+			<div class="panel panel-primary spell" id="absorbElements1">
+				<div class="panel-heading">Absorb Elements</div>
+					<p>1st-level abjuration</p>
+					<h4>Casting Time: 1 reaction, which you take when you take acid, cold, fire, lighting, or thunder damage</h4>
+					<h4>Range: Self</h4>
+					<h4>Duration: 1 round</h4>
+						<p>The spell catures some of the incoming energy, lessening its effect on you and storing it for your next melee attack. You have resistance to the triggring damage type until the start of your next turn. Also, the first time you hit with a melee attack on your next turn, the target takes an extra 1d6 damage of the triggering type, and the spell ends.</p>
+						<p>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each slot level above 1st.</p>
 			</div>
 			<div class="panel panel-primary spell ranger wizard one" id="alarm1">
 				<div class="panel-heading">Alarm</div>
@@ -359,6 +454,14 @@
 							<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 2nd level of higher, you can target one additional creature for each slot level about 1st.</p>
 			</div>
+			<div class="panel panel-primary spell" id="beastBond1">
+				<div class="panel-heading">Beast Bond</div>
+					<p>1st-level divination</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>You establish a telepathic link with one beast you touch that is friendly to you or charmed by you. The spell fails if the beast's Intelligence is 4 or higher. Until the spell ends, the link is active while you and the beast are within line of sight of each other. Through the link, the beast can understand your telepathic messages to it, and it can telepathically communicate simple emotions and concepts back to you. While the link is active, the beast gains advantage on attack rolls against any creature within 5 feet or you that you can see.</p>
+			</div>
 			<div class="panel panel-primary spell cleric paladin one" id="bless1">
 				<div class="panel-heading">Bless</div>
 					<p>1st-level enchantment</p>
@@ -376,6 +479,15 @@
 						<h4>Duration: Instantaneous</h4>
 							<p>As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
+			</div>
+			<div class="panel panel-primary spell" id="catapult1">
+				<div class="panel-heading">Catapult</div>
+					<p>1st-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 150 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>Choose one object weighing 1-5 lbs within range that isn't being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st.</p>
 			</div>
 			<div class="panel panel-primary spell bard druid sorcerer warlock wizard one" id="charmPerson1">
 				<div class="panel-heading">Charm Person</div>
@@ -511,6 +623,15 @@
 						<h4>Range: Self</h4>
 						<h4>Duration: Concentration, up to 1 minute</h4>
 							<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>
+			</div>
+			<div class="panel panel-primary spell" id="earthTremor1">
+				<div class="panel-heading">Earth Tremor</div>
+					<p>1st-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self (10-foot radius)</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You cause a tremor in the ground in a 10-foot radius. Each creature other than you in that area must make a Dexterity saving throw. On a failed save, a creature takes 1d6 bludgeoning damage and is knocked prone. If the ground in that area is loose earth or stone, it becomes difficult terrain until cleared.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</p>
 			</div>
 			<div class="panel panel-primary spell ranger one" id="ensnaringStrike1">
 				<div class="panel-heading">Ensnaring Strike</div>
@@ -669,6 +790,15 @@
 						<h4>Duration: Concentration, up to 1 hour</h4>
 							<p>You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom(Perception) or Wisdom(Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.</p>
+			</div>
+			<div class="panel panel-primary spell" id="iceKnife1">
+				<div class="panel-heading">Ice Knife</div>
+					<p>1st-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of the point where the ice exploded must succeed on a Dexterity saving throw or take 2d6 cold damage.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the cold damage increases by 1d6 for each slot level above 1st.</p>
 			</div>
 			<div class="panel panel-primary spell bard wizard one" id="identify1">
 				<div class="panel-heading">Identify</div>
@@ -886,6 +1016,15 @@
 						<h4>Duration: Concentration, up to 1 minute</h4>
 							<p>The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.</p>
 			</div>
+			<div class="panel panel-primary spell" id="aganazzarsScorcher1">
+				<div class="panel-heading">Aganazzar's Scorcher</div>
+					<p>2nd-level evocation</p>
+					<h4>Casting Time: 1 action</h4>
+					<h4>Range: 30 feet</h4>
+					<h4>Duration: Instantaneous</h4>
+						<p>A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one.</p>
+						<p>At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+			</div>
 			<div class="panel panel-primary spell cleric paladin two" id="aid1">
 				<div class="panel-heading">Aid</div>
 					<p>2nd-level abjuration</p>
@@ -1057,6 +1196,25 @@
 							<p>Questions verbally directed at the target creature naturally shape the course of its thoughts, so this spell is particularly effective as part of an interrogation.</p>
 							<p>You can also use this spell to detect the presence of thinking creatures you can't see. When you cast the spell or as your action during the duration, you can search for thoughts within 30 feet of you. The spell can penetrate barriers, but 2 feet of rock, 2 inches of any metal other than lead, or a thin sheet of lead blocks you. You can't detect a creature with an Intelligence of 3 or lower or one that doesn't speak any language.</p>
 							<p>Once you detect the presence of a creature in this way, you can read its thoughts for the rest of the duration as described above, even if you can't see it, but it must still be within range.</p>
+			</div>
+			<div class="panel panel-primary spell" id="dustDevil1">
+				<div class="panel-heading">Dust Devil</div>
+					<p>2nd-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>Choose an unoccupied 5-foot cube of air that you can see within rage. An elemental force that resembles a dust devil appears in the cube and lasts for the spell's duration.</p>
+							<p>Any creature that ends its turn within 5 feet of the dust devil must make a Strength saving throw. On a failed save, the creature takes 1d8 bludgeoning damage and is pushed 10 feet away. On a successful save, the creature takes half as much damage and isn't pushed.</p>
+							<p>As a bonus action, you can move the dust devil up to 30 feet in any direction. If the dust devil moves over sand, dust, loose dirt, or small gravel, it sucks up the material and forms a 10-foot-radius cloud of debris around itself that lasts until the start of your next turn. The cloud heavily obscured its area.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</p>
+			</div>
+			<div class="panel panel-primary spell" id="earthBind1">
+				<div class="panel-heading">Earth Bind</div>
+					<p>2nd-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 300 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>Choose one creature you can see within range. Yellow strips of magical energy loop around the creature. The target must succeed on a Strength saving throw or its flying speed (if any) is reduced to 0 feet for the spell's duration. An airborne creature affected by this spell descends at 60 feet per round until it reaches the ground or the spell ends.</p>
 			</div>
 			<div class="panel panel-primary spell bard cleric druid sorcerer two" id="enhanceAbility1">
 				<div class="panel-heading">Enhance Ability</div>
@@ -1245,6 +1403,17 @@
 							<p>You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3</p>
 			</div>
+			<div class="panel panel-primary spell" id="maximiliansEarthenGrasp1">
+				<div class="panel-heading">Maximilian's Earthen Grasp</div>
+					<p>2nd-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You choose a 5-foot-square unoccupied space on the ground that you can see within range. A Medium hand made from compacted soil rises there and reaches for one creature you can see within 5 feet of it. The target must make a Strength saving throw. On a failed save, the target takes 2d6 bludgeoning damage and is restrained for the spell's duration.</p>
+							<p>As an action, you can cause the hand to crush the restrained target, who must make a Strength saving throw. It takes 2d6 bludgeoning damage on a failed save, or half as much damage on a successful one.</p>
+							<p>To break out, the restrained target can make a Strength check against your spell save DC. On a success, the target escapes and is no longer restrained by the hand.</p>
+							<p>As an action, you can cause the hand to reach for a different creature or to move to a different unoccuption space within range. The hand releases a restrained target if you do either.</p>
+			</div>
 			<div class="panel panel-primary spell wizard two" id="melfsAcidArrow1">
 				<div class="panel-heading">Melf's Acid Arrow</div>
 					<p>2nd-level evocation</p>
@@ -1334,6 +1503,16 @@
 							<p>You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.</p>
 							<p>For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage.</p>
 			</div>
+			<div class="panel panel-primary spell" id="pyrotechnics1">
+				<div class="panel-heading">Pyrotechnics</div>
+					<p>2nd-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>Choose an area of flame that you can see and that can fit within a 5-foot cube within range. You can extinguish the fire in that area, and you create either fireworks or smoke.</p>
+							<p>Fireworks. The target explodes with a dazzling display of colors. Each creature within 10 feet of the target must succeed on a Constitution saving throw or become blinded until the end of your next turn.</p>
+							<p>Smoke. Thick black smoke spreads out from the target in a 20-foot radius, moving around corners. The area of the smoke is heavily obscured. The smoke persists for 1 minute or until a strong wind disperses it.</p>
+			</div>
 			<div class="panel panel-primary spell warlock wizard two" id="rayOfEnfeeblement1">
 				<div class="panel-heading">Ray of Enfeeblement</div>
 					<p>2nd-level necromancy</p>
@@ -1389,6 +1568,23 @@
 						<h4>Duration: Concentration, up to 10 minutes</h4>
 							<p>For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there.</p>
 			</div>
+			<div class="panel panel-primary spell" id="skywrite1">
+				<div class="panel-heading">Skywrite</div>
+					<p>2nd-level tranmutation (ritual)</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Sight</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>You cause up to ten words to form in a part of the sky you can see. The worlds appear to be made of cloud and remain in place for the spell's duration. The words dissipate when the spell ends. A strong wind can disperse the clouds and end the spell early.</p>
+			</div>
+			<div class="panel panel-primary spell" id="snillocsSnowballSwarm1">
+				<div class="panel-heading">Snilloc's Snowball Swarm</div>
+					<p>2nd-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 90 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>A flurry of magic snowballs erupts from a point you choose within range. Each creature in a 5-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes 3d6 cold damage on a failed save, or half as much damage on a successful one.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</p>
+			</div>
 			<div class="panel panel-primary spell sorcerer warlock wizard two" id="spiderClimb1">
 				<div class="panel-heading">Spider Climb</div>
 					<p>2nd-level transmutation</p>
@@ -1437,6 +1633,20 @@
 							<p>This spell wards a willing creature you touch and creates a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has resistance to all damage. Also, each time it takes damage, you take the same amount of damage.</p>
 							<p>The spell ends if you drop to 0 hit points or if you and the target become separated by more than 60 feet. It also ends if the spell is cast again on either of the connected creatures. You can also dismiss the spell as an action.</p>
 			</div>
+			<div class="panel panel-primary spell" id="wardingWind1">
+				<div class="panel-heading">Warding Wind</div>
+					<p>2nd-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>A strong wind (20 miles per hour) blows around you in a 10-foot radius and moves with you, remaining centered on you. The wind lasts for the spell's duration.</p>
+							<p>The wind has the following effects:</p>
+								<li>It deafens you and other creatures in its area.</li>
+								<li>It extinguishes unprotected flames in its area that are torch-sized or smaller.</li>
+								<li>The area is difficult terrain for creatures other than you.</li>
+								<li>The attack rolls of ranged weapon attacks have disadvantage if they pass in or out of the wind.</li>
+								<li>It hedges out vapor, gas, and fog that can be dispersed by strong wind.</li>
+			</div>
 			<div class="panel panel-primary spell sorcerer wizard two" id="web1">
 				<div class="panel-heading">Web</div>
 					<p>2nd-level conjuration</p>
@@ -1458,7 +1668,7 @@
 							<p>You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.</p>
 							<p>An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.</p>
 			</div>																			
-			<div class="panel panel-primary spell cleric wizard" id="animateDead1">
+			<div class="panel panel-primary spell cleric wizard three" id="animateDead1">
 				<div class="panel-heading">Animate Dead</div>
 					<p>3rd-level necromancy</p>
 						<h4>Casting Time: 1 minute</h4>
@@ -1469,7 +1679,7 @@
 							<p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.</p>
 			</div>
-			<div class="panel panel-primary spell paladin" id="auraOfVitality1">
+			<div class="panel panel-primary spell paladin three" id="auraOfVitality1">
 				<div class="panel-heading">Aura of Vitality</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1477,7 +1687,7 @@
 						<h4>Duration: Concentration, up to 1 minute</h4>
 							<p>Healing energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. You can use a bonus action to cause one creature in the aura (including you) to regain 2d6 hit points.</p>
 			</div>
-			<div class="panel panel-primary spell cleric" id="beaconOfHope1">
+			<div class="panel panel-primary spell cleric three" id="beaconOfHope1">
 				<div class="panel-heading">Beacon of Hope</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1485,7 +1695,7 @@
 						<h4>Duration: Concentration, up to 1 minute</h4>
 							<p>This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on Wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric wizard" id="bestowCurse1">
+			<div class="panel panel-primary spell bard cleric wizard three" id="bestowCurse1">
 				<div class="panel-heading">Bestow Curse</div>
 					<p>3rd-level necromancy</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1499,7 +1709,7 @@
 							<p>A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful that those described above. The DM has final say on such a curse's effect.</p>
 							<p>At Higher Levels. If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level of higher grants a duration that doesn't require concentration.</p>
 			</div>
-			<div class="panel panel-primary spell paladin" id="blindingSmite1">
+			<div class="panel panel-primary spell paladin three" id="blindingSmite1">
 				<div class="panel-heading">Blinding Smite</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 bonus action</h4>
@@ -1508,7 +1718,7 @@
 							<p>The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon flares with bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.</p>
 							<p>A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer wizard" id="blink1">
+			<div class="panel panel-primary spell sorcerer wizard three" id="blink1">
 				<div class="panel-heading">Blink</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1517,7 +1727,7 @@
 							<p>Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell fails and the casting is wasted if you were already of the plane). At the start of your next turn, and when the spell ends if you are on the Ethereal Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more than one space is equally near). You can dismess this spell as an action.</p>
 							<p>While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can't see anything there more than 60 feet away. You can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.</p>
 			</div>
-			<div class="panel panel-primary spell druid" id="callLightning1">
+			<div class="panel panel-primary spell druid three" id="callLightning1">
 				<div class="panel-heading">Call Lightning</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1528,7 +1738,7 @@
 							<p>If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing sotrm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell bard sorcerer wizard" id="clairvoyance1">
+			<div class="panel panel-primary spell bard sorcerer wizard three" id="clairvoyance1">
 				<div class="panel-heading">Clairvoyance</div>
 					<p>3rd-level divination</p>
 						<h4>Casting Time: 10 minutes</h4>
@@ -1538,7 +1748,7 @@
 							<p>When you cast this spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.</p>
 							<p>A creature that can see the sensor sees a luminous, intangible orb about the size of your fist.</p>
 			</div>
-			<div class="panel panel-primary spell druid ranger" id="conjureAnimals1">
+			<div class="panel panel-primary spell druid ranger three" id="conjureAnimals1">
 				<div class="panel-heading">Conjure Animals</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1556,7 +1766,7 @@
 							<p>The DM has the creatures' statistics.</p>
 							<p>At Higher Levels. When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.</p>
 			</div>
-			<div class="panel panel-primary spell ranger" id="conjureBarrage1">
+			<div class="panel panel-primary spell ranger three" id="conjureBarrage1">
 				<div class="panel-heading">Conjure Barrage</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1564,7 +1774,7 @@
 						<h4>Duration: Instantaneous</h4>
 							<p>You throw a nonmagical weapon or fire a piece of nonmagical ammunition into the air to create a cone of identical weapons that shoot forward and then disappear. Each creature in a 60-foot cone must succeed on a Dexterity saving throw. A creature takes 3d8 damage on a failed save, or half as much damage on a successful one. the damage type is the same as that of the weapon or ammunition used as a component.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer warlock wizard" id="counterspell1">
+			<div class="panel panel-primary spell sorcerer warlock wizard three" id="counterspell1">
 				<div class="panel-heading">Counterspell</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 reaction, which you take when you see a creature within 60 feet of you casting a spell</h4>
@@ -1573,7 +1783,7 @@
 							<p>You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.</p>
 			</div>
-			<div class="panel panel-primary spell cleric paladin" id="createFoodAndWater1">
+			<div class="panel panel-primary spell cleric paladin three" id="createFoodAndWater1">
 				<div class="panel-heading">Create Food and Water</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1581,7 +1791,7 @@
 						<h4>Duration: Instantaneous</h4>
 							<p>You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. the food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.</p>
 			</div>
-			<div class="panel panel-primary spell paladin" id="crusadersMantle1">
+			<div class="panel panel-primary spell paladin three" id="crusadersMantle1">
 				<div class="panel-heading">Crusader's Mantle</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1589,7 +1799,7 @@
 						<h4>Duration: Concentration, up to 1 minute</h4>
 							<p>Holy power radiates from you in an aura with a 30-foot radius, awakening boldness in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra 1d4 radiant damage when it  hits with a weapon attack.</p>
 			</div>
-			<div class="panel panel-primary spell cleric druid paladin ranger sorcerer" id="daylight1">
+			<div class="panel panel-primary spell cleric druid paladin ranger sorcerer three" id="daylight1">
 				<div class="panel-heading">Daylight</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1599,7 +1809,7 @@
 							<p>If you chose a point on an object you are holding or one that isn't being wor or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.</p>
 							<p>If any of this spell's aura overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric druid paladin sorcerer warlock wizard" id="dispelMagic1">
+			<div class="panel panel-primary spell bard cleric druid paladin sorcerer warlock wizard three" id="dispelMagic1">
 				<div class="panel-heading">Dispel Magic</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1608,7 +1818,7 @@
 							<p>Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</p>
 			</div>
-			<div class="panel panel-primary spell paladin" id="elementalWeapon1">
+			<div class="panel panel-primary spell paladin three" id="elementalWeapon1">
 				<div class="panel-heading">Elemental Weapon</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1617,7 +1827,16 @@
 							<p>A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or 6th level, the bones to attack rolls increases to +2 and the extra damage increases to 2d4. When you use a spell slot of 7th level or higher, the bones increases to +3 and the extra damage increases to 3d4.</p>
 			</div>
-			<div class="panel panel-primary spell bard sorcerer warlock wizard" id="fear1">
+			<div class="panel panel-primary spell three" id="eruptingEarth1">
+				<div class="panel-heading">Erupting Earth</div>
+					<p>3rd-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 120 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>Choose a point you can see on the ground within range. A fountain of churned earth and stone erupts in a 20-foot cube centered on that point. Each creature in that area must make a Dexterity saving throw. A creature takes 3d12 bludgeoning damage on failed save, or half as much damage on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared away. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d12 for each slot level above 2nd.</p>
+			</div>
+			<div class="panel panel-primary spell bard sorcerer warlock wizard three" id="fear1">
 				<div class="panel-heading">Fear</div>
 					<p>3rd-level illusion</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1626,7 +1845,7 @@
 							<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must	succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p>
 							<p>While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric druid wizard" id="feignDeath1">
+			<div class="panel panel-primary spell bard cleric druid wizard three" id="feignDeath1">
 				<div class="panel-heading">Feign Death</div>
 					<p>3rd-level necromancy(ritual)</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1635,7 +1854,7 @@
 							<p>You touch a willing creature and put it into a cataleptic state that is indistinguishable from death.</p>
 							<p>For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic damgage. If the target is diseased or poisoned when you cast the spell, or beomces diseased or poisoned while under the spell's effect, the disease and poison have no effect until the spell ends.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer wizard" id="fireball1">
+			<div class="panel panel-primary spell sorcerer wizard three" id="fireball1">
 				<div class="panel-heading">Fireball</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1644,7 +1863,16 @@
 							<p>A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an expolosion of flame. Each creature in a 20-foot radius shpere centered on that point must make a Dexterity saving thorw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer warlock wizard" id="fly1">
+			<div class="panel panel-primary spell three" id="flameArrows1">
+				<div class="panel-heading">Flame Arrows</div>
+					<p>3rd-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on the piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the number of pieces of ammunition you can affect with this spell increases by two for each slot level above 3rd.</p>
+			</div>
+			<div class="panel panel-primary spell sorcerer warlock wizard three" id="fly1">
 				<div class="panel-heading">Fly</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1653,7 +1881,7 @@
 							<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer warlock wizard" id="gaseousForm1">
+			<div class="panel panel-primary spell sorcerer warlock wizard three" id="gaseousForm1">
 				<div class="panel-heading">Gaseous Form</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1663,7 +1891,7 @@
 							<p>While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.</p>
 							<p>While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric wizard" id="glyphOfWarding1">
+			<div class="panel panel-primary spell bard cleric wizard three" id="glyphOfWarding1">
 				<div class="panel-heading">Glyph of Warding</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 hour</h4>
@@ -1678,7 +1906,7 @@
 							<p>Spell Glyph. You can store a prepared spell of 3rd level or lower in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is centered on that creature. If the spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell requires concentration, it lasts until the end of its full duration.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage on an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer wizard" id="haste1">
+			<div class="panel panel-primary spell sorcerer wizard three" id="haste1">
 				<div class="panel-heading">Haste</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1687,7 +1915,7 @@
 							<p>Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.</p>
 							<p>When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.</p>
 			</div>
-			<div class="panel panel-primary spell warlock" id="hungerOfHadar1">
+			<div class="panel panel-primary spell warlock three" id="hungerOfHadar1">
 				<div class="panel-heading">Hunger of Hadar</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1696,7 +1924,7 @@
 							<p>You open a gateway to the dark between the stars, a region infested with unknown horrors. A 20-foot-radius sphere of blackness and bitter cold appears, centered on a point with range and lasting for the duration. This void is filled with a cacophony of soft whispers and slupring noises that can be heard up to 30 feet away. No light, magical or otherwise, can illuminate the area, and creatures fully within the area are blinded.</p>
 							<p>The void creates a warp in the fabric of space, and the area is difficult terrain. Any creature that starts its turn in the area takes 2d6 cold damage. Any creature that ends its turn in the area must succeed on a Dexterity saving throw or take 2d6 acid damage as milky, otherworldly tentacles rub against it.</p>
 			</div>
-			<div class="panel panel-primary spell bard sorcerer warlock wizard" id="hypnoticPattern1">
+			<div class="panel panel-primary spell bard sorcerer warlock wizard three" id="hypnoticPattern1">
 				<div class="panel-heading">Hypnotic Pattern</div>
 					<p>3rd-level illusion</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1705,7 +1933,7 @@
 							<p>You create a twisting pattern of colors that weaves through the air inside a 30-foot cube within range. The pattern appears for a moment and vanishes. Each creature in the area who sees the pattern must make a Wisdom saving throw. On a failed save, the creature becomes for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0.</p>
 							<p>The spell ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor.</p>
 			</div>
-			<div class="panel panel-primary spell bard wizard" id="leomundsTinyHut1">
+			<div class="panel panel-primary spell bard wizard three" id="leomundsTinyHut1">
 				<div class="panel-heading">Leomund's Tiny Hut</div>
 					<p>3rd-level evocation (ritual)</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1715,7 +1943,7 @@
 							<p>Nine creatures of Medius size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.</p>
 							<p>Until the spell ends, you can command the interior to become dimly lit or dar. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.</p>
 			</div>
-			<div class="panel panel-primary spell ranger" id="lightningArrow1">
+			<div class="panel panel-primary spell ranger three" id="lightningArrow1">
 				<div class="panel-heading">Lightning Arrow</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 bonus action</h4>
@@ -1726,7 +1954,7 @@
 							<p>The piece of ammunition or weapon then returns to its normal form.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer wizard" id="lightningBolt1">
+			<div class="panel panel-primary spell sorcerer wizard three" id="lightningBolt1">
 				<div class="panel-heading">Lightning Bolt</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1736,7 +1964,7 @@
 							<p>The lightning ignites flammable objects in the area that aren't being worn or carried.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot fo 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell cleric paladin warlock wizard" id="magicCircle1">
+			<div class="panel panel-primary spell cleric paladin warlock wizard three" id="magicCircle1">
 				<div class="panel-heading">Magic Circle</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 minute</h4>
@@ -1752,7 +1980,7 @@
 							<p>When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targers outside it.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell bard sorcerer warlock wizard" id="majorImage1">
+			<div class="panel panel-primary spell bard sorcerer warlock wizard three" id="majorImage1">
 				<div class="panel-heading">Major Image</div>
 					<p>3rd-level illusion</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1763,7 +1991,7 @@
 							<p>Physical interaction with the image reaveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration.</p>
 			</div>
-			<div class="panel panel-primary spell cleric" id="massHealingWord1">
+			<div class="panel panel-primary spell cleric three" id="massHealingWord1">
 				<div class="panel-heading">Mass Healing Word</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 bonus action</h4>
@@ -1772,7 +2000,7 @@
 							<p>As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell cleric druid" id="meldIntoStone1">
+			<div class="panel panel-primary spell cleric druid three" id="meldIntoStone1">
 				<div class="panel-heading">Meld Into Stone</div>
 					<p>3rd-level transmutation (ritual)</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1782,7 +2010,16 @@
 							<p>While merged with the stone, you can't see what occurs outside it, and any Wisdom (Perception) checks you make to hear sounds outside it are made with disadvantage. You remain aware of the passage of time and can cast spells on yourself while merged in the stone. You can use your movement to leave the stone where you entered it, which ends the spell. You otherwise can't move.</p>
 							<p>Minor physical damage to the stone doesn't harm you, but its partial destruction or a change in its shape (to the extent that you no longer) expels you and deals 6d6 bludgeoning damage to you. The stone's complete destruction (or transmutation into a different substance) expels you and deals 50 bludgeoning damage to you. If expelled, you fall prone in an unoccupied space closest to where you first entered.</p>
 			</div>
-			<div class="panel panel-primary spell bard ranger wizard" id="nondetection1">
+			<div class="panel panel-primary spell three" id="melfsMinuteMeteors1">
+				<div class="panel-heading">Melf's Minute Meteors</div>
+					<p>3rd-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>You create six tiny meteors in your space. They float in the air and orbit you for the spell's duration. When you cast the spell-and as a bonus action on each of your turns thereafter-you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity saving throw. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the number of meteors created increases by two for each slot level above 3rd.</p>
+			</div>
+			<div class="panel panel-primary spell bard ranger wizard three" id="nondetection1">
 				<div class="panel-heading">Nondetection</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1790,7 +2027,7 @@
 						<h4>Duration: 8 hours</h4>
 							<p>For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.</p>
 			</div>
-			<div class="panel panel-primary spell wizard" id="phantomSteed1">
+			<div class="panel panel-primary spell wizard three" id="phantomSteed1">
 				<div class="panel-heading">Phantom Steed</div>
 					<p>3rd-level illusion (ritual)</p>
 						<h4>Casting Time: 1 minute</h4>
@@ -1799,7 +2036,7 @@
 							<p>A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.</p>
 							<p>For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 10 miles in an hour, or 13 at a fast pace. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage.</p>
 			</div>
-			<div class="panel panel-primary spell bard druid ranger" id="plantGrowth1">
+			<div class="panel panel-primary spell bard druid ranger three" id="plantGrowth1">
 				<div class="panel-heading">Plant Growth</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action or 8 hours</h4>
@@ -1810,7 +2047,7 @@
 							<p>You can exclude one or more areas of any size within the spell's area from being affected.</p>
 							<p>If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested.</p>
 			</div>
-			<div class="panel panel-primary spell cleric druid ranger sorcerer wizard" id="protectionFromEnergy1">
+			<div class="panel panel-primary spell cleric druid ranger sorcerer wizard three" id="protectionFromEnergy1">
 				<div class="panel-heading">Protection From Energy</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1818,7 +2055,7 @@
 						<h4>Duration: Concentration, up to 1 hour</h4>
 							<p>For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.</p>
 			</div>
-			<div class="panel panel-primary spell cleric paladin warlock wizard" id="removeCurse1">
+			<div class="panel panel-primary spell cleric paladin warlock wizard three" id="removeCurse1">
 				<div class="panel-heading">Remove Curse</div>
 					<p>3rd-level abjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1826,7 +2063,7 @@
 						<h4>Duration: Instantaneous</h4>
 							<p>At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.</p>
 			</div>
-			<div class="panel panel-primary spell cleric paladin" id="revivify1">
+			<div class="panel panel-primary spell cleric paladin three" id="revivify1">
 				<div class="panel-heading">Revivify</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1834,7 +2071,7 @@
 						<h4>Duration: Instantaneous</h4>
 							<p>You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it resotre any missing body parts.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric wizard" id="sending1">
+			<div class="panel panel-primary spell bard cleric wizard three" id="sending1">
 				<div class="panel-heading">Sending</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1843,7 +2080,7 @@
 							<p>You send a short message of twenty-five words or less to a creature with which you are familiar. the creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message.</p>
 							<p>You can send the message across any distane and even to other planes of existence, but if the target is on a different plane that you, there is a five percent chance that the message doesn't arrive.</p>
 			</div>
-			<div class="panel panel-primary spell druid sorcerer wizard" id="sleetStorm1">
+			<div class="panel panel-primary spell druid sorcerer wizard three" id="sleetStorm1">
 				<div class="panel-heading">Sleet Storm</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1853,7 +2090,7 @@
 							<p>The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone.</p>
 							<p>If a creature is concentrating in the spell's area, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.</p>
 			</div>
-			<div class="panel panel-primary spell sorcerer wizard" id="slow1">
+			<div class="panel panel-primary spell sorcerer wizard three" id="slow1">
 				<div class="panel-heading">Slow</div>
 					<p>3rd-level tansmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1864,7 +2101,7 @@
 							<p>If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.</p>
 							<p>A creature affected by this spell makes another Wisdom saving throw at the end of its turn. On a successful save, the effect ends for it.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric" id="speakWithDead1">
+			<div class="panel panel-primary spell bard cleric three" id="speakWithDead1">
 				<div class="panel-heading">Speak With Dead</div>
 					<p>3rd-level necromancy</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1873,7 +2110,7 @@
 							<p>You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spell fails if the corpse was the target of this spell within the last 10 days.</p>
 							<p>Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse in under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn't return the creature's sould to its body, only its animating spirit. Thus, the corspe can't learn new information, doesn't conprehend anything that has happened since it died, and can't speculate about future events.</p>
 			</div>
-			<div class="panel panel-primary spell bard druid ranger" id="speakWithPlants1">
+			<div class="panel panel-primary spell bard druid ranger three" id="speakWithPlants1">
 				<div class="panel-heading">Speak With Plants</div>
 					<p>3rd-level transmutation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1885,7 +2122,7 @@
 							<p>If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.</p>
 							<p>This spell can cause the plants created by the entangle spell to release a restrained creature.</p>
 			</div>
-			<div class="panel panel-primary spell cleric" id="spiritGuardians1">
+			<div class="panel panel-primary spell cleric three" id="spiritGuardians1">
 				<div class="panel-heading">Spirit Guardians</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1895,7 +2132,7 @@
 							<p>When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell bard sorcerer wizard" id="stinkingCloud1">
+			<div class="panel panel-primary spell bard sorcerer wizard three" id="stinkingCloud1">
 				<div class="panel-heading">Stinking Cloud</div>
 					<p>3rd-level conjuration</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1905,7 +2142,15 @@
 							<p>Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.</p>
 							<p>A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.</p>
 			</div>
-			<div class="panel panel-primary spell bard cleric sorcerer warlock wizard" id="tongues1">
+			<div class="panel panel-primary spell three" id="tidalWave1">
+				<div class="panel-heading">Tidal Wave</div>
+					<p>3rd-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 120 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You conjure up a wave of water that crashes down on an area within range. The area can be up to 30 feet long, up to 10 feet wide, and up to 10 feet tall. Each creature in that area must make a Dexterity saving throw. On a failure, a creature takes 4d8 bludgeoning damage and is knocked prone. On a success, a creature takes half as much damage and isn't knocked prone. The water then spreads out across the ground in all directions, extinguishing unprotected flames in its area and within 30 feet of it.</p>
+			</div>
+			<div class="panel panel-primary spell bard cleric sorcerer warlock wizard three" id="tongues1">
 				<div class="panel-heading">Tongues</div>
 					<p>3rd-level divination</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1913,7 +2158,7 @@
 						<h4>Duration: 1 hour</h4>
 							<p>This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.</p>
 			</div>
-			<div class="panel panel-primary spell warlock wizard" id="vampiricTouch1">
+			<div class="panel panel-primary spell warlock wizard three" id="vampiricTouch1">
 				<div class="panel-heading">Vampiric Touch</div>
 					<p>3rd-level necromancy</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1922,7 +2167,24 @@
 							<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p>
 							<p>At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</p>
 			</div>
-			<div class="panel panel-primary spell druid ranger sorcerer wizard" id="waterBreathing1">
+			<div class="panel panel-primary spell three" id="wallOfSand1">
+				<div class="panel-heading">Wall of Sand</div>
+					<p>3rd-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 90 feet</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>You conjure up a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall's space and must spend 3 feet of movement for every 1 foot it moves there.</p>
+			</div>
+			<div class="panel panel-primary spell three" id="wallOfWater1">
+				<div class="panel-heading">Wall of Water</div>
+					<p>3rd-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>You conjure up a wall of water on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 1 foot thick, or you can make a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick. The wall vanishes when the spell ends. The wall's space is difficult terrain.</p>
+							<p>Any ranged weapon attack that enters the wall's space has disadvantage on the attack roll, and fire damage is halved if the fire effect passes through the wall to reach its target. Spells that deal cold damage that pass through the wall cause the area of the wall they pass through to freeze solid (at least a 5-foot square section is frozen). Each 5-foot-square frozen section has AC 5 and 15 hit points. Reducing a frozen section to 0 hit points destroys it. When a section is destroyed, the wall's water doesn't fill it.</p>
+			</div>
+			<div class="panel panel-primary spell druid ranger sorcerer wizard three" id="waterBreathing1">
 				<div class="panel-heading">Water Breathing</div>
 					<p>3rd-level transmutation (ritual)</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1930,7 +2192,7 @@
 						<h4>Duration: 24 hours</h4>
 							<p>This spell grants up to ten willing creatures you can see within range the ability to breathe underwater until the spell ends. Affected creatures also retain their normal mode of respiration.</p>
 			</div>
-			<div class="panel panel-primary spell cleric druid ranger sorcerer" id="waterWalk1">
+			<div class="panel panel-primary spell cleric druid ranger sorcerer three" id="waterWalk1">
 				<div class="panel-heading">Water Walk</div>
 					<p>3rd-level transmutation (ritual)</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1939,7 +2201,7 @@
 							<p>This spell grants the ability to move across any liquid surface-such as water, acid, mud, snow, quicksand, or lava-as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.</p>
 							<p>If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round.</p>
 			</div>
-			<div class="panel panel-primary spell druid ranger" id="windWall1">
+			<div class="panel panel-primary spell druid ranger three" id="windWall1">
 				<div class="panel-heading">Wind Wall</div>
 					<p>3rd-level evocation</p>
 						<h4>Casting Time: 1 action</h4>
@@ -1949,7 +2211,371 @@
 							<p>When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 2d8 bludgeoning damage on a failed save or half as much damage on a successful one.</p>
 							<p>The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.</p>
 			</div>
+			<div class="panel panel-primary spell wizard four" id="arcaneEye1">
+				<div class="panel-heading">Arcane Eye</div>
+					<p>4th-level divination</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>You create an invisible, magical eye within range that hovers in the air for the duration.</p>
+							<p>You mentally receive visual information from the eye, which has normal vision and darkvision out to 30 feet. The eye can look in every direction.</p>
+							<p>As an action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch diameter.</p>
+			</div>
+			<div class="panel panel-primary spell paladin four" id="auraOfLife1">
+				<div class="panel-heading">Aura of Life</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self (30-foot radius)</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>Life-preserving energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) has resistance to necrotic damage, and its hit point maximum can't by reduced. In addition, a nonhostile, living creature regains 1 hit point when it starts its turn in the aura with 0 hit points.</p>
+			</div>
+			<div class="panel panel-primary spell paladin four" id="auraOfPurity1">
+				<div class="panel-heading">Aura of Purity</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self (30-foot radius)</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>Purifying energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you. Each nonhostile creature in the aura (including you) can't become diseased, has resistance to poison damage, and has advantage on saving throws against effects that cause any of the following conditions: blinded, charmed, deafened, frightened, paralyzed, poisoned, and stunned.</p>
+			</div>
+			<div class="panel panel-primary spell cleric paladin sorcerer warlock wizard four" id="banishment1">
+				<div class="panel-heading">Banishment</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.</p>
+							<p>If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p>
+							<p>If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>
+			</div>
+			<div class="panel panel-primary spell druid sorcerer warlock wizard four" id="blight1">
+				<div class="panel-heading">Blight</div>
+					<p>4th-level necromancy</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.</p>
+							<p>If you target a plant creature on a magical plant, it make the saving throw with disadvantage, and the spell deals maximum damage to it.</p>
+							<p>If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw; it simply withers and dies.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+			</div>
+			<div class="panel panel-primary spell bard four" id="compulsion1">
+				<div class="panel-heading">Compulsion</div>
+					<p>4th-level enchantment</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.</p>
+							<p>A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction.</p>
+			</div>
+			<div class="panel panel-primary spell bard druid sorcerer wizard four" id="confusion1">
+				<div class="panel-heading">Confusion</div>
+					<p>4th-level enchantment</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 90 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.</p>
+							<p>An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.</p>
+								<li>1-The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.</li>
+								<li>2-6-The creature doesn't move or take actions this turn.</li>
+								<li>7-8-The creature uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the creature does nothing this turn.</li>
+								<li>9-10-The creature can at and move normally.</li>
+							<p>At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.</p>
+			</div>
+			<div class="panel panel-primary spell druid wizard four" id="conjureMinorElementals1">
+				<div class="panel-heading">Conjure Minor Elementals</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 90 feet</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:</p>
+								<li>One elemental of challenge rating 2 or lower</li>
+								<li>Two elementals of challenge rating 1 or lower</li>
+								<li>Four elementals of challenge rating 1/2 or lower</li>
+								<li>Eight elementals of challenge rating 1/4 or lower</li>
+							<p>An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.</p>
+							<p>The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
+							<p>At Higher Levels. When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with a 8th-level slot.</p>
+			</div>
+			<div class="panel panel-primary spell druid ranger four" id="conjureWoodlandBeings1">
+				<div class="panel-heading">Conjure Woodland Beings</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>You summon fey creatures that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:</p>
+								<li>One fey creature of challenge rating 2 or lower</li>
+								<li>Two fey creatures of challenge rating 1 or lower</li>
+								<li>Four fey creatures of challenge rating 1/2 or lower</li>
+								<li>Eight fey creatures of challenge rating 1/4 or lower</li>
+							<p>An summoned creature disappears when it drops to 0 hit points or when the spell ends.</p>
+							<p>The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.</p>
+							<p>At Higher Levels. When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with a 8th-level slot.</p>
+			</div>
+			<div class="panel panel-primary spell cleric druid wizard four" id="controlWater1">
+				<div class="panel-heading">Control Water</div>
+					<p>4th-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 300 feet</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.</p>
+							<p>Flood. You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent change of capsizing. The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.</p>
+							<p>Part Water. You cause water in the area to move apart and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.</p>
+							<p>Redirect Flow. You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect.</p>
+							<p>Whirlpool. The effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex in pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC. When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a Strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so. The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.</p>
+			</div>
+			<div class="panel panel-primary spell cleric paladin four" id="deathWard1">
+				<div class="panel-heading">Death Ward</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: 8 hours</h4>
+							<p>You touch a creature and grant it a measure of protection from death.</p>
+							<p>The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.</p>
+							<p>In the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.</p>
+			</div>
+			<div class="panel panel-primary spell bard sorcerer warlock wizard four" id="dimensionDoor1">
+				<div class="panel-heading">Dimension Door</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 500 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction.</p>
+							<p>You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spel.</p>
+							<p>If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.</p>
+			</div>
+			<div class="panel panel-primary spell cleric four" id="divination1">
+				<div class="panel-heading"></div>
+					<p>4th-level divination (ritual)</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen.</p>
+							<p>The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain or a companion.</p>
+							<p>If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret.</p>
+			</div>
+			<div class="panel panel-primary spell druid sorcerer four" id="dominateBeast1">
+				<div class="panel-heading">Dominate Beast</div>
+					<p>4th-level enchantment</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.</p>
+							<p>While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action. If the creature completes the order and doesn't receive further direction from you, it defends and perserves itself to the best of its ability.</p>
+							<p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p>
+							<p>Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.</p>
+							<p>At Higher Levels. When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="evardsBlackTentacles1">
+				<div class="panel-heading">Evard's Black Tentacles</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 90 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>Squirming, ebony tentacles fill a 20-foot square on the ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain.</p>
+							<p>When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage.</p>
+							<p>A creature restrained by the tentacles can use its action to make a Strength of Dexterity chech (its choice) against you spell save DC. On a success, it frees itself.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="fabricate1">
+				<div class="panel-heading"></div>
+					<p>4th-level transmutation</p>
+						<h4>Casting Time: 10 minutes</h4>
+						<h4>Range: 120 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool.</p>
+							<p>Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the spell is commensurate with the quality of the raw materials.</p>
+							<p>Creatures or magic items can't be created or transmuted by this spell. You also can't use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of arisan's tools used to craft such objects.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="fireShield1">
+				<div class="panel-heading">Fire Shield</div>
+					<p>4th-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self</h4>
+						<h4>Duration: 10 minutes</h4>
+							<p>Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it.</p>
+							<p>The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.</p>
+							<p>In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.</p>
+			</div>
+			<div class="panel panel-primary spell bard cleric druid ranger four" id="freedomOfMovement1">
+				<div class="panel-heading">Freedom of Movement</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: 1 hour</h4>
+							<p>You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.</p>
+							<p>The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.</p>
+			</div>
+			<div class="panel panel-primary spell druid four" id="giantInsect1">
+				<div class="panel-heading">Giant Insect</div>
+					<p>4th-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Concentration, up to 10 minutes</h4>
+							<p>You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration.</p>
+							<p>Each creature obeys your verbal commands, and in combat, they act on your turn each round. The DM has the statistics for these creatures and resolves their actions and movements.</p>
+							<p>A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it.</p>
+			</div>
+			<div class="panel panel-primary spell druid ranger four" id="graspingVine1">
+				<div class="panel-heading"></div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 bonus action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You conjure a vine that sprouts from the ground in an unoccupied space of your choice that you can see within range. When you cast this spell, you can direct the vine to lash out at a creature within 30 feet of it that you can see. That creature must succeed on a Dexterity saving throw or be pulled 20 feet directly toward the vine.</p>
+							<p>Until the spell ends, you can direct the vine to lash out at the same creature or another one as a bonus action on each of your turns.</p>
+			</div>
+			<div class="panel panel-primary spell bard sorcerer wizard four" id="greaterInvisiblity1">
+				<div class="panel-heading">Greater Invisibility</div>
+					<p>4th-level illusion</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.</p>
+			</div>
+			<div class="panel panel-primary spell cleric four" id="guardianOfFaith1">
+				<div class="panel-heading">Guarding of Faith</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: 8 hours</h4>
+							<p>A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shild emblazoned with the symbol of your deity.</p>
+							<p>Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a Dexterity saving throw. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.</p>
+			</div>
+			<div class="panel panel-primary spell bard druid warlock wizard four" id="hallucinatoryTerrain1">
+				<div class="panel-heading">Hallucinatory Terrain</div>
+					<p>4th-level illusion</p>
+						<h4>Casting Time: 10 minutes</h4>
+						<h4>Range: 300 feet</h4>
+						<h4>Duration: 24 hours</h4>
+							<p>You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.</p>
+							<p>The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.</p>
+			</div>
+			<div class="panel panel-primary spell druid sorcerer wizard four" id="iceStorm1">
+				<div class="panel-heading">Ice Storm</div>
+					<p>4th-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 300 feet</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.</p>
+							<p>Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="leomundsSecretChest1">
+				<div class="panel-heading">Leomund's Secret Chest</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You hide a chest, and all its contents, on the Ethereal Plane. You must touch the chest and the miniature replica that serves as a material component for the spell. The chest can contain up to 12 cubic feet of nonliving material (3 feet by 2 feet by 2 feet).</p>
+							<p>While the chest remains on the Ethereal Plane, you can use an action and touch the replica to recall the chest. It appears in an unoccupied space on the ground within 5 feet of you. You can send the chest back to the Ethereal Plane by using an action and touching both the chest and the replica.</p>
+							<p>After 60 days, there is a cumulative 5 percent chance per day that the spell's effect ends. This effect ends if you cast this spell again, if the smaller replica chest in destroyed, or if you choose to end the spell as an action. If the spell ends and the larger chest in on the Ethereal Plane, it is irretrievably lost.</p>
+			</div>
+			<div class="panel panel-primary spell bard cleric druid paladin ranger wizard four" id="locateCreature1">
+				<div class="panel-heading">Locate Creature</div>
+					<p>4th-level divination</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Self</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.</p>
+							<p>The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close-within 30 feet-at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn't locate the creature.</p>
+							<p>This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="mordenkainensFaithfulHound1">
+				<div class="panel-heading">Mordenkainen's Faithful Hound</div>
+					<p>4th-level conjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: 8 hours</h4>
+							<p>You conjure a phantom watchdog in an unoccupied space that you can see within range, where it remains for the duration, until you dismiss it as an action, or until you move more than 100 feet away from it.</p>
+							<p>The hound is invisible to all creatures except you and can't be harmed. When a Small or larger creature comes within 30 feet of it without first speaking the password that you specify when you cast this spell, the hound starts barking loudly. The hound sees invisible creatures and can see into the Ethereal Plane. It ignores illusions.</p>
+							<p>At the start of each of your turns, the hound attempts to bite one creature within 5 feet of it that is hostile to you. The hound's attack bonus is equal to your spellcasting ability modifier + your proficiency bonus. On a hit, it deals 4d8 piercing damage.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="mordenkainensPrivateSanctum1">
+				<div class="panel-heading">Mordenkainen's Private Sanctum</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 10 minutes</h4>
+						<h4>Range: 120 feet</h4>
+						<h4>Duration: 24 hours</h4>
+							<p>You make an area within range magically secure. The area is a cube that can be as small as 5 feet to as large as 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it.</p>
+							<p>When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties:</p>
+								<li>Sound can't pass through the barrier at the edge of the warded area.</li>
+								<li>The barrier of the warded area appears dark and foggy, preventing vision (including darkvision) through it.</li>
+								<li>Sensors created by divination spells can't appear inside the protected are or pass through the barrier as its perimeter.</li>
+								<li>Creatures in the are can't be targeted by divination spells.</li>
+								<li>Nothing can teleport into or out of the warded area.</li>
+								<li>Planar travel is blocked within the warded area.</li>
+							<p>Casting this spell on the same spot every day for a year makes this effect permanent.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="otilukesResilientSphere1">
+				<div class="panel-heading">Otiluke's Resilient Sphere</div>
+					<p>4th-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 30 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration.</p>
+							<p>Nothing-not physical objects, energy, or other spell effects-can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.</p>
+							<p>The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures.</p>
+							<p>A disintegrate spell targeting the globe destorys it without harming anyhing inside it.</p>
+			</div>
+			<div class="panel panel-primary spell wizard four" id="phantasmalKiller1">
+				<div class="panel-heading">Phantasmal Killer</div>
+					<p>4th-level illusion</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 120 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You tap into the nightmare of a creature you can see within range and create an illusory manifestation of its deepest fears, visible only to that creature. The target must make a Wisdom saving throw. On a failed save, the target becomes frightened for the duration. At the start of each of the target's turns before the spell ends, the target must succeed on a Wisdom saving throw or take 4d10 psychic damage. On a successful save, the spell ends.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.</p>
+			</div>
+			<div class="panel panel-primary spell bard druid sorcerer wizard four" id="polymorph1">
+				<div class="panel-heading">Polymorph</div>
+					<p>4th-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 60 feet</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>This spell transforms a creature that you can see within range into a new form. An unwilling creature must make a Wisdom saving throw to avoid the effect. A shapechanger automatically succeeds on this saving throw.</p>
+							<p>The transformation lasts for the duration, or until the target drops to 0 hit points or dies. The new form can be any beast whose challenge rating is equal to or less than the target's (or the target's level, if it doesn't have a challenge rating). The target's game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.</p>
+							<p>The target assumes the hit points of its new form. When it reverts to its normal form, the creature returns to the number of hit points it had before it transformed. If it reverts as a results of dropping to 0 hit points, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 hit points, it isn't knock unconscious.</p>
+							<p>The creature is limited in the actions it can perform by the nature of its nuew form, and it can't speak, cast spells, or take any other action that requires hands or speech.</p>
+							<p>The target's gear melds into the new form. The creature can't activate, use, wield, or othewise benefit from any of its equipment.</p>
+			</div>
+			<div class="panel panel-primary spell paladin four" id="staggeringSmite1">
+				<div class="panel-heading">Staggering Smite</div>
+					<p>4th-level evocation</p>
+						<h4>Casting Time: 1 bonus action</h4>
+						<h4>Range: Self</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>The next time you hit a creature with a melee weapon attack during this spell's duration, your weapon pierces both body and mind, and the attack deals an extra 4d6 psychic damage to the target. The target must make a Wisdom saving throw. On a failed save, it has disadvantage on attack rolls and ability checks, and can't take reactions, until the end of its next turn.</p>
+			</div>
+			<div class="panel panel-primary spell cleric druid wizard four" id="stoneShape1">
+				<div class="panel-heading">Stone Shape</div>
+					<p>4th-level transmutation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: Instantaneous</h4>
+							<p>You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.</p>
+			</div>
+			<div class="panel panel-primary spell druid ranger sorcerer wizard four" id="stoneskin1">
+				<div class="panel-heading">Stoneskin</div>
+					<p>4th-level abjuration</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: Touch</h4>
+						<h4>Duration: Concentration, up to 1 hour</h4>
+							<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>
+			</div>
 		</div>
+		<div class="panel panel-primary spell druid sorcerer wizard four" id="wallOfFire1">
+				<div class="panel-heading">Wall of Fire</div>
+					<p>4th-level evocation</p>
+						<h4>Casting Time: 1 action</h4>
+						<h4>Range: 120 feet</h4>
+						<h4>Duration: Concentration, up to 1 minute</h4>
+							<p>You create a wall of fire on a solid surface within range. You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet hight, and 1 foot thick. The wall is opaque and lasts for the duration.</p>
+							<p>When the wall appears, each creature within its area must make a Dexterity saving throw. On a failed save, a creature takes 5d8 fire damage, or half as much damage on a successful save.</p>
+							<p>One side of the wall, selected by you when you cast this spell, deals 5d8 fire damage to each creature that ends its turn within 10 feet of that side or inside the wall. A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there. The other side of the wall deals no damage.</p>
+							<p>At Higher Levels. When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.</p>
+			</div>
 	</div>	
 	</body>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
