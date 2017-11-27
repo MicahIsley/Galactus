@@ -22,104 +22,40 @@
 		<div class="container-fluid">
 			<div class="row" id="characterRow">
 				<div class="col-sm-12">
-					<div class="character" id="fenla">Fenla</div>
-					<div class="character" id="fannar">Fannar</div>
-					<div class="character" id="alea">Alea</div>
-					<div class="character" id="autumn">Autumn</div>
-					<div class="character" id="regina">Regina</div>
-					<div class="character" id="clithsbee">Clithsbee</div>
-					<div class="character" id="scepter">Scepter</div>
-					<div class="character" id="syndir">Syndir</div>
-					<div class="character" id="franco">Franco</div>
-					<div class="character" id="minime">Mini-me</div>
+					<div class="character" id="humphrey">Humphrey</div>
+					<div class="character" id="moro">Moro</div>
 				</div>
 			</div>	
 			<div class="row contentSection">		
 				<div class="col-sm-3" id="nameSection">
 					<div class="row">
-						<h1 class="character_title fenla">Fenla Arila</h1>
-						<h1 class="character_title clithsbee">Clithsbee</h1>
-						<h1 class="character_title scepter">Scepter de Scepter</h1>
-						<h1 class="character_title syndir">Synndur the Sober</h1>
-						<h1 class="character_title alea">Alea Vonbella</h1>
-						<h1 class="character_title fannar">Fannar Imada</h1>
-						<h1 class="character_title regina">Regina the Wretched</h1>
-						<h1 class="character_title franco">Franco Buffandi</h1>
-						<h1 class="character_title minime">Mini-Me</h1>
-						<h1 class="character_title autumn">Autumn</h1>
+						<h1 class="character_title humphrey">Humphrey Puddlefoot</h1>
+						<h1 class="character_title moro">Moro Bloodfist</h1>
 					</div>
 					<div class="row">
-						<div class="fenla levelClass">
-							<div>Lvl.3 Gnome Druid</div>
+						<div class="humphrey levelClass">
+							<div>Lvl.3 Halfling Paladin</div>
 						</div>
-						<div class="clithsbee levelClass">
-							<div>Lvl.3 Dwarf Barbarian</div>
-						</div>
-						<div class="scepter levelClass">
-							<div>Lvl.3 Human Bard</div>
-						</div>
-						<div class="syndir levelClass">
-							<div>Lvl.3 Dragonborn Sorcerer</div>
-						</div>
-						<div class="alea levelClass">
-							<div>Lvl.3 Dark Elf Ranger</div>
-						</div>
-						<div class="fannar levelClass">
-							<div>Lvl.3 Half-Elf Cleric</div>
-						</div>
-						<div class="regina levelClass">
-							<div>Lvl.3 Teifling Warlock</div>
-						</div>
-						<div class="franco levelClass">
-							<div>Lvl.2 Half-Elf Monk</div>
-						</div>
-						<div class="minime levelClass">
-							<div>Lvl.2 Halfling Rogue</div>
-						</div>
-						<div class="autumn levelClass">
-							<div>Lvl.3 Tabaxi Bard</div>
+						<div class="moro levelClass">
+							<div>Lvl.5 Human Monk</div>
 						</div>
 					</div>	
 				</div>
 				<div class="col-sm-2" id="classIcon">
-					<img src="/images/druid-symbol.png" alt="Responsive image" class="fenla">
-					<img src="/images/cleric-symbol.png" alt="Responsive image" class="fannar">
-					<img src="/images/bard-symbol.png" alt="Responsive image" class="autumn scepter">
-					<img src="/images/ranger-symbol.png" alt="Responsive image" class="alea">
-					<img src="/images/warlock-symbol.png" alt="Responsive image" class="regina">
-					<img src="/images/monk-symbol.png" alt="Responsive image" class="franco">
-					<img src="/images/sorcerer-symbol.png" alt="Responsive image" class="syndir">
-					<img src="/images/barbarian-symbol.png" alt="Responsive image" class="clithsbee">
-					<img src="/images/rogue-symbol.png" alt="Responsive image" class="minime">
+					<img src="/images/paladin-symbol.png" alt="Responsive image" class="humphrey">
+					<img src="/images/monk-symbol.png" alt="Responsive image" class="moro">
 				</div>
-				<div class="col-sm-2 contentSection" id="hpSection">
+				<div class="col-sm-3 contentSection" id="hpSection">
 					<h3 id="maxHpLabel">Max HP: <span id="maxHp"></span></h3>
 					<div id="hpArea">
 						<div class="hpButton" id="addHp">+</div>
-						<span id="currentHp"></span>
+						<span id="currentHpDM"></span>
 						<div class="hpButton" id="subHp">-</div>
 					</div>	
 				</div>
-				<div class="col-sm-2" id="experienceSection">
+				<div class="col-sm-3" id="experienceSection">
 					<div id="xpProgressBar">
 						<div id="xpProgressFill"></div>
-					</div>
-				</div>
-				<div class="col-sm-2" id="characterSpecialTracker">
-					<div class="fenla" id="wildShape">
-						Wild Shape: 2
-					</div>
-					<div class="autumn" id="bardicInspriation">
-						Barding Inspiration (d6): 3
-					</div>
-					<div class="scepter" id="bardicInspriation">
-						Barding Inspiration (d6): 3
-					</div>
-					<div class="franco" id="kiPoints">
-						Ki: 3
-					</div>
-					<div class="syndir" id="sorceryPoints">
-						Sorcery Points: 3
 					</div>
 				</div>
 			</div>		
@@ -273,288 +209,52 @@
 						<h2 class="sectionTitles">Racial Abilities</h2>
 					</div>
 					<div class="row">
-						<div class="panel-group fenla" id="accordionFenlaR">
+						<div class="panel-group humphrey" id="accordionHumphreyR">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFenlaR" href="#collapseFeR1"><h4 class="panel-title">Darkvision</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionHumphreyR" href="#collapseHuR1"><h4 class="panel-title">Lucky</h4></a>
 	   							</div>
-	    						<div id="collapseFeR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
+	    						<div id="collapseHuR1" class="panel-collapse collapse">
+	      							<div class="panel-body">When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</div>
 	    						</div>
 	  						</div>
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFenlaR" href="#collapseFeR2"><h4 class="panel-title">Gnome Cunning</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionHumphreyR" href="#collapseHuR2"><h4 class="panel-title">Brave</h4></a>
 	    						</div>
-	    						<div id="collapseFeR2" class="panel-collapse collapse">
+	    						<div id="collapseHuR2" class="panel-collapse collapse">
 	      							<div class="panel-body">
-	      							You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.
+	      							You have advantage on saving throws against being frightened.
 	      							</div>
 	   							</div>
 	  						</div>
 				  			<div class="panel panel-default">
 				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionFenlaR" href="#collapseFeR3"><h4 class="panel-title">Natural Illusionist</h4></a>
+				     				<a data-toggle="collapse" data-parent="#accordionHumphreyR" href="#collapseHuR3"><h4 class="panel-title">Halfling Nimbleness</h4></a>
 				    			</div>
-				    			<div id="collapseFeR3" class="panel-collapse collapse">
-				     				<div class="panel-body">You know the minor illusion cantrip. Intelligence is your spellcasting ability for it.</div>
-				    			</div>
-							</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFenlaR" href="#collapseFeR4"><h4 class="panel-title">Speak with Small Beasts</h4></a>
-	    						</div>
-	    						<div id="collapseFeR4" class="panel-collapse collapse">
-	      							<div class="panel-body">Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets.</div>
-	    						</div>
-	  						</div>
-						</div>
-						<div class="panel-group fannar" id="accordionFannarR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFannarR" href="#collapseFaR1"><h4 class="panel-title">Darkvision</h4></a>
-	   							</div>
-	    						<div id="collapseFaR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFannarR" href="#collapseFaR2"><h4 class="panel-title">Fey Ancestry</h4></a>
-	    						</div>
-	    						<div id="collapseFaR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
-	      							</div>
-	   							</div>
-	  						</div>
-						</div>
-						<div class="panel-group alea" id="accordionAleaR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAleaR" href="#collapseAR1"><h4 class="panel-title"> Superior Darkvision</h4></a>
-	   							</div>
-	    						<div id="collapseAR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAleaR" href="#collapseAR2"><h4 class="panel-title">Fey Ancestry</h4></a>
-	    						</div>
-	    						<div id="collapseAR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionAleaR" href="#collapseAR3"><h4 class="panel-title">Trance</h4></a>
-				    			</div>
-				    			<div id="collapseAR3" class="panel-collapse collapse">
-				     				<div class="panel-body">Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</div>
+				    			<div id="collapseHuR3" class="panel-collapse collapse">
+				     				<div class="panel-body">You can move through the space of any creature that is of a larger size than yours.</div>
 				    			</div>
 							</div>
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAleaR" href="#collapseAR4"><h4 class="panel-title">Sunlight Sensitivity</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionHumphreyR" href="#collapseHuR4"><h4 class="panel-title">Naturally Stealthy</h4></a>
 	    						</div>
-	    						<div id="collapseAR4" class="panel-collapse collapse">
-	      							<div class="panel-body">You have disadvantage on attack rolls and on Wisdom (Perception)checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAleaR" href="#collapseAR5"><h4 class="panel-title">Drow Magic</h4></a>
-	    						</div>
-	    						<div id="collapseAR5" class="panel-collapse collapse">
-	      							<div class="panel-body">You know the dancing lights cantrip. When you reach 3rd level, you can cast the faerie fire spell once per day. When you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.</div>
+	    						<div id="collapseHuR4" class="panel-collapse collapse">
+	      							<div class="panel-body">You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</div>
 	    						</div>
 	  						</div>
 						</div>
-						<div class="panel-group regina" id="accordionReginaR">
+						<div class="panel-group moro" id="accordionMoroR">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionReginaR" href="#collapseRR1"><h4 class="panel-title">Darkvision</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionMoroR" href="#collapseMoR1"><h4 class="panel-title">Human</h4></a>
 	   							</div>
-	    						<div id="collapseRR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
+	    						<div id="collapseMoR1" class="panel-collapse collapse">
+	      							<div class="panel-body">You're human.</div>
 	    						</div>
 	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionReginaR" href="#collapseRR2"><h4 class="panel-title">Hellish Resistance</h4></a>
-	    						</div>
-	    						<div id="collapseRR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You have resistance to fire damage.
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionReginaR" href="#collapseRR3"><h4 class="panel-title">Infernal Legacy</h4></a>
-				    			</div>
-				    			<div id="collapseRR3" class="panel-collapse collapse">
-				     				<div class="panel-body">You know the thaumaturgy cantrip. Once you reach 3rd leve, you can cast the hellish rebuke spell once per day as a 2nd-levell spell. Once you reach 5th level, you can also cast the darkness spell once per day. Charisma is your spellcasting ability for these spells.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group scepter" id="accordionScepterR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionScepterR" href="#collapseScR1"><h4 class="panel-title">Human</h4></a>
-	   							</div>
-	    						<div id="collapseScR1" class="panel-collapse collapse">
-	      							<div class="panel-body">You're not special.</div>
-	    						</div>
-	  						</div>
-	  					</div>	
-						<div class="panel-group syndir" id="accordionSyndirR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionSyndirR" href="#collapseSyR1"><h4 class="panel-title">Draconic Ancestry</h4></a>
-	   							</div>
-	    						<div id="collapseSyR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Red/Fire damage/15ft.cone(Dex.save)</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionSyndirR" href="#collapseSyR2"><h4 class="panel-title">Breath Weapons</h4></a>
-	    						</div>
-	    						<div id="collapseSyR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You can use your action to exhale destructive energy. When you use your breath weapon, each creature in the area must make a Dexterity saving throw. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. After you use your breath weapon, you can't use it again until you complete a short or long rest.
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionSyndirR" href="#collapseSyR3"><h4 class="panel-title">Damage Resistance</h4></a>
-				    			</div>
-				    			<div id="collapseSyR3" class="panel-collapse collapse">
-				     				<div class="panel-body">You have resistance to fire damage.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group clithsbee" id="accordionClithsbeeR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionClithsbeeR" href="#collapseCR1"><h4 class="panel-title">Darkvision</h4></a>
-	   							</div>
-	    						<div id="collapseCR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionClithsbeeR" href="#collapseCR2"><h4 class="panel-title">Dwarven Resilience</h4></a>
-	    						</div>
-	    						<div id="collapseCR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You have advantage on saving throws against poison, and you have resistance against poison damage.
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionClithsbeeR" href="#collapseCR3"><h4 class="panel-title">Stonecunning</h4></a>
-				    			</div>
-				    			<div id="collapseCR3" class="panel-collapse collapse">
-				     				<div class="panel-body">Whenever you make an Intelligence(History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group minime" id="accordionMinimeR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeR" href="#collapseMmR1"><h4 class="panel-title">Lucky</h4></a>
-	   							</div>
-	    						<div id="collapseMmR1" class="panel-collapse collapse">
-	      							<div class="panel-body">When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeR" href="#collapseMmR2"><h4 class="panel-title">Brave</h4></a>
-	    						</div>
-	    						<div id="collapseMmR2" class="panel-collapse collapse">
-	      							<div class="panel-body">You have advantage on saving throws against being frightened.
-	      							</div>
-	   							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeR" href="#collapseMmR3"><h4 class="panel-title">Halfling Nimbleness</h4></a>
-	    						</div>
-	    						<div id="collapseMmR3" class="panel-collapse collapse">
-	      							<div class="panel-body">You can move through the space of any creature that is of a size larger than yours.
-	      							</div>
-	   							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeR" href="#collapseMmR2"><h4 class="panel-title">Naturally Stealthy</h4></a>
-	    						</div>
-	    						<div id="collapseMmR2" class="panel-collapse collapse">
-	      							<div class="panel-body">You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.
-	      							</div>
-	   							</div>
-	  						</div>
-						</div>
-						<div class="panel-group franco" id="accordionFrancoR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFrancoR" href="#collapseFrR1"><h4 class="panel-title">Darkvision</h4></a>
-	   							</div>
-	    						<div id="collapseFrR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFrancoR" href="#collapseMmR2"><h4 class="panel-title">Fey Ancestry</h4></a>
-	    						</div>
-	    						<div id="collapseMmR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You have advantage on saving throws against being charmed, and magic can't put you to sleep.
-	      							</div>
-	   							</div>
-	  						</div>
-						</div>
-						<div class="panel-group autumn" id="accordionAutumnR">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAutumnR" href="#collapseAuR1"><h4 class="panel-title">Darkvision</h4></a>
-	   							</div>
-	    						<div id="collapseAuR1" class="panel-collapse collapse">
-	      							<div class="panel-body">Accustomed to life undergound, you have surperior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't descern color in darkness, only shades of gray.</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAutumnR" href="#collapseAuR2"><h4 class="panel-title">Feline Agility</h4></a>
-	    						</div>
-	    						<div id="collapseAuR2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns.
-	      							</div>
-	   							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAutumnR" href="#collapseAuR3"><h4 class="panel-title">Cat's Claws</h4></a>
-	    						</div>
-	    						<div id="collapseAuR3" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4+ your strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
-	      							</div>
-	   							</div>
-	  						</div>
-						</div>		
+						</div>	
 					</div>
 				</div>	
 				<div class="col-sm-offset-1 col-sm-5 contentSection">
@@ -562,324 +262,81 @@
 						<h2 class="sectionTitles">Class Abilities</h2>
 					</div>
 					<div class="row">
-						<div class="panel-group fenla" id="accordionFenlaC">
+						<div class="panel-group humphrey" id="accordionHumphreyC">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFenlaC" href="#collapseFeC1"><h4 class="panel-title">Druidic</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC1"><h4 class="panel-title">Divine Sense</h4></a>
 	   							</div>
-	    						<div id="collapseFeC1" class="panel-collapse collapse">
-	      							<div class="panel-body">You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom(Perception)check but can't decipher it without magic.</div>
+	    						<div id="collapseHuC1" class="panel-collapse collapse">
+	      							<div class="panel-body"><p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</p>
+	      							<p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p></div>
 	    						</div>
 	  						</div>
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFenlaC" href="#collapseFeC2"><h4 class="panel-title">Wild Shape</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC2"><h4 class="panel-title">Lay on Hands</h4></a>
 	    						</div>
-	    						<div id="collapseFeC2" class="panel-collapse collapse">
-	      							<div class="panel-body"><p>You can use a bonus action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
-	      							<p>You can transform into a beast up to a CR of 1. You can stay in a beast shape for a number of hours equal to half your druid level(rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
-	      							<p>While you are transformed, the following rules apply:</p>
-	      							<p>You game statistics are replaced by the stats of the beast, but you retain your alignment, personality, Int, Wis, and Cha. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has a larger bonus than you, use the creature's bonus.</p>
-	      							<p>When you drop to 0 hit points, you transform into your normal form. Any excess damage transfers to your normal form.</p>
-	      							<p>You can't cast spells, and your ability to speak or take actions is limited by that of your beast form. However, transforming does not break any concentration spells you cast previously.</p>
-	      							<p>You can choose whether your equipment falls to the ground or merges into your new form. Merged equipment has no effect.</p></div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionFenlaC" href="#collapseFeC3"><h4 class="panel-title">Circle of the Moon</h4></a>
-				    			</div>
-				    			<div id="collapseFeC3" class="panel-collapse collapse">
-				     				<div class="panel-body">While you are transformed, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group clithsbee" id="accordionClithsbeeC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionClithsbeeC" href="#collapseCC1"><h4 class="panel-title">Rage</h4></a>
-	   							</div>
-	    						<div id="collapseCC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor.</p>
-	      							<li>You have advantage on Strength checks and Strength saving throws.</li>
-	      							<li>When you make a melee weapon attack using Strength, you gain a +2 bonus to the damage roll.</li>
-	      							<li>You have resistance to bludgeoning, piercing, and slashing damage</li>
-	      							<p>You can't cast spells or concentrate on them while raging.</p>
-	      							<p>Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.</p>
-	      							<p>You can rage 3 times, you must finish a long rest before you can rage again.</p>
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionClithsbeeC" href="#collapseCC2"><h4 class="panel-title">Unarmored Defense</h4></a>
-	    						</div>
-	    						<div id="collapseCC2" class="panel-collapse collapse">
-	      							<div class="panel-body">While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionClithsbeeC" href="#collapseCC3"><h4 class="panel-title">Reckless Attack</h4></a>
-				    			</div>
-				    			<div id="collapseCC3" class="panel-collapse collapse">
-				     				<div class="panel-body">When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionClithsbeeC" href="#collapseCC4"><h4 class="panel-title">Danger Sense</h4></a>
-				    			</div>
-				    			<div id="collapseCC4" class="panel-collapse collapse">
-				     				<div class="panel-body">You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group alea" id="accordionAleaC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAleaC" href="#collapseAC1"><h4 class="panel-title">Favored Enemy: Beasts</h4></a>
-	   							</div>
-	    						<div id="collapseAC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>You have advantage on Wisdom(Survival)check to track beasts, as well as on Intelligence checks to recall information about them.</p>
-									<p>You choose one additional favored enemy, as well as an associated language, at 6th and 14th level.</p>
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAleaC" href="#collapseAC2"><h4 class="panel-title">Natural Explorer: Desert</h4></a>
-	    						</div>
-	    						<div id="collapseAC2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      								<p>When you make an Intelligence or Wisdom check related to the desert, your proficiency bonus is doubled if you are using a skill that you're proficient in.</p>
-	      								<p>While traveling for an hour or more in the desert, you gain the following benefits</p>
-	      								<li>Difficult terrain doesn't slow your group's travel.</li>
-	      								<li>Your group can't become lost except by magical means.</li>
-	      								<li>Even when you are engaged in another activity while traveling, you remain alert to danger.</li>
-	      								<li>If you are traveling alone, you can move stealthily at a normal pace.</li>
-	      								<li>When you forage, you find twice as much food as you normally wolid.</li>
-	      								<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
-	      								<p>You choose additional favored terrain types at 6th and 10th level.</p>
+	    						<div id="collapseHuC2" class="panel-collapse collapse">
+	      							<div class="panel-body"><p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</p>
+	      							<p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p>
+	      							<p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neurtralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p>
+	      							<p>This feature has no effect on undead and constructs.</p>
 	      							</div>
 	   							</div>
 	  						</div>
 				  			<div class="panel panel-default">
 				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionAleaC" href="#collapseAC3"><h4 class="panel-title">Fighting Style: Archery</h4></a>
+				     				<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC3"><h4 class="panel-title">Fighting Style-Protection</h4></a>
 				    			</div>
-				    			<div id="collapseAC3" class="panel-collapse collapse">
-				     				<div class="panel-body">You gain a +2 bonus to attack rolls you make with ranged weapons.</div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionAleaC" href="#collapseAC4"><h4 class="panel-title">Ranger Archetype:</h4></a>
-				    			</div>
-				    			<div id="collapseAC4" class="panel-collapse collapse">
-				     				<div class="panel-body">TBD</div>
+				    			<div id="collapseHuC3" class="panel-collapse collapse">
+				     				<div class="panel-body">When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.</div>
 				    			</div>
 							</div>
 							<div class="panel panel-default">
 				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionAleaC" href="#collapseAC5"><h4 class="panel-title">Primeval Awareness</h4></a>
+				     				<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC4"><h4 class="panel-title">Divine Smite</h4></a>
 				    			</div>
-				    			<div id="collapseAC5" class="panel-collapse collapse">
-				     				<div class="panel-body">You can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you(or within 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn't reveal the creatures' location or number.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group fannar" id="accordionFannarC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFannarC" href="#collapseFaC1"><h4 class="panel-title">Divine Domain: Tempest</h4></a>
-	   							</div>
-	    						<div id="collapseFaC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>You learn the fog cloud,thunderwave, gust of wind, and shatter spells, these do not count against your number of prepared spells.</p>
-	      							<p>You gain proficiency with martial weapons and heavy armor.</p>
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFannarC" href="#collapseFaC2"><h4 class="panel-title">Wrath of the Storm</h4></a>
-	    						</div>
-	    						<div id="collapseFaC2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>You can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hit you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lighting or thunder damage(your choice)on a failed throw, and half as much damage on a successful one.</p>
-	      							<p>You can use this feature a number of times equal to your Wisdom modified(a minimum of once). You regain all expended uses when you finish a long rest.</p>
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionFannarC" href="#collapseFaC3"><h4 class="panel-title">Channel Divinity</h4></a>
-				    			</div>
-				    			<div id="collapseFaC3" class="panel-collapse collapse">
-				     				<div class="panel-body">When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again. Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</div>
+				    			<div id="collapseHuC4" class="panel-collapse collapse">
+				     				<div class="panel-body">When you hit a creature with a melee weapon attack, you can expend one paladin spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. the damage increases by 1d8 in the target is an undead or a fiend.</div>
 				    			</div>
 							</div>
 							<div class="panel panel-default">
 				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionFannarC" href="#collapseFaC4"><h4 class="panel-title">Channel Divinity: Turn Undead</h4></a>
+				     				<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC5"><h4 class="panel-title">Divine Health</h4></a>
 				    			</div>
-				    			<div id="collapseFaC4" class="panel-collapse collapse">
-				     				<div class="panel-body"><p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
-				     				<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly  move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p></div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionFannarC" href="#collapseFaC5"><h4 class="panel-title">Channel Divinity: Destructive Wrath</h4></a>
-				    			</div>
-				    			<div id="collapseFaC5" class="panel-collapse collapse">
-				     				<div class="panel-body">You can use your Channel Divinity to wield the power of the storm with unchecked ferocity. When you roll lighting or thunder damage, you can use your Channel Divinity to deal maximum damage, instead of rolling.</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group regina" id="accordionReginaC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionReginaC" href="#collapseRC1"><h4 class="panel-title">The Great Old One Expanded Spells</h4></a>
-	   							</div>
-	    						<div id="collapseRC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							Dissonant whispers, Tasha's hideous laughter, detect thoughts, and phantasmal force are added to the Warlock spell list for you.
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionReginaC" href="#collapseRC2"><h4 class="panel-title">Awakened Mind</h4></a>
-	    						</div>
-	    						<div id="collapseRC2" class="panel-collapse collapse">
-	      							<div class="panel-body">Your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionReginaC" href="#collapseRC3"><h4 class="panel-title">Mask of Many Faces</h4></a>
-				    			</div>
-				    			<div id="collapseRC3" class="panel-collapse collapse">
-				     				<div class="panel-body">You can cast disguise self at will, without expending a spell slot.</div>
+				    			<div id="collapseHuC5" class="panel-collapse collapse">
+				     				<div class="panel-body">You are immune to disease.</div>
 				    			</div>
 							</div>
 							<div class="panel panel-default">
 				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionReginaC" href="#collapseRC4"><h4 class="panel-title">Gaze of Two Minds</h4></a>
+				     				<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC6"><h4 class="panel-title">Oath of Devotion-Channel Divinity-Sacred Weapon</h4></a>
 				    			</div>
-				    			<div id="collapseRC4" class="panel-collapse collapse">
-				     				<div class="panel-body">You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use your action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. While perceiving through the other creature's senses, you benefit from any special senses possessed by that creature, and you are blinded and deafened to your own surroundings.</div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionReginaC" href="#collapseRC5"><h4 class="panel-title">Pact of the Chain</h4></a>
-				    			</div>
-				    			<div id="collapseRC5" class="panel-collapse collapse">
-				     				<div class="panel-body"><p>You learn the find familiar spell and can cast it as a ritual. The spell doesn't count against your number of spells known.</p>
-				     				<p>When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.</p>
-				     				<p>Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.</p>
-				     				</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group scepter" id="accordionScepterC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionScepterC" href="#collapseScC1"><h4 class="panel-title">Ritual Casting</h4></a>
-	   							</div>
-	    						<div id="collapseScC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You can cast any bard spell you know as a ritual if that spell has the ritual tag. A ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn't expend a spell slot, which means the ritual version of a spell can't be cast at a higher level.
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionScepterC" href="#collapseScC2"><h4 class="panel-title">Bardic Inspiration</h4></a>
-	    						</div>
-	    						<div id="collapseScC2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choosse one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
-	      							<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
-	      							<p>You can use this feature a number of times equal to your Charisma modifier(a minimum of ocnce). You regain any expended uses when you finish a long rest.</p>
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionScepterC" href="#collapseScC3"><h4 class="panel-title">Jack of All Trades</h4></a>
-				    			</div>
-				    			<div id="collapseScC3" class="panel-collapse collapse">
-				     				<div class="panel-body">You can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionScepterC" href="#collapseScC4"><h4 class="panel-title">Song of Rest</h4></a>
-				    			</div>
-				    			<div id="collapseScC4" class="panel-collapse collapse">
-				     				<div class="panel-body">You can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performace regain hit points at the end of the short rest, each of those creatures regains an extra 1d6 hit points.</div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionScepterC" href="#collapseScC5"><h4 class="panel-title">Bard Colleges</h4></a>
-				    			</div>
-				    			<div id="collapseScC5" class="panel-collapse collapse">
-				     				<div class="panel-body">Choose One</div>
-				    			</div>
-							</div>
-						</div>
-						<div class="panel-group syndir" id="accordionSyndirC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionSyndirC" href="#collapseSyC1"><h4 class="panel-title">Font of Magic</h4></a>
-	   							</div>
-	    						<div id="collapseSyC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>Sorcery Points. You have 2 sorcery points. You regain all spent sorcery points when you finish a long rest.</p>
-	      							<p>Creating Spell Slots. You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. You can creature spell slots no higher in level than 5th.</p>
-	      								<ul>1st level: 2 points</ul>
-	      								<ul>2nd level: 3 points</ul>
-	      								<ul>3rd level: 5 points</ul>
-	      								<ul>4th level: 6 points</ul>
-	      								<ul>5th level: 7 points</ul>
-	      							<p>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.</p>	
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionSyndirC" href="#collapseSyC2"><h4 class="panel-title">Metamagic</h4></a>
-	    						</div>
-	    						<div id="collapseSyC2" class="panel-collapse collapse">
-	      							<div class="panel-body">Choose two options
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionSyndirC" href="#collapseSyC3"><h4 class="panel-title">Draconic Bloodline</h4></a>
-				    			</div>
-				    			<div id="collapseSyC3" class="panel-collapse collapse">
+				    			<div id="collapseHuC6" class="panel-collapse collapse">
 				     				<div class="panel-body">
-				     				<p>Dragon Ancestor. I forgot what you chose. Red dragon/ Fire damage. You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.</p>
-				     				<p>Draconic Resilience. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. Additionally, parts of your skin are covered by a thin sheet of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.</p>
+				     					<p>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon. The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p>
+				     					<p>You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>
 				     				</div>
-				     			</div>	
+				    			</div>
+							</div>
+							<div class="panel panel-default">
+				    			<div class="panel-heading">
+				     				<a data-toggle="collapse" data-parent="#accordionHumphreyC" href="#collapseHuC7"><h4 class="panel-title">Oath of Devotion-Channel Divinity-Turn the Unholy</h4></a>
+				    			</div>
+				    			<div id="collapseHuC7" class="panel-collapse collapse">
+				     				<div class="panel-body">
+				     					<p>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using you Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+				     					<p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>
+				     				</div>
+				    			</div>
 							</div>
 						</div>
-						<div class="panel-group franco" id="accordionFrancoC">
+						<div class="panel-group moro" id="accordionMoroC">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFrancoC" href="#collapseFrC1"><h4 class="panel-title">Unarmored Defense</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC1"><h4 class="panel-title">Unarmored Defense</h4></a>
 	   							</div>
-	    						<div id="collapseFrC1" class="panel-collapse collapse">
+	    						<div id="collapseMoC1" class="panel-collapse collapse">
 	      							<div class="panel-body">
 	      							While you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.	
 	      							</div>
@@ -887,9 +344,9 @@
 	  						</div>
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFrancoC" href="#collapseFrC2"><h4 class="panel-title">Martial Arts</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC2"><h4 class="panel-title">Martial Arts</h4></a>
 	    						</div>
-	    						<div id="collapseFrC2" class="panel-collapse collapse">
+	    						<div id="collapseMoC2" class="panel-collapse collapse">
 	      							<div class="panel-body"><p>Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapon that don't have the two-handed or heavy property.</p>
 	      							<p>You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:</p>
 	      								<ul>You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</ul>
@@ -900,9 +357,9 @@
 	  						</div>
 				  			<div class="panel panel-default">
 				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionFrancoC" href="#collapseFrC3"><h4 class="panel-title">Ki</h4></a>
+				     				<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC3"><h4 class="panel-title">Ki</h4></a>
 				    			</div>
-				    			<div id="collapseFrC3" class="panel-collapse collapse">
+				    			<div id="collapseMoC3" class="panel-collapse collapse">
 				     				<div class="panel-body">
 				     				<p>Your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. You have 2 ki points.</p>
 				     				<p>You can spend these points to fuel various ki features, listed below.</p>
@@ -916,86 +373,65 @@
 							</div>
 							<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionFrancoC" href="#collapseFrC4"><h4 class="panel-title">Unarmored Movement</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC4"><h4 class="panel-title">Unarmored Movement</h4></a>
 	   							</div>
-	    						<div id="collapseFrC4" class="panel-collapse collapse">
+	    						<div id="collapseMoC4" class="panel-collapse collapse">
 	      							<div class="panel-body">
 	      							Your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases as you level up.
 	      							</div>
 	    						</div>
 	  						</div>
-						</div>
-						<div class="panel-group minime" id="accordionMinimeC">
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeC" href="#collapseMmC1"><h4 class="panel-title">Sneak Attack</h4></a>
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC5"><h4 class="panel-title">Monastic Tradition-Way of Shadow-Shadow Arts</h4></a>
 	   							</div>
-	    						<div id="collapseMmC1" class="panel-collapse collapse">
-	      							<div class="panel-body"><p>Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.</p>
-	      							<p>You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll.</p>
-	      							</div>
-	    						</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionMinimeC" href="#collapseMmC2"><h4 class="panel-title">Thieves' Cant</h4></a>
-	    						</div>
-	    						<div id="collapseMmC2" class="panel-collapse collapse">
+	    						<div id="collapseMoC5" class="panel-collapse collapse">
 	      							<div class="panel-body">
-	      							<p>During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. If takes four times longer to convey such a message than it does to speak the same idea plainly.</p>
-	      							<p>In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>	
-	      							</div>
-	   							</div>
-	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionMinimeC" href="#collapseMmC3"><h4 class="panel-title">Cunning Action</h4></a>
-				    			</div>
-				    			<div id="collapseMmC3" class="panel-collapse collapse">
-				     				<div class="panel-body">Your quick thinking and agility allow you to make and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.
-				     				</div>
-				     			</div>	
-							</div>
-						</div>
-						<div class="panel-group autumn" id="accordionAutumnC">
-	  						<div class="panel panel-default">
-	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC1"><h4 class="panel-title">Ritual Casting</h4></a>
-	   							</div>
-	    						<div id="collapseAuC1" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							You can cast any bard spell you know as a ritual if that spell has the ritual tag. A ritual version of a spell takes 10 minutes longer to cast than normal. It also doesn't expend a spell slot, which means the ritual version of a spell can't be cast at a higher level.
+	      								<p>As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantriop if you don't already know it.</p>
 	      							</div>
 	    						</div>
 	  						</div>
 	  						<div class="panel panel-default">
 	    						<div class="panel-heading">
-	      							<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC2"><h4 class="panel-title">Bardic Inspiration</h4></a>
-	    						</div>
-	    						<div id="collapseAuC2" class="panel-collapse collapse">
-	      							<div class="panel-body">
-	      							<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choosse one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.</p>
-	      							<p>Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p>
-	      							<p>You can use this feature a number of times equal to your Charisma modifier(a minimum of ocnce). You regain any expended uses when you finish a long rest.</p>
-	      							</div>
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC6"><h4 class="panel-title">Deflect Missiles</h4></a>
 	   							</div>
+	    						<div id="collapseMoC6" class="panel-collapse collapse">
+	      							<div class="panel-body">
+	      								<p>You can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p>
+	      								<p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</p>
+	      							</div>
+	    						</div>
 	  						</div>
-				  			<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC3"><h4 class="panel-title">Jack of All Trades</h4></a>
-				    			</div>
-				    			<div id="collapseAuC3" class="panel-collapse collapse">
-				     				<div class="panel-body">You can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</div>
-				    			</div>
-							</div>
-							<div class="panel panel-default">
-				    			<div class="panel-heading">
-				     				<a data-toggle="collapse" data-parent="#accordionAutumnC" href="#collapseAuC4"><h4 class="panel-title">Song of Rest</h4></a>
-				    			</div>
-				    			<div id="collapseAuC4" class="panel-collapse collapse">
-				     				<div class="panel-body">You can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performace regain hit points at the end of the short rest, each of those creatures regains an extra 1d6 hit points.</div>
-				    			</div>
-							</div>
+	  						<div class="panel panel-default">
+	    						<div class="panel-heading">
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC7"><h4 class="panel-title">Slow Fall</h4></a>
+	   							</div>
+	    						<div id="collapseMoC7" class="panel-collapse collapse">
+	      							<div class="panel-body">
+	      								<p>You can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+	      							</div>
+	    						</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	    						<div class="panel-heading">
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC8"><h4 class="panel-title">Extra Attack</h4></a>
+	   							</div>
+	    						<div id="collapseMoC8" class="panel-collapse collapse">
+	      							<div class="panel-body">
+	      								<p>You can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+	      							</div>
+	    						</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	    						<div class="panel-heading">
+	      							<a data-toggle="collapse" data-parent="#accordionMoroC" href="#collapseMoC9"><h4 class="panel-title">Stunning Strike</h4></a>
+	   							</div>
+	    						<div id="collapseMoC9" class="panel-collapse collapse">
+	      							<div class="panel-body">
+	      								<p>You can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
+	      							</div>
+	    						</div>
+	  						</div>
 						</div>							
 					</div>	
 				</div>			
@@ -2490,5 +1926,5 @@
 								
 	</body>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="javascript/characters.js"></script>
+	<script type="text/javascript" src="javascript/dm-only.js"></script>
 </html>			

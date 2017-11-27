@@ -576,7 +576,6 @@ footer {
 	border-width: 3px;
 	border-color: black;
 	height: 40px;
-	width: 200px;
 	background: transparent;
 }
 
@@ -669,6 +668,14 @@ footer {
 }
 
 .autumn {
+	display: none;
+}
+
+.humphrey {
+	display: none;
+}
+
+.moro {
 	display: none;
 }
 
