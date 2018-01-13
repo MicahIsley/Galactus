@@ -58,8 +58,18 @@ function renderStats(data) {
 	$("#abilityScores").append(div);
 	$("#goldDisplay").text("Gold: " + data.gold);
 	console.log(data.xp);
-	$("#xpProgressFill").text(data.xp + "/2700");
-	var xpPercentage = (data.xp/2700) * 100;
+	var totalXp;
+	if(data.xp > 900) {
+		totalXp = 2700;
+	}else if(data.xp > 2700) {
+		totalXp = 6500;
+	}else if(data.xp > 6500) {
+		totalXp = 14000;
+	} else {
+		totalXp = 300;
+	}
+	$("#xpProgressFill").text(data.xp + "/" + totalXp);
+	var xpPercentage = (data.xp/totalXp) * 100;
 	$("#xpProgressFill").css("width", xpPercentage + "%");
 };
 
