@@ -59,11 +59,13 @@ function renderStats(data) {
 	$("#goldDisplay").text("Gold: " + data.gold);
 	console.log(data.xp);
 	var totalXp;
-	if(data.xp > 900) {
+	if(data.xp >= 300 && data.xp < 900) {
+		totalXp = 900;
+	}else if(data.xp >= 900 && data.xp < 2700) {
 		totalXp = 2700;
-	}else if(data.xp > 2700) {
+	}else if(data.xp >= 2700 && data.xp < 6500) {
 		totalXp = 6500;
-	}else if(data.xp > 6500) {
+	}else if(data.xp >= 6500 && data.xp < 14000) {
 		totalXp = 14000;
 	} else {
 		totalXp = 300;
